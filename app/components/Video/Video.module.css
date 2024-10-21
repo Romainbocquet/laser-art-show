@@ -1,0 +1,14 @@
+.videoTitle {
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 5.5vw;
+    width: 100%;
+    text-align: center;
+    font-family: var(--benzin-semibold);
+}
+
+
+.iframe {
+    height: 100vh;
+  }

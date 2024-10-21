@@ -1,18 +1,18 @@
 import Link from "next/link";
 import styles from "./Header.module.css";
-import Image from 'next/image';
 
 export default function Header() {
   return (
-    <header className="w-full bg-gray-800 text-white py-4">
+    <header className="w-full bg-black text-white p-4 px-10">
       <div className={`flex justify-between items-center ${styles.header}`}>
         <div className={styles.logo}>
           <Link href="/">
-          <Image
-            src="/img/logo/logo-white.png"
-            height={60}
-            alt="Logo laser show"
-          />
+            <img
+              src="/img/logo/logo-white.png"
+              height={67}
+              width={200}
+              alt="Logo laser show"
+            />
           </Link>
         </div>
 
@@ -40,7 +40,7 @@ export default function Header() {
           <Link href="/services" className="hover:underline">
             CLIENTS
           </Link>
-          <Link href="/contact" className="hover:underline">
+          <Link href="/contact" className={`${styles.contactLink}`}>
             CONTACT
           </Link>
         </nav>

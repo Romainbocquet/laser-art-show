@@ -6,14 +6,17 @@ import Footer from "./components/Footer/Footer";
 
 const gothamMedium = localFont({
   src: "./fonts/Gotham/Gotham-Medium.otf",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+  variable: "--gotham-medium",
+});
+
+const gothamBold = localFont({
+  src: "./fonts/Gotham/Gotham-Medium.otf",
+  variable: "--gotham-bold",
 });
 
 const benzinSemibold = localFont({
   src: "./fonts/benzin-semibold.ttf",
   variable: "--benzin-semibold",
-  weight: "100 900",
 });
 
 export const metadata: Metadata = {
@@ -29,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body
-        className={`${benzinSemibold.variable} ${gothamMedium.variable} antialiased`}
+        className={`${benzinSemibold.variable} ${gothamMedium.variable} ${gothamBold.variable} antialiased bg-black text-white`}
       >
         <Header />
         {children}
