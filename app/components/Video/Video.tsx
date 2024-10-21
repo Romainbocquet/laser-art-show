@@ -75,7 +75,7 @@ export default function Video() {
         Your browser does not support the video tag.
       </video>
 
-      <h1 className={`absolute ${styles.videoTitle}`}>
+      <h1 className={`absolute ${styles.videoTitle} px-10 `}>
         L’EXCELLENCE DU LASER
       </h1>
     </div>

@@ -24,3 +24,14 @@
 .videoContainer video {
     object-fit: cover;
 }
+
+@media (max-width: 768px) {
+    .videoTitle {
+        bottom: -75px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 8vw;
+        width: 100%;
+        text-align: center;
+    }
+}
