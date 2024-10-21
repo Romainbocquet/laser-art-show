@@ -4,9 +4,19 @@ import "./globals.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
+const gothamLight = localFont({
+  src: "./fonts/Gotham/Gotham-Light.otf",
+  variable: "--gotham-light",
+});
+
 const gothamMedium = localFont({
   src: "./fonts/Gotham/Gotham-Medium.otf",
   variable: "--gotham-medium",
+});
+
+const gothamMediumItl = localFont({
+  src: "./fonts/Gotham/Gotham-MediumItalic.otf",
+  variable: "--gotham-medium-itl",
 });
 
 const gothamBold = localFont({
@@ -32,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body
-        className={`${benzinSemibold.variable} ${gothamMedium.variable} ${gothamBold.variable} antialiased bg-black text-white`}
+        className={`${benzinSemibold.variable} ${gothamMedium.variable} ${gothamBold.variable} ${gothamLight.variable} ${gothamMediumItl.variable} antialiased bg-black text-white`}
       >
         <Header />
         {children}

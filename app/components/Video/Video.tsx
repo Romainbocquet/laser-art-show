@@ -17,7 +17,7 @@ export default function Video() {
   };
 
   return (
-    <div className="relative w-full px-10">
+    <div className={`relative w-full px-10 ${styles.videoContainer}`}>
       <button
         onClick={toggleSound}
         className={`absolute top-2 bg-gray-700 text-white p-2 z-50 ${styles.buttonSound}`}
@@ -59,7 +59,7 @@ export default function Video() {
 
       <video
         ref={videoRef}
-        className="w-full h-auto"
+        className="w-full h-full"
         muted={muted}
         autoPlay
         loop

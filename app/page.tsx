@@ -1,6 +1,7 @@
 
 import Video from "./components/Video/Video";
 import InfiniteSlider from "./components/InfiniteSlider/InfiniteSlider";
+import Accordion from "./components/Accordion/Accordion";
 
 export default function Home() {
 
@@ -8,6 +9,7 @@ export default function Home() {
     <div className="flex justify-center min-h-screen pb-20 font-[family-name:var(--font-geist-sans)]">
       <main className="relative flex flex-col gap-8 row-start-2 sm:items-start">
         <Video />
+        <Accordion />
         <InfiniteSlider />
       </main>
     </div>
