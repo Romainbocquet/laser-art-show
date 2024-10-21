@@ -66,12 +66,7 @@ export default function Video() {
         preload="auto"
       >
         <source src="/video/video-header.mp4" type="video/mp4" />
-        <track
-          src="/path/to/captions.vtt"
-          kind="subtitles"
-          srcLang="en"
-          label="English"
-        />
+        <img src="/video/video-header-caption.png" alt="Fallback image if video fails" />
         Your browser does not support the video tag.
       </video>
 
