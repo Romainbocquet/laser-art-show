@@ -3,6 +3,7 @@ import Video from "./components/Video/Video";
 import InfiniteSlider from "./components/InfiniteSlider/InfiniteSlider";
 import Accordion from "./components/Accordion/Accordion";
 import Valeurs from "./components/Valeurs/Valeurs";
+import Chateau from "./components/Chateau/Chateau";
 
 export default function Home() {
 
@@ -10,6 +11,7 @@ export default function Home() {
     <div className="pb-20 font-[family-name:var(--font-geist-sans)]">
       <main className="relative flex flex-col gap-8 row-start-2 sm:items-start">
         <Video />
+        <Chateau/>
         <Accordion />
         <InfiniteSlider />
         <Valeurs />
