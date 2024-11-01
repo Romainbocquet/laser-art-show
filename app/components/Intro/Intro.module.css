@@ -1,0 +1,31 @@
+
+
+.intro {
+    font-family: var(--benzin-semibold);
+}
+
+.intro h3 {
+    font-family: var(--benzin-semibold);
+    font-size: 1.4vw;
+}
+
+.intro h4 {
+    font-family: var(--gotham-light);
+    font-size: 1.4vw;
+}
+
+@media (max-width: 768px) {
+    .intro h3 {
+        font-family: var(--benzin-semibold);
+        font-size: 5vw;
+    }
+    
+    .intro h4 {
+        font-family: var(--gotham-light);
+        font-size: 5vw;
+    }
+
+    .textLeft {
+        display: block;
+    }
+  }
