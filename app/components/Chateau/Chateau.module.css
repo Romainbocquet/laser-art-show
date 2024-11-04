@@ -1,0 +1,24 @@
+.chateau {
+  font-family: var(--benzin-semibold);
+}
+
+.button {
+  background-color: white;
+  color: black;
+}
+
+.extraContentButton {
+  right: 4rem;
+  top: 20px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.chateauTitle {
+  font-size: 35px;
+}
+
+.chateauTitle span {
+  font-size: 35px;
+  font-family: var(--gotham-light);
+}
