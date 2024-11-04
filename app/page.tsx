@@ -5,6 +5,7 @@ import Accordion from "./components/Accordion/Accordion";
 import Valeurs from "./components/Valeurs/Valeurs";
 import Chateau from "./components/Chateau/Chateau";
 import Intro from "./components/Intro/Intro";
+import ImageSlider from "./components/ImageSlider/ImageSlider";
 
 export default function Home() {
 
@@ -17,6 +18,7 @@ export default function Home() {
         <Accordion />
         <InfiniteSlider />
         <Valeurs />
+        <ImageSlider images={['/img/mapping-2.jpg', '/img/mapping-1.jpg', '/img/mapping-2.jpg']} />
       </main>
     </div>
   );
