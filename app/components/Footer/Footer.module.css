@@ -1,0 +1,32 @@
+.menuItemFooter {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--benzin-semibold);
+  font-size: 22px;
+  margin-top: 50px;
+}
+
+.submenuFooter {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--benzin-light);
+  font-size: 14px;
+  color: rgb(73, 73, 73);
+}
+
+.menuItemTightFooter {
+  margin-top: 50px;
+}
+
+.menuItemTightFooter img {
+  filter: brightness(100);
+}
+
+.menuItemBottomFooter {
+  display: flex;
+  flex-direction: row;
+  font-family: var(--benzin-semibold);
+  font-size: 22px;
+  margin-top: 50px;
+  gap: 64px;
+}

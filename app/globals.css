@@ -14,14 +14,32 @@
   }
 }
 
+main {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
   overflow-x: hidden;
 }
 
+.global-title {
+  font-family: var(--benzin-semibold);
+  font-size:4.2vw;
+  text-align: center;
+  margin: 100px 0px;
+  line-height: 130%;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@media (max-width: 768px) {
+  .global-title {
+    font-size:7.2vw;
   }
 }

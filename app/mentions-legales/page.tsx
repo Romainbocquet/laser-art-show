@@ -9,14 +9,14 @@ export default function MentionsLegales() {
         <p>
           <strong>Éditeur du site :</strong> <br />
           Laser Art Show <br />
-          Adresse : 123 Rue de l’Événement, Paris, France <br />
+          Adresse : 57 rue Maréchal Joffre, Nantes<br />
           Email : contact@laserartshow.com
         </p>
         <p>
           <strong>Hébergement :</strong> <br />
-          Nom de l’hébergeur <br />
-          Adresse : 456 Avenue des Services, Paris, France <br />
-          Email : support@hebergeur.com
+          Le Site est hébergé par la société Hostinger International LTD, situé , (contact téléphonique ou email : https://www.hostinger.fr/contact).<br />
+          Directeur de publication<br />
+          Le Directeur de la publication du Site est XXX XXX .
         </p>
         <p>
           <strong>Droits d’auteur :</strong> <br />

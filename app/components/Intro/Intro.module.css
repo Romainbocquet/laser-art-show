@@ -14,7 +14,27 @@
     font-size: 1.4vw;
 }
 
+.textLeftImg {
+    width: 450px;
+}
+
+.textLeftImgTitle {
+    right: -350px;
+}
+
+@media (max-width: 1600px) {
+    .textLeftImgTitle {
+        right: -250px;
+    }    
+}
+
+
 @media (max-width: 768px) {
+    .intro {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
     .intro h3 {
         font-family: var(--benzin-semibold);
         font-size: 5vw;
@@ -27,5 +47,9 @@
 
     .textLeft {
         display: block;
+    }
+
+    .textLeftImg {
+        width: 100%;
     }
   }

@@ -4,19 +4,15 @@ import Slider from 'react-slick';
 import Image from 'next/image';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import styles from './ImageSlider.module.css';
+import styles from './PartenaireSlider.module.css';
 
 type ImageType = {
   src: string;
   alt: string;
-  title: string;
 };
 
 interface CarouselProps {
   images: ImageType[];
-  iconUrl?: string;
-  title?: string;
-  subTitle?: string;
 }
 
 function NextArrow(props) {
@@ -26,9 +22,9 @@ function NextArrow(props) {
       className={`${styles.next} ${className} slick-arrow`}
       onClick={onClick}
     >
-  <svg width="28" height="63" viewBox="0 0 28 63" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M3.97228 63L1.45128 61.171L25.2631 29.0683L27.7841 30.8972L3.97228 63Z" fill="white"/>
-  <path d="M5.92144e-06 1.96523L2.41388 -2.27894e-06L28 30.7386L25.5861 32.7038L5.92144e-06 1.96523Z" fill="white"/>
+  <svg width="14" height="32" viewBox="0 0 14 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1.98614 32L0.725637 31.071L12.6315 14.7648L13.8921 15.6938L1.98614 32Z" fill="white"/>
+  <path d="M2.94107e-07 0.998214L1.20694 8.30215e-08L14 15.6133L12.7931 16.6115L2.94107e-07 0.998214Z" fill="white"/>
   </svg>
   </div>
   );
@@ -41,41 +37,41 @@ function PrevArrow(props) {
       className={`${styles.prev} ${className} slick-arrow`}
       onClick={onClick}
     >
-    <svg width="28" height="63" viewBox="0 0 28 63" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M24.0277 0L26.5487 1.82895L2.7369 33.9317L0.215902 32.1028L24.0277 0Z" fill="white"/>
-    <path d="M28 61.0348L25.5861 63L0 32.2614L2.41387 30.2962L28 61.0348Z" fill="white"/>
-    </svg>
+  <svg width="14" height="32" viewBox="0 0 14 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12.0139 0L13.2744 0.928991L1.36845 17.2352L0.107951 16.3062L12.0139 0Z" fill="white"/>
+  <path d="M14 31.0018L12.7931 32L0 16.3867L1.20694 15.3885L14 31.0018Z" fill="white"/>
+  </svg>
   </div>
   );
 }
 
-export default function ImageSlider({ images, iconUrl, title, subTitle}: CarouselProps) {
+export default function PartenaireSlider({ images }: CarouselProps) {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 5,
     slidesToScroll: 1,
     arrows: true,
     centerMode: true,
-    centerPadding: "5%",
-    adaptiveHeight: false,
     nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />
+    prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
+        }
+      },
+    ],
   };
 
   return (
     <div className={`${styles.slider} mt-10`}>
       <div className={styles.sliderTitle}>
-        <div>
-          {iconUrl && <img src={iconUrl} alt="Icon"/>}
-        </div>
-        <div>
-          <h1>
-          {title}
-          </h1>
-          <p>{subTitle}</p>
-        </div>
+        ILS NOUS FONT CONFIANCE
       </div>
       <div className={styles.sliderContainer}>
         <Slider {...settings}>
@@ -88,7 +84,6 @@ export default function ImageSlider({ images, iconUrl, title, subTitle}: Carouse
                 height={600} // ajuste la hauteur en conséquence
                 className={styles.image}
               />
-              <h3 className={styles.imageTitle}>{image.title}</h3> {/* Ajout du titre sous chaque image */}
             </div>
           ))}
         </Slider>
