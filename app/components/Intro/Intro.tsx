@@ -25,7 +25,7 @@ export default function Intro() {
           </div>
           {/* Image 2 avec titre à droite */}
           <div className={`flex relative justify-center ${styles.textLeft} `}>
-            <div className='w-3/4'>
+            <div className={`${styles.textLeftImg}`}>
               <Image
                 src="/img/intro/defile.jpg"
                 alt="Description de l'image 2"
@@ -34,7 +34,7 @@ export default function Intro() {
                 className="w-full object-cover"
               />
             </div>
-            <div className="lg:absolute lg:-right-80 mt-5 lg:mt-0 bottom-0">
+            <div className={`${styles.textLeftImgTitle} lg:absolute mt-5 lg:mt-0 bottom-0`}>
               <h3>DÉFILÉ DE MODE <br /> POUR « VETEMENTS »</h3>
               <h4>PARIS</h4>
             </div>

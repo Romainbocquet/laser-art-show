@@ -1,3 +1,8 @@
+.valeurs {
+    background-image: url(/img/valeurs/valeurs-bg-img.png);
+    background-position: 55% bottom;
+}
+
 .valeurs h2 {
     font-family: var(--benzin-semibold);
     font-size: 4vw;

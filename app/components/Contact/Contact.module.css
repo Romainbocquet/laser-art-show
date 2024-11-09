@@ -1,0 +1,32 @@
+.contact {
+  gap: 80px;
+}
+
+.contactTitle {
+  font-family: var(--benzin-semibold);
+  font-size: 80px;
+  line-height: 120%;
+  color: rgb(73, 73, 73);
+}
+
+.button {
+  background-color: white;
+  font-family: var(--benzin-semibold);
+  color: black;
+}
+
+.contactText {
+  font-family: var(--benzin-light);
+}
+
+.contactTopTitle {
+  font-family: var(--benzin-semibold);
+  font-size: 48px;
+}
+
+
+@media (max-width: 768px) {
+  .contactTitle {
+    font-size: 40px;
+  }
+}

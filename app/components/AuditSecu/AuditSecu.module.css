@@ -1,0 +1,27 @@
+.secu {
+  gap: 80px;
+}
+
+.secuTitle {
+  font-family: var(--benzin-semibold);
+  margin-top: 200px;
+}
+
+.secuText {
+  font-family: var(--benzin-light);
+}
+
+.secuLeft {
+  background-color: #1A1A1A;
+  padding: 50px;
+}
+
+.secuRight {
+  height: 492px;
+}
+
+@media (max-width: 768px) {
+  .secu h2 {
+    margin-top: 0;
+  }
+}
