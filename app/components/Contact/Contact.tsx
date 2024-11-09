@@ -8,7 +8,7 @@ export default function Contact() {
   const [isMathCorrect, setIsMathCorrect] = useState(false);
 
   // Fonction pour vérifier la réponse
-  const handleMathChange = (e) => {
+  const handleMathChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const answer = e.target.value;
     setMathAnswer(answer);
     setIsMathCorrect(answer === '7'); // Active le bouton si la réponse est "7"
