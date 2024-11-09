@@ -15,8 +15,14 @@ interface CarouselProps {
   images: ImageType[];
 }
 
-function NextArrow(props) {
-  const { className, onClick } = props;
+// Typage des flèches manuellement
+interface ArrowProps {
+  className?: string;
+  onClick?: () => void;
+}
+
+
+function NextArrow({ className, onClick }: ArrowProps) {
   return (
     <div
       className={`${styles.next} ${className} slick-arrow`}
@@ -30,17 +36,16 @@ function NextArrow(props) {
   );
 }
 
-function PrevArrow(props) {
-  const { className, onClick } = props;
+function PrevArrow({ className, onClick }: ArrowProps) {
   return (
     <div
       className={`${styles.prev} ${className} slick-arrow`}
       onClick={onClick}
     >
-  <svg width="14" height="32" viewBox="0 0 14 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M12.0139 0L13.2744 0.928991L1.36845 17.2352L0.107951 16.3062L12.0139 0Z" fill="white"/>
-  <path d="M14 31.0018L12.7931 32L0 16.3867L1.20694 15.3885L14 31.0018Z" fill="white"/>
-  </svg>
+    <svg width="14" height="32" viewBox="0 0 14 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12.0139 0L13.2744 0.928991L1.36845 17.2352L0.107951 16.3062L12.0139 0Z" fill="white"/>
+    <path d="M14 31.0018L12.7931 32L0 16.3867L1.20694 15.3885L14 31.0018Z" fill="white"/>
+    </svg>
   </div>
   );
 }
