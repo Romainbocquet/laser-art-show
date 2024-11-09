@@ -18,29 +18,30 @@ export default function Header() {
 
         <nav className={`flex space-x-8 ${styles.menu}`}>
           <div className={styles.menuItem}>
-            <Link href="/" className="hover:underline">
+            <Link href="#about" className="hover:underline">
               A PROPOS
             </Link>
             <div className={styles.submenu}>
-              <Link href="/about/team" className="hover:underline">Équipe</Link>
-              <Link href="/about/history" className="hover:underline">Histoire</Link>
+              <Link href="#histoire" className="hover:underline">NOTRE HISTOIRE</Link>
+              <Link href="#valeurs" className="hover:underline">NOS VALEURS</Link>
             </div>
           </div>
-
           <div className={styles.menuItem}>
-            <Link href="/about" className="hover:underline">
+            <Link href="#presentation" className="hover:underline">
               PRESENTATION
             </Link>
             <div className={styles.submenu}>
-              <Link href="/presentation/vision" className="hover:underline">Vision</Link>
-              <Link href="/presentation/mission" className="hover:underline">Mission</Link>
+              <Link href="#volumetrique" className="hover:underline">SHOW VOLUMÉTRIQUE</Link>
+              <Link href="#mapping-laser" className="hover:underline">MAPPING LASER</Link>
+              <Link href="#projection-laser" className="hover:underline">PROJECTION LASER</Link>
+              <Link href="#security-audit" className="hover:underline">AUDIT DE SÉCURITÉ</Link>
             </div>
           </div>
 
-          <Link href="/services" className="hover:underline">
+          <Link href="#partenaire" className="hover:underline">
             CLIENTS
           </Link>
-          <Link href="/contact" className={`${styles.contactLink}`}>
+          <Link href="#contact" className={`${styles.contactLink}`}>
             CONTACT
           </Link>
         </nav>

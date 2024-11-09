@@ -1,0 +1,86 @@
+.sliderContainer {
+  width: 100vw; /* Occupe toute la largeur de la page */
+  margin: 0 auto;
+  overflow: hidden; /* Cache les débordements */
+}
+
+.image {
+  object-fit: cover; /* L'image couvrira entièrement l'espace disponible sans déformer */
+  width: 100%; /* Prend toute la largeur de son conteneur */
+  height: 700px; /* Définit une hauteur fixe pour les images */
+}
+
+.slide {
+  display: flex;
+  flex-direction: column; /* Permet de mettre l'image et le titre l'un sous l'autre */
+  justify-content: center;
+  align-items: center; /* Centre le contenu */
+  padding: 40px;
+}
+
+.imageTitle {
+  font-size: 1.5rem;
+  font-family: var(--gotham-light);
+  margin-top: 10px;
+  color: #fff;
+}
+
+.prev {
+  left: 25px;
+  z-index: 999;
+}
+
+.next {
+  right: 60px;
+  z-index: 999;
+}
+
+.prev::before {
+  display: none;
+}
+
+.next::before {
+  display: none;
+}
+
+.sliderTitle {
+  display: flex;
+  padding: 0px 150px;
+  align-items: center;
+}
+
+.sliderTitle h1 {
+  font-family: var(--benzin-semibold);
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+.sliderTitle p {
+  font-family: var(--benzin-light);
+  font-size: 18px;
+  margin-left: 20px;
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .next {
+    right: 20px;
+    z-index: 999;
+  }
+
+  .sliderTitle {
+    padding: 0px 20px;
+  }
+
+  .sliderTitle h1 {
+    font-size: 32px;
+  }
+  .image {
+    height: 400px; /* Définit une hauteur fixe pour les images */
+  }
+
+  .slide {
+    padding: 10px;
+    margin-top: 20px;
+  }
+}

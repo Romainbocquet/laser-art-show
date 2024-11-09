@@ -1,0 +1,11 @@
+<svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="10.6464" y1="36.6464" x2="36.6464" y2="10.6464" stroke="white"/>
+<line x1="10.2929" y1="37.2929" x2="37.2929" y2="10.2929" stroke="white" stroke-width="2"/>
+<line x1="43.7071" y1="10.2929" x2="69.7071" y2="36.2929" stroke="white" stroke-width="2"/>
+<line x1="69.7071" y1="42.7071" x2="43.7071" y2="68.7071" stroke="white" stroke-width="2"/>
+<line x1="38.2929" y1="69.7071" x2="11.2929" y2="42.7071" stroke="white" stroke-width="2"/>
+<rect x="1.41421" y="39.7782" width="9" height="9" transform="rotate(-45 1.41421 39.7782)" stroke="white" stroke-width="2"/>
+<rect x="66.4142" y="39.7782" width="9" height="9" transform="rotate(-45 66.4142 39.7782)" stroke="white" stroke-width="2"/>
+<rect x="33.4142" y="7.7782" width="9" height="9" transform="rotate(-45 33.4142 7.7782)" stroke="white" stroke-width="2"/>
+<rect x="34.4142" y="72.7782" width="9" height="9" transform="rotate(-45 34.4142 72.7782)" stroke="white" stroke-width="2"/>
+</svg>

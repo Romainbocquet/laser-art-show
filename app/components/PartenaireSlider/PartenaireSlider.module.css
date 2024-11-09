@@ -1,0 +1,52 @@
+.sliderContainer {
+  width: 100vw; /* Occupe toute la largeur de la page */
+  margin: 0 auto;
+  overflow: hidden; /* Cache les débordements */
+}
+
+.image {
+  object-fit: contain; /* L'image couvrira entièrement l'espace disponible sans déformer */
+  width: 100%; /* Prend toute la largeur de son conteneur */
+  height: 200px; /* Définit une hauteur fixe pour les images */
+  filter: brightness(100);
+}
+
+.sliderTitle {
+  font-size: 54px;
+  font-family: var(--benzin-semibold);
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column; /* Permet de mettre l'image et le titre l'un sous l'autre */
+  justify-content: center;
+  align-items: center; /* Centre le contenu */
+  padding: 40px;
+}
+
+.prev {
+  left: 25px;
+  z-index: 999;
+}
+
+.next {
+  right: 60px;
+  z-index: 999;
+}
+
+.prev::before {
+  display: none;
+}
+
+.next::before {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .next {
+    right: 20px;
+    z-index: 999;
+  }
+}
