@@ -22,20 +22,6 @@ export default function Contact() {
 
   const onSubmit = async (e : FormEvent) => {
     e.preventDefault();
-
-    try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        body: JSON.stringify({
-          firstName, lastName, subject, email, message, 
-        }),
-        headers: {
-          'content-type': 'application/json',
-        }
-      })
-    } catch (err: any) {
-      console.error('Err', err)
-    }
   }
 
   return (
