@@ -49,6 +49,7 @@
   transition: height 0.5s ease, opacity 0.5s ease; /* Smooth transition */
   height: 0;
   opacity: 0;
+  margin-top: 30px;
 }
 
 .extraContainer.open {
@@ -61,11 +62,40 @@
   color: white;
 }
 
+.extraContent p {
+  font-family: var(--gotham-light);
+}
+
+.extraContent p span {
+  font-family: var(--gotham-medium-itl) !important;
+}
+
 .extraContentButton {
   right: 4rem;
   top: 20px;
   padding: 8px;
   cursor: pointer;
+}
+
+.timeline {
+  display: flex;
+  gap: 50px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.timelineElt {
+  min-width: 25%;
+  margin-top: 20px;
+  background-color: #1A1A1A;
+  padding: 20px;
+}
+
+.timelineElt h5 {
+  font-family: var(--benzin-semibold);
+  font-size: 22px;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 @media (max-width: 768px) {
