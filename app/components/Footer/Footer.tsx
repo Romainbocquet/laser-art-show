@@ -4,9 +4,7 @@ import styles from "./Footer.module.css";
 export default function Footer() {
   return (
     <footer className="w-full bg-black text-white py-6 mt-8 flex flex-col">
-      {/* Partie supérieure du footer */}
-      <div className="flex justify-between w-full px-10 mb-6">
-        {/* Logo */}
+      <div className={`flex justify-between w-full px-10 mb-6 ${styles.footerElt}`}>
         <div className="flex">
           <Link href="/">
             <img
@@ -18,7 +16,7 @@ export default function Footer() {
         </div>
 
         {/* Navigation */}
-        <nav className="flex space-x-16">
+        <nav className={`flex space-x-16 ${styles.footer}`}>
         <div className={styles.menuItemFooter}>
             <Link href="#about" className="hover:underline">
               A PROPOS
@@ -78,7 +76,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex items-center px-10 justify-between mt-20 text-[rgb(73,73,73)]">
+      <div className={`flex items-center px-10 justify-between mt-20 text-[rgb(73,73,73)] ${styles.menuItemTBottomFooter}`}>
         <div>
         <a href="mailto:contact@laserartshow.com" className="hover:underline">contact@laserartshow.com</a>
         <p>+33 7 59 50 86 08</p>
