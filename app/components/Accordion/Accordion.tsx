@@ -71,15 +71,45 @@ const Accordion = () => {
             </svg>
           </button>
           <p>
-            Notre parcours commence en 2017 avec la rencontre de Jonathan et Loïc.
-            Depuis, nous avons réalisé plus de 100 spectacles laser à travers le monde,
-            en collaborant avec des grandes marques et des événements prestigieux.
+            Fondée par <span>Jonathan NINON</span>, Laser Art Show est le fruit d’une solide expérience acquise <span>depuis 2017 </span>aux côtés de <span>Loïc LACOSTE</span>, professionnel du laser depuis 1989, véritable référence de ce domaine.
           </p>
-          <ul className="list-disc pl-5">
-            <li>Plus de 100 spectacles laser réalisés</li>
-            <li>Collaboration avec des marques internationales</li>
-            <li>Utilisation des dernières technologies laser</li>
-          </ul>
+          <span>Jonathan a notamment participé à de <span>nombreux événements</span> tels que :</span>
+          <div className={`${styles.timeline}`}>
+            <div className={`${styles.timelineElt}`}>
+              <h5>2019</h5>
+              <p>Les voiles de St. Barth à Saint-Barthélemy</p>
+            </div>
+            <div className={`${styles.timelineElt}`}>
+              <h5>2019</h5>
+              <p>La finale de « La Coupe de la Ligue » de football à Bordeaux</p>
+            </div>
+            <div className={`${styles.timelineElt}`}>
+              <h5>2019</h5>
+              <p>Les émissions de TV The Voice et Mask Singer</p>
+            </div>
+            <div className={`${styles.timelineElt}`}>
+              <h5>2019</h5>
+              <p>Le 1er mapping laser de la Tour Eiffel pour son 130 ème anniversaire</p>
+            </div>
+            <div className={`${styles.timelineElt}`}>
+              <h5>2019</h5>
+              <p>Le Nouvel An 2020 sur les Champs-Élysées</p>
+            </div>
+            <div className={`${styles.timelineElt}`}>
+              <h5>2018 - 2019</h5>
+              <p>Le festival Mawazine au Maroc en 2018 et 2019</p>
+            </div>
+            <div className={`${styles.timelineElt}`}>
+              <h5>2017</h5>
+              <p>L’Exposition sur le thème « Énergie du Futur » à Astana, au Kazakhstan.</p>
+            </div>
+            <div className={`${styles.timelineElt}`}>
+              <h5>Mais aussi</h5>
+              <p>De nombreux concerts d’artistes de renom comme David Guetta, Martin Garrix ou encore Travis Scott</p>
+            </div>
+          </div>
+          <br />
+          <p>Nous sommes une équipe de passionné, qui adorent explorer de nouvelles idées et technique pour donner vie à des specticle lasers épousstouflants</p>
         </div>
       </div>
     </div>
