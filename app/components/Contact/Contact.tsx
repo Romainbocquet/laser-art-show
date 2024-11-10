@@ -21,7 +21,7 @@ export default function Contact() {
     e.preventDefault();
     
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
-      `Nom : ${firstName} ${lastName}\n\nMessage : ${message}`
+      `${message}\n\n${firstName} ${lastName}`
     )}`;
     
     // Ouvrir le client de messagerie avec le lien mailto

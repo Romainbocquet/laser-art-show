@@ -49,4 +49,11 @@
     right: 20px;
     z-index: 999;
   }
+
+  .sliderTitle {
+    font-size: 34px;
+    font-family: var(--benzin-semibold);
+    text-align: center;
+    margin-bottom: 100px;
+  }
 }
