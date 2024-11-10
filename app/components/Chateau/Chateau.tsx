@@ -18,11 +18,11 @@ const Chateau = () => {
         </h3>
       </div>
       <div className="flex justify-center mt-4">
-          <button
-            className={`${styles.button} text-black bg-white py-1 px-5 rounded-3xl`}
+          <a
+            className={`${styles.button} text-black bg-white py-1 px-5 rounded-3xl`} href='#volumetrique'
           >
             VOIR PLUS
-          </button>
+          </a>
       </div>
     </div>
   );
