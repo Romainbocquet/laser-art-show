@@ -29,4 +29,13 @@
   .contactTitle {
     font-size: 40px;
   }
+
+  .contactTopTitle {
+    font-size: 30px;
+  }
+
+  .contact {
+    padding: 1rem;
+  }
+  
 }
