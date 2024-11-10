@@ -21,7 +21,14 @@
 }
 
 @media (max-width: 768px) {
+  .secu {
+    padding: 1rem;
+  }
   .secu h2 {
     margin-top: 0;
+  }
+  .secuLeft {
+    background-color: #1A1A1A;
+    padding: 20px;
   }
 }
