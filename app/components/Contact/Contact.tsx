@@ -20,11 +20,10 @@ export default function Contact() {
   const handleSendEmail = (e: FormEvent) => {
     e.preventDefault();
     
-    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
-      `${message}\n\n${firstName} ${lastName}`
+    const mailtoLink = `mailto:contact@laserartshow.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+      `${message}\n\n${firstName} ${lastName}\n\n Email de contact : ${email}`
     )}`;
     
-    // Ouvrir le client de messagerie avec le lien mailto
     window.location.href = mailtoLink;
   };
 
