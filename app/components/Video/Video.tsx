@@ -23,36 +23,16 @@ export default function Video() {
         className={`absolute top-2 bg-gray-700 text-white p-2 z-50 ${styles.buttonSound}`}
       >
         {muted ? (
-          <svg
-            width="24px"
-            height="24px"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19 6C20.5 7.5 21 10 21 12C21 14 20.5 16.5 19 18M16 8.99998C16.5 9.49998 17 10.5 17 12C17 13.5 16.5 14.5 16 15M3 10.5V13.5C3 14.6046 3.5 15.5 5.5 16C7.5 16.5 9 21 12 21C14 21 14 3 12 3C9 3 7.5 7.5 5.5 8C3.5 8.5 3 9.39543 3 10.5Z"
-              stroke="#fff"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20.4182 20.2272H14.3091V28.8182H20.4182L27.7682 35.1182V13.9272L20.4182 20.2272Z" fill="white"/>
+          <path d="M46 25C46 36.598 36.598 46 25 46C13.402 46 4 36.598 4 25C4 13.402 13.402 4 25 4C36.598 4 46 13.402 46 25Z" stroke="white" stroke-width="4"/>
           </svg>
         ) : (
-          <svg
-            width="24px"
-            height="24px"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5 8.14307C3.4148 8.66137 3 9.49393 3 10.5V13.5C3 14.6046 3.5 15.5 5.5 16C7.5 16.5 9 21 12 21C12.6098 21 13.0337 19.3265 13.2717 17M3 3L21 21M9 4.60756C9.84604 3.71548 10.8038 3 12 3C12.7739 3 13.2484 5.69533 13.4233 9"
-              stroke="#fff"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.4 28.9L28 17.4V13.3L20.2 19.9H13.8V28.9H16.4Z" fill="white"/>
+          <path d="M28 26.9L23.3 31.5L28 35.6V26.9Z" fill="white"/>
+          <path d="M13.8 34.9L15.5 36.7L36.3 15.3L34.6 13.5L13.8 34.9Z" fill="white"/>
+          <path d="M46 25C46 36.598 36.598 46 25 46C13.402 46 4 36.598 4 25C4 13.402 13.402 4 25 4C36.598 4 46 13.402 46 25Z" stroke="white" stroke-width="4"/>
           </svg>
         )}
       </button>
