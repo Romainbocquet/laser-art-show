@@ -50,6 +50,13 @@ z-index: 999;
   transition: background-color 0.3s ease;
 }
 
+.menuItemElt {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  cursor: default;
+}
+
 .contactLink:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
