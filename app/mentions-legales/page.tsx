@@ -16,7 +16,7 @@ export default function MentionsLegales() {
           <strong>Hébergement :</strong> <br />
           Le Site est hébergé par la société Hostinger International LTD, situé , (contact téléphonique ou email : https://www.hostinger.fr/contact).<br />
           Directeur de publication<br />
-          Le Directeur de la publication du Site est XXX XXX .
+          Le Directeur de la publication du Site est Maël NINON.
         </p>
         <p>
           <strong>Droits d’auteur :</strong> <br />
