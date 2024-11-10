@@ -14,7 +14,7 @@ import Image from 'next/image';
 export default function Home() {
 
   return (
-    <div className="pb-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="font-[family-name:var(--font-geist-sans)]">
       <main className="relative flex flex-col row-start-2 sm:items-start">
         <Video />
         <Intro />
@@ -34,9 +34,10 @@ export default function Home() {
             title="SHOW VOLUMÉTRIQUE"
             subTitle="Vivez une expérience immersive où la lumière et la technologie fusionnen pour créer des spectacles éblouissants en trois dimensions."
             images={[
-              { src: '/img/mapping-2.jpg', alt: 'Image 1', title: 'Concert de David Guetta, Paris' },
-              { src: '/img/mapping-1.jpg', alt: 'Image 2', title: 'Titre 2' },
-              { src: '/img/mapping-2.jpg', alt: 'Image 3', title: 'Titre 3' },
+              { src: '/img/volumetrie/david.jpg', alt: 'Image 1', title: 'Concert de David Guetta, Paris' },
+              { src: '/img/volumetrie/volumetrie-3.jpg', alt: 'Image 3', title: 'Titre 3' },
+              { src: '/img/volumetrie/volumetrie-4.jpg', alt: 'Image 3', title: 'Titre 3' },
+              { src: '/img/volumetrie/volumetrie-5.jpg', alt: 'Image 3', title: 'Titre 3' },
             ]}
           />
         </section>
@@ -46,9 +47,8 @@ export default function Home() {
             title="MAPPING LASER"
             subTitle="Transformez vos espaces en véritables œuvres d’art, où chaque surface devient un spectacle lumineux."
             images={[
-              { src: '/img/mapping-2.jpg', alt: 'Image 1', title: 'Concert de David Guetta, Paris' },
+              { src: '/img/mapping-2.jpg', alt: 'Image 1', title: 'Bosquet de la Colonnade, Château de Versailles' },
               { src: '/img/mapping-1.jpg', alt: 'Image 2', title: 'Titre 2' },
-              { src: '/img/mapping-2.jpg', alt: 'Image 3', title: 'Titre 3' },
             ]}
           />
         </section>
@@ -58,9 +58,12 @@ export default function Home() {
             title="PROJECTION LASER"
             subTitle="Mettez en avant votre identité de manière percutante en projetant votre logo, des animations ou textes personnalisés"
             images={[
-              { src: '/img/mapping-2.jpg', alt: 'Image 1', title: 'Concert de David Guetta, Paris' },
-              { src: '/img/mapping-1.jpg', alt: 'Image 2', title: 'Titre 2' },
-              { src: '/img/mapping-2.jpg', alt: 'Image 3', title: 'Titre 3' },
+              { src: '/img/projection/projection-5.jpg', alt: 'Image 1', title: 'Tournoi de futsal, Dijon' },
+              { src: '/img/projection/projection-1.jpg', alt: 'Image 2', title: 'Titre 2' },
+              { src: '/img/projection/projection-2.jpg', alt: 'Image 3', title: 'Titre 3' },
+              { src: '/img/projection/projection-3.jpg', alt: 'Image 3', title: 'Titre 3' },
+              { src: '/img/projection/projection-4.jpg', alt: 'Image 3', title: 'Titre 3' },
+              { src: '/img/projection/projection-6.jpg', alt: 'Image 3', title: 'Titre 3' },
             ]}
           />
         </section>
