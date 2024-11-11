@@ -31,10 +31,11 @@ function NextArrow({ className, onClick }: ArrowProps) {
       className={`${styles.next} ${className} slick-arrow`}
       onClick={onClick}
     >
-      <svg width="28" height="63" viewBox="0 0 28 63" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3.97228 63L1.45128 61.171L25.2631 29.0683L27.7841 30.8972L3.97228 63Z" fill="white" />
-        <path d="M5.92144e-06 1.96523L2.41388 -2.27894e-06L28 30.7386L25.5861 32.7038L5.92144e-06 1.96523Z" fill="white" />
-      </svg>
+<svg width="28" height="63" viewBox="0 0 28 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.81899 54L5 52.7064L22.181 30L24 31.2936L6.81899 54Z" fill="white"/>
+<path d="M4 10.3821L5.72422 9L24 30.6179L22.2758 32L4 10.3821Z" fill="white"/>
+</svg>
+
     </div>
   );
 }
@@ -45,9 +46,9 @@ function PrevArrow({ className, onClick }: ArrowProps) {
       className={`${styles.prev} ${className} slick-arrow`}
       onClick={onClick}
     >
-      <svg width="28" height="63" viewBox="0 0 28 63" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M24.0277 0L26.5487 1.82895L2.7369 33.9317L0.215902 32.1028L24.0277 0Z" fill="white" />
-        <path d="M28 61.0348L25.5861 63L0 32.2614L2.41387 30.2962L28 61.0348Z" fill="white" />
+     <svg width="28" height="63" viewBox="0 0 28 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M21.181 9L23 10.2936L5.81898 33L4 31.7064L21.181 9Z" fill="white"/>
+      <path d="M24 52.6179L22.2758 54L4 32.3821L5.72419 31L24 52.6179Z" fill="white"/>
       </svg>
     </div>
   );
@@ -56,12 +57,12 @@ function PrevArrow({ className, onClick }: ArrowProps) {
 export default function ImageSlider({ images, iconUrl, title, subTitle}: CarouselProps) {
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 1.5,
     slidesToScroll: 1,
     arrows: true,
-    centerMode: true,
+    centerMode: false,
     centerPadding: "5%",
     adaptiveHeight: false,
     nextArrow: <NextArrow />,

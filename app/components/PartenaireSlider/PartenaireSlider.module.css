@@ -18,6 +18,10 @@
   margin-bottom: 100px;
 }
 
+.slide:focus-visible {
+  outline: none;
+}
+
 .slide {
   display: flex;
   flex-direction: column; /* Permet de mettre l'image et le titre l'un sous l'autre */
@@ -29,11 +33,13 @@
 .prev {
   left: 25px;
   z-index: 999;
+  top: 43%;
 }
 
 .next {
   right: 60px;
   z-index: 999;
+  top: 43%;
 }
 
 .prev::before {

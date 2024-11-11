@@ -3,7 +3,11 @@
   flex-direction: column;
   font-family: var(--benzin-semibold);
   font-size: 22px;
-  margin-top: 50px;
+  margin-top: 40px;
+}
+
+.footerElt {
+  gap: 20px;
 }
 
 .submenuFooter {
@@ -15,11 +19,12 @@
 }
 
 .menuItemTightFooter {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .menuItemTightFooter img {
   filter: brightness(100);
+
 }
 
 .menuItemBottomFooter {
@@ -27,7 +32,7 @@
   flex-direction: row;
   font-family: var(--benzin-semibold);
   font-size: 22px;
-  margin-top: 50px;
+  margin-top: 40px;
   gap: 64px;
 }
 

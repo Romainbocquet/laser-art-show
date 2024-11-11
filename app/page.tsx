@@ -76,11 +76,13 @@ export default function Home() {
         <section id="partenaire">
           <PartenaireSlider
             images={[
-              { src: '/img/partenaires/caisse-d-epargne.png', alt: 'caisse d\'epargne logo' },
+              { src: '/img/partenaires/caisse-epargne.png', alt: 'caisse d\'epargne logo' },
               { src: '/img/partenaires/chateau-de-versaille.png', alt: 'Chateau de versaille logo' },
-              { src: '/img/partenaires/logo-vetements.png', alt: 'logo Vetements' },
+              { src: '/img/partenaires/vetements.png', alt: 'logo Vetements' },
               { src: '/img/partenaires/novelty.png', alt: 'Novety Logo' },
-              { src: '/img/partenaires/the-voice.png', alt: 'The voice logo' },
+              { src: '/img/partenaires/thevoice.png', alt: 'The voice logo' },
+              { src: '/img/partenaires/mawazine.png', alt: 'Mawazine logo' },
+              { src: '/img/partenaires/vieille-charrues.png', alt: 'Vieille charrues logo' },
             ]}
           />
         </section>

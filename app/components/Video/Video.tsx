@@ -24,15 +24,15 @@ export default function Video() {
       >
         {muted ? (
           <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20.4182 20.2272H14.3091V28.8182H20.4182L27.7682 35.1182V13.9272L20.4182 20.2272Z" fill="white"/>
-          <path d="M46 25C46 36.598 36.598 46 25 46C13.402 46 4 36.598 4 25C4 13.402 13.402 4 25 4C36.598 4 46 13.402 46 25Z" stroke="white" stroke-width="4"/>
+          <path d="M18.08 28L27.36 19.1539V16L21.12 21.0769H16V28H18.08Z" fill="white"/>
+          <path d="M27.36 26.4614L23.6 29.9999L27.36 33.1538V26.4614Z" fill="white"/>
+          <path d="M16 32.6154L17.36 34L34 17.5384L32.64 16.1538L16 32.6154Z" fill="white"/>
+          <path d="M46 25C46 36.598 36.598 46 25 46C13.402 46 4 36.598 4 25C4 13.402 13.402 4 25 4C36.598 4 46 13.402 46 25Z" stroke="white" strokeWidth="2"/>
           </svg>
         ) : (
           <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16.4 28.9L28 17.4V13.3L20.2 19.9H13.8V28.9H16.4Z" fill="white"/>
-          <path d="M28 26.9L23.3 31.5L28 35.6V26.9Z" fill="white"/>
-          <path d="M13.8 34.9L15.5 36.7L36.3 15.3L34.6 13.5L13.8 34.9Z" fill="white"/>
-          <path d="M46 25C46 36.598 36.598 46 25 46C13.402 46 4 36.598 4 25C4 13.402 13.402 4 25 4C36.598 4 46 13.402 46 25Z" stroke="white" stroke-width="4"/>
+          <path d="M46 25C46 36.598 36.598 46 25 46C13.402 46 4 36.598 4 25C4 13.402 13.402 4 25 4C36.598 4 46 13.402 46 25Z" stroke="white" strokeWidth="2"/>
+          <path d="M21.2199 20.6486H16V28.3514H21.2199L27.5 34V15L21.2199 20.6486Z" fill="white"/>
           </svg>
         )}
       </button>
