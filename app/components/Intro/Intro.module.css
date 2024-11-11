@@ -7,6 +7,7 @@
 .intro h3 {
     font-family: var(--benzin-semibold);
     font-size: 1.4vw;
+    line-height: 1.8rem;
 }
 
 .intro h4 {

@@ -5,9 +5,8 @@
 }
 
 .image {
-  object-fit: cover; /* L'image couvrira entièrement l'espace disponible sans déformer */
-  width: 100%; /* Prend toute la largeur de son conteneur */
-  height: 700px; /* Définit une hauteur fixe pour les images */
+  height: 450px; /* Définit une hauteur fixe pour les images */
+  object-fit: cover;
 }
 
 .slide {
@@ -16,6 +15,10 @@
   justify-content: center;
   align-items: center; /* Centre le contenu */
   padding: 40px;
+}
+
+.slide:focus-visible {
+  outline: none;
 }
 
 .imageTitle {
@@ -28,11 +31,13 @@
 .prev {
   left: 25px;
   z-index: 999;
+  top: 43%;
 }
 
 .next {
   right: 60px;
   z-index: 999;
+  top: 43%;
 }
 
 .prev::before {

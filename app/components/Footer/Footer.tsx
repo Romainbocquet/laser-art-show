@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-black text-white py-6 mt-8 flex flex-col">
       <div className={`flex justify-between w-full px-10 mb-6 ${styles.footerElt}`}>
-        <div className="flex">
+        <div className="flex w-96">
           <Link href="/">
             <img
               src="/img/logo/logo-white.png"
@@ -64,7 +64,7 @@ export default function Footer() {
         {/* Bouton Retour en haut */}
         <div className={`flex ${styles.menuItemTightFooter}`}>
           <Link href="#top">
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center text-center">
               <svg width="35" height="40" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="15" y="3" width="5" height="37" fill="white"/>
               <rect x="17.163" width="5" height="23.739" transform="rotate(45 17.163 0)" fill="white"/>

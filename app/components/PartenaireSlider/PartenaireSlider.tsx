@@ -28,11 +28,11 @@ function NextArrow({ className, onClick }: ArrowProps) {
       className={`${styles.next} ${className} slick-arrow`}
       onClick={onClick}
     >
-  <svg width="14" height="32" viewBox="0 0 14 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M1.98614 32L0.725637 31.071L12.6315 14.7648L13.8921 15.6938L1.98614 32Z" fill="white"/>
-  <path d="M2.94107e-07 0.998214L1.20694 8.30215e-08L14 15.6133L12.7931 16.6115L2.94107e-07 0.998214Z" fill="white"/>
-  </svg>
-  </div>
+    <svg width="28" height="63" viewBox="0 0 28 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6.81899 54L5 52.7064L22.181 30L24 31.2936L6.81899 54Z" fill="white"/>
+    <path d="M4 10.3821L5.72422 9L24 30.6179L22.2758 32L4 10.3821Z" fill="white"/>
+    </svg>
+    </div>
   );
 }
 
@@ -42,11 +42,11 @@ function PrevArrow({ className, onClick }: ArrowProps) {
       className={`${styles.prev} ${className} slick-arrow`}
       onClick={onClick}
     >
-    <svg width="14" height="32" viewBox="0 0 14 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12.0139 0L13.2744 0.928991L1.36845 17.2352L0.107951 16.3062L12.0139 0Z" fill="white"/>
-    <path d="M14 31.0018L12.7931 32L0 16.3867L1.20694 15.3885L14 31.0018Z" fill="white"/>
-    </svg>
-  </div>
+     <svg width="28" height="63" viewBox="0 0 28 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M21.181 9L23 10.2936L5.81898 33L4 31.7064L21.181 9Z" fill="white"/>
+      <path d="M24 52.6179L22.2758 54L4 32.3821L5.72419 31L24 52.6179Z" fill="white"/>
+      </svg>
+    </div>
   );
 }
 
@@ -74,7 +74,7 @@ export default function PartenaireSlider({ images }: CarouselProps) {
   };
 
   return (
-    <div className={`${styles.slider} mt-10`}>
+    <div className={`mt-10`}>
       <div className={styles.sliderTitle}>
         ILS NOUS FONT CONFIANCE
       </div>
