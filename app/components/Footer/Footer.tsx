@@ -50,7 +50,7 @@ export default function Footer() {
 
         {/* Instagram Icon */}
         <div className={`flex ${styles.menuItemTightFooter}`}>
-          <Link href="https://www.instagram.com" target="_blank">
+          <Link href="https://www.instagram.com/laser.art.show" target="_blank">
             <img
               src="./img/home/insta.svg"
               alt="Instagram"
