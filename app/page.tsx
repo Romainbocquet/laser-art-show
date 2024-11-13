@@ -35,9 +35,12 @@ export default function Home() {
             subTitle="Vivez une expérience immersive où la lumière et la technologie fusionnent pour créer des spectacles éblouissants en trois dimensions."
             images={[
               { src: '/img/volumetrie/david.jpg', alt: 'Image 1', title: 'Concert de David Guetta, Paris' },
-              { src: '/img/volumetrie/volumetrie-3.jpg', alt: 'Image 3', title: 'Les Grandes Eaux Nocturnes Electro, Château de Versailles' },
+              { src: '/img/volumetrie/volumetrie-3.jpg', alt: 'Image 2', title: 'Les Grandes Eaux Nocturnes Electro, Château de Versailles' },
               { src: '/img/volumetrie/volumetrie-4.jpg', alt: 'Image 3', title: 'Les Grandes Eaux Nocturnes Electro, Château de Versailles' },
-              { src: '/img/volumetrie/volumetrie-5.jpg', alt: 'Image 3', title: 'Concert de M.Pokora, Bruxelles' },
+              { src: '/img/volumetrie/volumetrie-6.jpg', alt: 'Image 5', title: 'Les Grandes Eaux Nocturnes Electro, Château de Versailles' },
+              { src: '/img/volumetrie/volumetrie-7.jpg', alt: 'Image 6', title: 'Soirée privée, Toulouse' },
+              { src: '/img/volumetrie/volumetrie-8.png', alt: 'Image 6', title: 'Concert de M.Pokora, Bruxelles' },
+              { src: '/img/volumetrie/volumetrie-9.jpg', alt: 'Image 6', title: '200e anniversaire de la Caisse d\'Épargne, Paris' },
             ]}
           />
         </section>
@@ -47,10 +50,10 @@ export default function Home() {
             title="MAPPING LASER"
             subTitle="Transformez vos espaces en véritables œuvres d’art, où chaque surface devient un spectacle lumineux."
             images={[
-              { src: '/img/mapping-2.jpg', alt: 'Image 1', title: 'Bosquet de la Colonnade, Château de Versailles' },
-              { src: '/img/mapping-1.jpg', alt: 'Image 2', title: 'Bosquet de la Colonnade, Château de Versailles' },
-              { src: '/img/mapping-2.jpg', alt: 'Image 1', title: 'Bosquet de la Colonnade, Château de Versailles' },
-              { src: '/img/mapping-1.jpg', alt: 'Image 2', title: 'Bosquet de la Colonnade, Château de Versailles' },
+              { src: '/img/mapping-2.jpg', alt: 'Château de Versailles', title: 'Bosquet de la Colonnade, Château de Versailles' },
+              { src: '/img/mapping-1.jpg', alt: 'Château de Versailles', title: 'Bosquet de la Colonnade, Château de Versailles' },
+              { src: '/img/mapping-3.jpg', alt: 'Tour eiffel', title: '130e anniversaire de la Tour Eiffel, Paris' },
+              { src: '/img/mapping-1.jpg', alt: 'Château de Versailles', title: 'Bosquet de la Colonnade, Château de Versailles' },
             ]}
           />
         </section>
@@ -63,9 +66,9 @@ export default function Home() {
               { src: '/img/projection/projection-5.jpg', alt: 'Image 1', title: 'Tournoi de futsal, Dijon' },
               { src: '/img/projection/projection-1.jpg', alt: 'Image 2', title: 'Projection sur l\'eau, soirée privée, Nantes' },
               { src: '/img/projection/projection-2.jpg', alt: 'Image 3', title: 'Tournoi de futsal, Dijon' },
-              { src: '/img/projection/projection-3.jpg', alt: 'Image 3', title: 'Finale de la Coupe de la Ligue de Football, Bordeaux' },
-              { src: '/img/projection/projection-4.jpg', alt: 'Image 3', title: 'Tournoi de futsal, Dijon' },
-              { src: '/img/projection/projection-6.jpg', alt: 'Image 3', title: 'Tournoi de futsal, Dijon' },
+              { src: '/img/projection/projection-3.jpg', alt: 'Image 4', title: 'Finale de la Coupe de la Ligue de Football, Bordeaux' },
+              { src: '/img/projection/projection-4.jpg', alt: 'Image 5', title: 'Tournoi de futsal, Dijon' },
+              { src: '/img/projection/projection-6.jpg', alt: 'Image 6', title: 'Tournoi de futsal, Dijon' },
             ]}
           />
         </section>

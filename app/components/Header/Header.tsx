@@ -44,7 +44,7 @@ export default function Header() {
             </div>
           </div>
 
-          <Link href="#partenaire" className="hover:underline">
+          <Link href="#partenaire" className="hover:underline hidden">
             CLIENTS
           </Link>
           <Link href="#contact" className={`${styles.contactLink}`}>
