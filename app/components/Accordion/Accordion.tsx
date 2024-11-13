@@ -31,17 +31,17 @@ const Accordion = () => {
         <div className={` ${styles.accordionLeft}`}>
           <h2>NOTRE HISTOIRE</h2>
           <p>
-            Fondée par <span className={` ${styles.itl}`}>Jonathan Ninon</span>,
+            Fondée par <span className={` ${styles.itl}`}>Jonathan NINON</span>,
             Laser Art Show est le fruit d’une solide expérience acquise{' '}
             <span>depuis 2017</span> aux côtés de{' '}
-            <span>Loïc Lacoste, professionnel du laser depuis 1989</span>,
+            <span className={` ${styles.itl}`}>Loïc LACOSTE</span>, <span>professionnel du laser depuis 1989</span>,
             véritable référence de ce domaine.
           </p>
           <button
             onClick={toggleAccordion} // Ajout de l'événement onClick pour ouvrir/fermer la section
             className={`${styles.button} text-black bg-white py-1 px-5 rounded-3xl`}
           >
-            NOTRE PARCOURS ?
+            Voir plus
           </button>
         </div>
 
@@ -70,9 +70,6 @@ const Accordion = () => {
               <path d="M27 27L2.9878 2.98781" stroke="white" strokeWidth="4" strokeLinecap="round" />
             </svg>
           </button>
-          <p>
-            Fondée par <span>Jonathan NINON</span>, Laser Art Show est le fruit d’une solide expérience acquise <span>depuis 2017 </span>aux côtés de <span>Loïc LACOSTE</span>, professionnel du laser depuis 1989, véritable référence de ce domaine.
-          </p>
           <span>Jonathan a notamment participé à de <span>nombreux événements</span> tels que :</span>
           <div className={`${styles.timeline}`}>
             <div className={`${styles.timelineElt}`}>

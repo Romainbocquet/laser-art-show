@@ -6,8 +6,8 @@
 
 .intro h3 {
     font-family: var(--benzin-semibold);
-    font-size: 1.4vw;
-    line-height: 1.8rem;
+    font-size: 1.6rem;
+    line-height: 1.4rem;
 }
 
 .intro h4 {
@@ -25,7 +25,7 @@
 
 @media (max-width: 1600px) {
     .textLeftImgTitle {
-        right: -250px;
+        right: -320px;
     }    
 }
 
