@@ -57,10 +57,10 @@ function PrevArrow({ className, onClick }: ArrowProps) {
 export default function ImageSlider({ images, iconUrl, title, subTitle}: CarouselProps) {
   const settings = {
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
-    slidesToShow: 1.5,
-    slidesToScroll: 1,
+    slidesToShow: 3,
+    slidesToScroll: 2,
     arrows: true,
     centerMode: false,
     centerPadding: "5%",

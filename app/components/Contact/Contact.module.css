@@ -13,6 +13,16 @@
   background-color: white;
   font-family: var(--benzin-semibold);
   color: black;
+  border: 2px solid black;
+
+}
+
+.button:hover {
+  background-color: black;
+  font-family: var(--benzin-semibold);
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
 }
 
 .contactText {

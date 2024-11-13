@@ -45,7 +45,7 @@ export default function Contact() {
                   type="text"
                   name="firstName"
                   placeholder="Votre prénom"
-                  className="placeholder-[rgb(73,73,73)] mt-1 block w-full py-2 border-b-2 border-[rgb(73,73,73)] bg-black text-[rgb(73,73,73)] focus:ring-blue-500 focus:border-blue-500"
+                  className="placeholder-[rgb(73,73,73)] mt-1 block w-full py-2 border-b-2 border-[rgb(73,73,73)] bg-black text-white focus:ring-blue-500 focus:border-blue-500"
                   required
                   onChange={e => setFirstName(e.target.value)}
                 />
@@ -57,7 +57,7 @@ export default function Contact() {
                   type="text"
                   name="lastName"
                   placeholder="Votre nom"
-                  className="placeholder-[rgb(73,73,73)] mt-1 block w-full py-2 border-b-2 border-[rgb(73,73,73)] bg-black text-[rgb(73,73,73)] focus:ring-blue-500 focus:border-blue-500"
+                  className="placeholder-[rgb(73,73,73)] mt-1 block w-full py-2 border-b-2 border-[rgb(73,73,73)] bg-black text-white focus:ring-blue-500 focus:border-blue-500"
                   required
                   onChange={e => setLastName(e.target.value)}
                 />
@@ -73,7 +73,7 @@ export default function Contact() {
                   type="email"
                   name="email"
                   placeholder="Votre email"
-                  className="placeholder-[rgb(73,73,73)] mt-1 block w-full py-2 border-b-2 border-[rgb(73,73,73)] bg-black text-[rgb(73,73,73)] focus:ring-blue-500 focus:border-blue-500"
+                  className="placeholder-[rgb(73,73,73)] mt-1 block w-full py-2 border-b-2 border-[rgb(73,73,73)] bg-black text-white focus:ring-blue-500 focus:border-blue-500"
                   required
                   onChange={e => setEmail(e.target.value)}
                 />
@@ -85,7 +85,7 @@ export default function Contact() {
                   type="text"
                   name="subject"
                   placeholder="Objet"
-                  className="placeholder-[rgb(73,73,73)] mt-1 block w-full py-2 border-b-2 border-[rgb(73,73,73)] bg-black text-[rgb(73,73,73)] focus:ring-blue-500 focus:border-blue-500"
+                  className="placeholder-[rgb(73,73,73)] mt-1 block w-full py-2 border-b-2 border-[rgb(73,73,73)] bg-black text-white focus:ring-blue-500 focus:border-blue-500"
                   required
                   onChange={e => setSubject(e.target.value)}
                 />
@@ -99,7 +99,7 @@ export default function Contact() {
                 type="number"
                 name="mathQuestion"
                 placeholder="Combien font 5 + 2 ?"
-                className="placeholder-[rgb(73,73,73)] mt-1 block w-full py-2 border-b-2 border-[rgb(73,73,73)] bg-black text-[rgb(73,73,73)] focus:ring-blue-500 focus:border-blue-500"
+                className="placeholder-[rgb(73,73,73)] mt-1 block w-full py-2 border-b-2 border-[rgb(73,73,73)] bg-black text-white focus:ring-blue-500 focus:border-blue-500"
                 value={mathAnswer}
                 onChange={handleMathChange}
                 required
@@ -114,7 +114,7 @@ export default function Contact() {
                 name="message"
                 placeholder="Votre message"
                 rows={4}
-                className="placeholder-[rgb(73,73,73)] mt-1 block w-full px-4 py-2 border-2 border-[rgb(73,73,73)] bg-black text-[rgb(73,73,73)] focus:ring-blue-500 focus:border-blue-500"
+                className="placeholder-[rgb(73,73,73)] mt-1 block w-full px-4 py-2 border-2 border-[rgb(73,73,73)] bg-black text-white focus:ring-blue-500 focus:border-blue-500"
                 required
                 onChange={e => setMessage(e.target.value)}
               />

@@ -35,9 +35,9 @@ export default function Home() {
             subTitle="Vivez une expérience immersive où la lumière et la technologie fusionnen pour créer des spectacles éblouissants en trois dimensions."
             images={[
               { src: '/img/volumetrie/david.jpg', alt: 'Image 1', title: 'Concert de David Guetta, Paris' },
-              { src: '/img/volumetrie/volumetrie-3.jpg', alt: 'Image 3', title: 'Titre 3' },
-              { src: '/img/volumetrie/volumetrie-4.jpg', alt: 'Image 3', title: 'Titre 3' },
-              { src: '/img/volumetrie/volumetrie-5.jpg', alt: 'Image 3', title: 'Titre 3' },
+              { src: '/img/volumetrie/volumetrie-3.jpg', alt: 'Image 3', title: 'Les Grandes Eaux Nocturnes Electro, Chateau de versaille' },
+              { src: '/img/volumetrie/volumetrie-4.jpg', alt: 'Image 3', title: 'Les Grandes Eaux Nocturnes Electro, Chateau de versaille' },
+              { src: '/img/volumetrie/volumetrie-5.jpg', alt: 'Image 3', title: 'Concert de M.Pokora, Bruxelles' },
             ]}
           />
         </section>
@@ -48,7 +48,9 @@ export default function Home() {
             subTitle="Transformez vos espaces en véritables œuvres d’art, où chaque surface devient un spectacle lumineux."
             images={[
               { src: '/img/mapping-2.jpg', alt: 'Image 1', title: 'Bosquet de la Colonnade, Château de Versailles' },
-              { src: '/img/mapping-1.jpg', alt: 'Image 2', title: 'Titre 2' },
+              { src: '/img/mapping-1.jpg', alt: 'Image 2', title: 'Bosquet de la Colonnade, Château de Versailles' },
+              { src: '/img/mapping-2.jpg', alt: 'Image 1', title: 'Bosquet de la Colonnade, Château de Versailles' },
+              { src: '/img/mapping-1.jpg', alt: 'Image 2', title: 'Bosquet de la Colonnade, Château de Versailles' },
             ]}
           />
         </section>
@@ -59,11 +61,11 @@ export default function Home() {
             subTitle="Mettez en avant votre identité de manière percutante en projetant votre logo, des animations ou textes personnalisés"
             images={[
               { src: '/img/projection/projection-5.jpg', alt: 'Image 1', title: 'Tournoi de futsal, Dijon' },
-              { src: '/img/projection/projection-1.jpg', alt: 'Image 2', title: 'Titre 2' },
-              { src: '/img/projection/projection-2.jpg', alt: 'Image 3', title: 'Titre 3' },
-              { src: '/img/projection/projection-3.jpg', alt: 'Image 3', title: 'Titre 3' },
-              { src: '/img/projection/projection-4.jpg', alt: 'Image 3', title: 'Titre 3' },
-              { src: '/img/projection/projection-6.jpg', alt: 'Image 3', title: 'Titre 3' },
+              { src: '/img/projection/projection-1.jpg', alt: 'Image 2', title: 'Projection sur l\'eau, Soirée privée, Nantes' },
+              { src: '/img/projection/projection-2.jpg', alt: 'Image 3', title: 'Tournoi de futsal, Dijon' },
+              { src: '/img/projection/projection-3.jpg', alt: 'Image 3', title: 'Finale de la Coupe de la Ligue de Football, Bordeaux' },
+              { src: '/img/projection/projection-4.jpg', alt: 'Image 3', title: 'Tournoi de futsal, Dijon' },
+              { src: '/img/projection/projection-6.jpg', alt: 'Image 3', title: 'Tournoi de futsal, Dijon' },
             ]}
           />
         </section>
@@ -71,9 +73,9 @@ export default function Home() {
           <AuditSecu />
         </section>
         <div className="my-10">
-        <InfiniteSlider />
+          <InfiniteSlider />
         </div>
-        <section id="partenaire">
+        <section id="partenaire" className=" hidden">
           <PartenaireSlider
             images={[
               { src: '/img/partenaires/caisse-epargne.png', alt: 'caisse d\'epargne logo' },

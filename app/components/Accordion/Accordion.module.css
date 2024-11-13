@@ -6,12 +6,12 @@
 }
 
 .accordionLeft {
-  width: 50%;
+  width: 40%;
 }
 
 .accordionRight {
   padding-left: 40px;
-  width: 50%;
+  width: 60%;
 }
 
 .accordionRightImg {
@@ -22,13 +22,14 @@
 }
 
 .accordionLeft h2 {
-  font-size: 4vw;
+  font-size: 3vw;
   margin-bottom: 20px;
 }
 
 .accordionLeft p {
   font-family: var(--gotham-light);
   margin-bottom: 40px;
+  max-width: 450px;
 }
 
 .itl {
@@ -42,6 +43,13 @@
 .button {
   background-color: white;
   color: black;
+  border: 2px solid black;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
 }
 
 .extraContainer {
@@ -86,6 +94,7 @@
 
 .timelineElt {
   min-width: 25%;
+  max-width: 600px;
   margin-top: 20px;
   background-color: #1A1A1A;
   padding: 20px;
