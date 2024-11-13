@@ -11,8 +11,6 @@ export default function Video() {
     if (videoRef.current) {
       videoRef.current.muted = !videoRef.current.muted;
       setMuted(videoRef.current.muted);
-      console.log('patate');
-      
     }
   };
 

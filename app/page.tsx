@@ -38,9 +38,8 @@ export default function Home() {
               { src: '/img/volumetrie/volumetrie-3.jpg', alt: 'Image 2', title: 'Les Grandes Eaux Nocturnes Electro, Château de Versailles' },
               { src: '/img/volumetrie/volumetrie-4.jpg', alt: 'Image 3', title: 'Les Grandes Eaux Nocturnes Electro, Château de Versailles' },
               { src: '/img/volumetrie/volumetrie-6.jpg', alt: 'Image 5', title: 'Les Grandes Eaux Nocturnes Electro, Château de Versailles' },
-              { src: '/img/volumetrie/volumetrie-7.jpg', alt: 'Image 6', title: 'Soirée privée, Toulouse' },
               { src: '/img/volumetrie/volumetrie-8.png', alt: 'Image 6', title: 'Concert de M.Pokora, Bruxelles' },
-              { src: '/img/volumetrie/volumetrie-9.jpg', alt: 'Image 6', title: '200e anniversaire de la Caisse d\'Épargne, Paris' },
+              { src: '/img/volumetrie/volumetrie-9.jpg', alt: 'Image 7', title: '200e anniversaire de la Caisse d\'Épargne, Paris' },
             ]}
           />
         </section>

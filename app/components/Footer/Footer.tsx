@@ -11,7 +11,6 @@ export default function Footer() {
     const handleScroll = () => {
       const scrollHeight = document.documentElement.scrollHeight;
       const threshold = scrollHeight * 0.2;
-      console.log(window.scrollY, threshold);
       
       // Met à jour l'état showButton en fonction de la position de défilement
       if (window.scrollY > threshold) {
