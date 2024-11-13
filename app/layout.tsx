@@ -20,7 +20,7 @@ const gothamMediumItl = localFont({
 });
 
 const gothamBold = localFont({
-  src: "./fonts/Gotham/Gotham-Medium.otf",
+  src: "./fonts/Gotham/Gotham-Bold.otf",
   variable: "--gotham-bold",
 });
 

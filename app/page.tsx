@@ -32,7 +32,7 @@ export default function Home() {
           <ImageSlider
             iconUrl="/img/home/show-volumetrique.svg"
             title="SHOW VOLUMÉTRIQUE"
-            subTitle="Vivez une expérience immersive où la lumière et la technologie fusionnen pour créer des spectacles éblouissants en trois dimensions."
+            subTitle="Vivez une expérience immersive où la lumière et la technologie fusionnent pour créer des spectacles éblouissants en trois dimensions."
             images={[
               { src: '/img/volumetrie/david.jpg', alt: 'Image 1', title: 'Concert de David Guetta, Paris' },
               { src: '/img/volumetrie/volumetrie-3.jpg', alt: 'Image 3', title: 'Les Grandes Eaux Nocturnes Electro, Chateau de versaille' },
