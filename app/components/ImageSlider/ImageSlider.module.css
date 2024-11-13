@@ -29,15 +29,19 @@
 }
 
 .prev {
-  left: 25px;
+  left: 55px;
   z-index: 999;
   top: 43%;
+  width: fit-content;
+  height: fit-content;
 }
 
 .next {
   right: 60px;
   z-index: 999;
   top: 43%;
+  width: fit-content;
+  height: fit-content;
 }
 
 .prev::before {
@@ -50,7 +54,7 @@
 
 .sliderTitle {
   display: flex;
-  padding: 0px 150px;
+  padding: 0px 2.5rem;
   align-items: center;
 }
 

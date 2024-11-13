@@ -26,9 +26,8 @@
 }
 
 .valeur {
-    width: 35vw;
+    width: 40vw;
     max-width: 700px;
-    height: 500px;
     background-color: #1A1A1A;
     padding: 30px;
     display: flex;
@@ -37,14 +36,15 @@
 }
 
 .valeur h3 {
-    margin-top: 60px;
+    margin-top: 80px;
     font-size: 32px;
     font-family: var(--benzin-semibold);
 }
 
 .valeur p {
-    height: 180px;
+    height: fit-content;
     margin-top: 40px;
+    text-align: justify;
 }
 
 .valeur p span {
@@ -52,7 +52,7 @@
 }
 
 .valeurtImg {
-    top: 50px;
+    top: 30px;
     right: 30px;
     height: 90px;
     object-fit: contain;

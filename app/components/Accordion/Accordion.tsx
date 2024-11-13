@@ -41,7 +41,7 @@ const Accordion = () => {
             onClick={toggleAccordion} // Ajout de l'événement onClick pour ouvrir/fermer la section
             className={`${styles.button} text-black bg-white py-1 px-5 rounded-3xl`}
           >
-            Voir plus
+            VOIR PLUS
           </button>
         </div>
 
@@ -65,12 +65,11 @@ const Accordion = () => {
             onClick={toggleAccordion}
             className={`${styles.extraContentButton} absolute`}
           >
-            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M27 2.98781L2.9878 27" stroke="white" strokeWidth="4" strokeLinecap="round" />
-              <path d="M27 27L2.9878 2.98781" stroke="white" strokeWidth="4" strokeLinecap="round" />
-            </svg>
+          <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M27 2.98782L2.98779 27" stroke="white"/>
+          <path d="M27 27L2.98779 2.98782" stroke="white"/>
+          </svg>
           </button>
-          <span>Jonathan a notamment participé à de <span>nombreux événements</span> tels que :</span>
           <div className={`${styles.timeline}`}>
             <div className={`${styles.timelineElt}`}>
               <h5>2019</h5>
@@ -86,7 +85,7 @@ const Accordion = () => {
             </div>
             <div className={`${styles.timelineElt}`}>
               <h5>2019</h5>
-              <p>Le 1er mapping laser de la Tour Eiffel pour son 130 ème anniversaire</p>
+              <p>Le 1<sup>er</sup> mapping laser de la Tour Eiffel pour son 130<sup>er</sup> anniversaire</p>
             </div>
             <div className={`${styles.timelineElt}`}>
               <h5>2019</h5>
@@ -106,7 +105,6 @@ const Accordion = () => {
             </div>
           </div>
           <br />
-          <p>Nous sommes une équipe de passionné, qui adorent explorer de nouvelles idées et technique pour donner vie à des specticle lasers épousstouflants</p>
         </div>
       </div>
     </div>

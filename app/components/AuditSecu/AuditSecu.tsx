@@ -8,10 +8,10 @@ export default function AuditSecu() {
         <h2 className={`text-3xl font-semibold mb-4 ${styles.secuTitle}`}>AUDIT DE SÉCURITÉ</h2>
         <p className={`text-lg ${styles.secuText}`}>
         En France, une formation aux risques lasers est obligatoire pour l’utilisation
-        des lasers de classe 3 et 4. Tous nos techniciens étant formés et diplômés
-        en tant que « Responsable sécurité laser », nous proposons également
+        des lasers de classe 3 et 4. Tous nos techniciens étant <strong>formés et diplômés
+        en tant que « Responsable sécurité laser »</strong>, nous proposons également
         un service d’audit de conformité des installations lasers, garantissant une
-        sécurité maximale des spectacles lasers en France.
+        sécurité maximale des spectacles lasers <strong>en France</strong>.
         </p>
       </div>
       <div className={`w-full md:w-7/12 flex justify-center mb-6 md:mb-0 ${styles.secuRight}`}>

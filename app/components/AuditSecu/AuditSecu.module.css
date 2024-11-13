@@ -9,6 +9,7 @@
 
 .secuText {
   font-family: var(--benzin-light);
+  text-align: justify;
 }
 
 .secuLeft {
