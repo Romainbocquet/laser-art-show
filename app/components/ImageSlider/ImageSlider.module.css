@@ -29,15 +29,19 @@
 }
 
 .prev {
-  left: 25px;
+  left: 55px;
   z-index: 999;
   top: 43%;
+  width: fit-content;
+  height: fit-content;
 }
 
 .next {
-  right: 60px;
+  right: 80px;
   z-index: 999;
   top: 43%;
+  width: fit-content;
+  height: fit-content;
 }
 
 .prev::before {
