@@ -66,7 +66,7 @@ export default function Footer() {
           </div>
 
           <div className={`flex ${styles.menuItemBottomFooter}`}>
-            <Link href="#partenaire" className="hover:underline">
+            <Link href="#partenaire" className="hover:underline hidden">
               CLIENTS
             </Link>
             <Link href="#contact" className="hover:underline">
@@ -94,9 +94,9 @@ export default function Footer() {
             <Link href="#top">
               <div className="flex flex-col items-center text-center">
                 <svg width="35" height="40" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="15" y="3" width="5" height="37" fill="white"/>
-                  <rect x="17.163" width="5" height="23.739" transform="rotate(45 17.163 0)" fill="white"/>
-                  <rect x="14" y="3.53552" width="5" height="23.739" transform="rotate(-45 14 3.53552)" fill="white"/>
+                  <path d="M18 1H17V38H18V1Z" fill="white"/>
+                  <path d="M18.1914 0.707107L17.4965 0L1.00001 16.786L1.69492 17.4931L18.1914 0.707107Z" fill="white"/>
+                  <path d="M17.5035 -1.44182e-05L16.8086 0.707092L33.3051 17.4931L34 16.786L17.5035 -1.44182e-05Z" fill="white"/>
                 </svg>
                 Haut de page
               </div>

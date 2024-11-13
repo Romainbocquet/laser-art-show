@@ -7,7 +7,7 @@
 .intro h3 {
     font-family: var(--benzin-semibold);
     font-size: 1.6rem;
-    line-height: 1.4rem;
+    line-height: 1.6rem;
 }
 
 .intro h4 {
@@ -25,10 +25,15 @@
 
 @media (max-width: 1600px) {
     .textLeftImgTitle {
-        right: -320px;
+        right: -350px;
     }    
 }
 
+@media (max-width: 1170px) {
+    .textLeftImgTitle {
+        right: -400px;
+    }
+}
 
 @media (max-width: 768px) {
     .intro {

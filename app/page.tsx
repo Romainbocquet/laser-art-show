@@ -35,8 +35,8 @@ export default function Home() {
             subTitle="Vivez une expérience immersive où la lumière et la technologie fusionnent pour créer des spectacles éblouissants en trois dimensions."
             images={[
               { src: '/img/volumetrie/david.jpg', alt: 'Image 1', title: 'Concert de David Guetta, Paris' },
-              { src: '/img/volumetrie/volumetrie-3.jpg', alt: 'Image 3', title: 'Les Grandes Eaux Nocturnes Electro, Chateau de versaille' },
-              { src: '/img/volumetrie/volumetrie-4.jpg', alt: 'Image 3', title: 'Les Grandes Eaux Nocturnes Electro, Chateau de versaille' },
+              { src: '/img/volumetrie/volumetrie-3.jpg', alt: 'Image 3', title: 'Les Grandes Eaux Nocturnes Electro, Château de Versailles' },
+              { src: '/img/volumetrie/volumetrie-4.jpg', alt: 'Image 3', title: 'Les Grandes Eaux Nocturnes Electro, Château de Versailles' },
               { src: '/img/volumetrie/volumetrie-5.jpg', alt: 'Image 3', title: 'Concert de M.Pokora, Bruxelles' },
             ]}
           />
@@ -61,7 +61,7 @@ export default function Home() {
             subTitle="Mettez en avant votre identité de manière percutante en projetant votre logo, des animations ou textes personnalisés"
             images={[
               { src: '/img/projection/projection-5.jpg', alt: 'Image 1', title: 'Tournoi de futsal, Dijon' },
-              { src: '/img/projection/projection-1.jpg', alt: 'Image 2', title: 'Projection sur l\'eau, Soirée privée, Nantes' },
+              { src: '/img/projection/projection-1.jpg', alt: 'Image 2', title: 'Projection sur l\'eau, soirée privée, Nantes' },
               { src: '/img/projection/projection-2.jpg', alt: 'Image 3', title: 'Tournoi de futsal, Dijon' },
               { src: '/img/projection/projection-3.jpg', alt: 'Image 3', title: 'Finale de la Coupe de la Ligue de Football, Bordeaux' },
               { src: '/img/projection/projection-4.jpg', alt: 'Image 3', title: 'Tournoi de futsal, Dijon' },

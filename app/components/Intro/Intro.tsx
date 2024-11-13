@@ -53,7 +53,7 @@ export default function Intro() {
             />
           </div>
           <div className="text-left mt-5">
-            <h3>130<sup>e</sup> ANNIVERSAIRE <br/>DE LA TOUR EIFFEL</h3>
+            <h3>130<sup>e</sup> ANNIVERSAIRE DE LA <br /> TOUR EIFFEL</h3>
             <h4>PARIS</h4>
           </div>
         </div>
