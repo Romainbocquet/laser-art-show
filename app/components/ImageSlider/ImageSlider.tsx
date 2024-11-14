@@ -66,7 +66,17 @@ export default function ImageSlider({ images, iconUrl, title, subTitle}: Carouse
     centerPadding: "5%",
     adaptiveHeight: false,
     nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />
+    prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
+        }
+      },
+    ],
   };
 
   return (
