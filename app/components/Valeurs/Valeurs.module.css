@@ -1,6 +1,6 @@
 .valeurs {
     background-image: url(/img/valeurs/valeurs-bg-img.png);
-    background-position: 55% bottom;
+    background-size: cover;
 }
 
 .valeurs h2 {
