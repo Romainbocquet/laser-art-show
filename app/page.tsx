@@ -35,7 +35,7 @@ export default function Home() {
             subTitle="Vivez une expérience immersive où la lumière et la technologie fusionnent pour créer des spectacles éblouissants en trois dimensions."
             images={[
               { src: '/img/volumetrie/david.jpg', alt: 'Image 1', title: 'Concert de David Guetta, Paris' },
-              { src: '/img/volumetrie/volumetrie-1.jpg', alt: 'Image 1', title: 'Soirée privée, Toulouse' },
+              { src: '/img/volumetrie/test.jpg', alt: 'Image 1', title: 'Soirée privée, Toulouse' },
               { src: '/img/volumetrie/volumetrie-6.jpg', alt: 'Image 5', title: 'Les Grandes Eaux Nocturnes Electro, Château de Versailles' },
               { src: '/img/volumetrie/volumetrie-8.png', alt: 'Image 6', title: 'Concert de M.Pokora, Bruxelles' },
               { src: '/img/volumetrie/volumetrie-9.jpg', alt: 'Image 7', title: '200e anniversaire de la Caisse d\'Épargne, Paris' },
