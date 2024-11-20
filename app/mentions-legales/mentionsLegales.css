@@ -6,4 +6,5 @@ h2 {
 h1 {
     font-family: var(--benzin-semibold);
     font-size: 3.6rem;
+    margin-top: 100px;
 }
