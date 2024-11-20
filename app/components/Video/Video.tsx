@@ -5,7 +5,6 @@ import styles from "./Video.module.css";
 
 export default function Video() {
   const videoRef = useRef<HTMLVideoElement>(null);
-
   return (
     <div className={`relative w-full ${styles.videoContainer}`}>
       <video
