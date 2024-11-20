@@ -1,5 +1,5 @@
 .videoTitle {
-    bottom: -40px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 5.5vw;
@@ -7,11 +7,7 @@
     text-align: center;
     font-family: var(--benzin-semibold);
     position: absolute;
-}
-
-.buttonSound {
-    right: 50px;
-    background-color: transparent;
+    line-height: 85%;
 }
 
 .iframe {
@@ -19,7 +15,7 @@
 }
 
 .videoContainer {
-    height: 83vh;
+    height: 97vh;
     position: relative;
 }
 
@@ -28,31 +24,13 @@
     object-position: top;
 }
 
-@media (max-width:1920px) {
-    .videoTitle {
-        bottom: -52px;
-    }
-}
-
-@media (max-width:1536px) {
-    .videoTitle {
-        bottom: -40px;
-    }
-}
-
-@media (max-width:1170px) {
-    .videoTitle {
-        bottom: -30px;
-    }
-}
-
 @media (max-width: 768px) {
     .videoTitle {
-        bottom: -75px;
         left: 50%;
         transform: translateX(-50%);
         font-size: 8vw;
         width: 100%;
         text-align: center;
+        line-height: 100%; 
     }
 }

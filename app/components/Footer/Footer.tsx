@@ -1,33 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
-  const [showButton, setShowButton] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollHeight = document.documentElement.scrollHeight;
-      const threshold = scrollHeight * 0.2;
-      
-      // Met à jour l'état showButton en fonction de la position de défilement
-      if (window.scrollY > threshold) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Nettoyage de l'écouteur d'événement lors du démontage du composant
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <footer className="w-full bg-black text-white py-6 mt-8 flex flex-col">
       <div className={`flex justify-between w-full px-10 mb-6 ${styles.footerElt}`}>
@@ -44,18 +20,18 @@ export default function Footer() {
         {/* Navigation */}
         <nav className={`flex space-x-16 ${styles.footer}`}>
           <div className={styles.menuItemFooter}>
-            <Link href="#about" className="hover:underline">
+            <div className="hover:underline">
               À PROPOS
-            </Link>
+            </div>
             <div className={styles.submenuFooter}>
               <Link href="#histoire" className="hover:underline">Notre histoire</Link>
               <Link href="#valeurs" className="hover:underline">Nos valeurs</Link>
             </div>
           </div>
           <div className={styles.menuItemFooter}>
-            <Link href="#presentation" className="hover:underline">
+            <div className="hover:underline">
               PRÉSENTATION
-            </Link>
+            </div>
             <div className={styles.submenuFooter}>
               <Link href="#volumetrique" className="hover:underline">Show volumétrique</Link>
               <Link href="#mapping-laser" className="hover:underline">Mapping laser</Link>
@@ -86,25 +62,9 @@ export default function Footer() {
             />
           </Link>
         </div>
-
-        {/* Bouton Retour en haut (affichage conditionnel) */}
-        {showButton && (
-          <div className={`flex fixed ${styles.menuItemTightFooter}`}>
-            <Link href="#top">
-              <div className="flex flex-col items-center text-center">
-                <svg width="35" height="40" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18 1H17V38H18V1Z" fill="white"/>
-                  <path d="M18.1914 0.707107L17.4965 0L1.00001 16.786L1.69492 17.4931L18.1914 0.707107Z" fill="white"/>
-                  <path d="M17.5035 -1.44182e-05L16.8086 0.707092L33.3051 17.4931L34 16.786L17.5035 -1.44182e-05Z" fill="white"/>
-                </svg>
-                Haut de page
-              </div>
-            </Link>
-          </div>
-        )}
       </div>
 
-      <div className={`flex items-center px-10 justify-between mt-20 text-[rgb(73,73,73)] ${styles.menuItemTBottomFooter}`}>
+      <div className={`flex items-center px-10 justify-between mt-20 text-white ${styles.menuItemTBottomFooter}`}>
         <div>
           <a href="mailto:contact@laserartshow.com" className="hover:underline">contact@laserartshow.com</a>
           <p>+33 7 59 50 86 08</p>

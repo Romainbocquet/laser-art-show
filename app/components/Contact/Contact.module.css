@@ -10,18 +10,19 @@
 }
 
 .button {
-  background-color: white;
   font-family: var(--benzin-semibold);
-  color: black;
-  border: 2px solid black;
-
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  transition: background-color 0.3s ease;
+  padding: 0.5rem 1rem;
 }
 
 .button:hover {
-  background-color: black;
+  background-color: white;
+  border: 2px solid black;
   font-family: var(--benzin-semibold);
-  color: white;
-  border: 2px solid white;
+  color: black;
   cursor: pointer;
 }
 
@@ -31,7 +32,7 @@
 
 .contactTopTitle {
   font-family: var(--benzin-semibold);
-  font-size: 48px;
+  font-size: 3.6rem;
 }
 
 

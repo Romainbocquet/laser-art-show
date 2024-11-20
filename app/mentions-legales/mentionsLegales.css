@@ -1,0 +1,9 @@
+h2 {
+    font-family: var(--benzin-semibold);
+    font-size: 2rem;
+}
+
+h1 {
+    font-family: var(--benzin-semibold);
+    font-size: 3.6rem;
+}

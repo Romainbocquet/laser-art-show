@@ -5,11 +5,16 @@
 .secuTitle {
   font-family: var(--benzin-semibold);
   margin-top: 200px;
+  font-size: 3.6rem;
 }
 
 .secuText {
-  font-family: var(--benzin-light);
+  font-family: var(--gotham-light);
   text-align: justify;
+}
+
+.secuText span {
+  font-family: var(--gotham-bold);
 }
 
 .secuLeft {
@@ -31,5 +36,9 @@
   .secuLeft {
     background-color: #1A1A1A;
     padding: 20px;
+  }
+
+  .secuTitle {
+    font-size: 2.6rem;
   }
 }

@@ -9,19 +9,23 @@
   cursor: pointer;
 }
 
-.chateauTitle {
+.chateauTitle h3 {
+  font-family: var(--benzin-semibold);
   font-size: 1.6rem;
+  line-height: 1.6rem;
 }
 
-.chateauTitle span {
-  line-height: 1.4rem;
+.chateauTitle h4 {
   font-family: var(--gotham-light);
+  font-size: 1.4vw;
 }
 
 .button {
   background-color: black;
   color: white;
   border: 2px solid white;
+  transition: background-color 0.3s ease;
+  padding: 0.5rem 1rem;
 }
 
 .button:hover {
