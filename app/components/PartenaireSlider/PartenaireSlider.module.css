@@ -32,7 +32,7 @@
 
 .prev {
   left: 55px;
-  z-index: 999;
+  z-index: 47;
   top: 43%;
   width: fit-content;
   height: fit-content;
@@ -40,7 +40,7 @@
 
 .next {
   right: 60px;
-  z-index: 999;
+  z-index: 47;
   top: 43%;
   width: fit-content;
   height: fit-content;
