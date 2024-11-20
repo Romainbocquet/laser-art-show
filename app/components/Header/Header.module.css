@@ -3,6 +3,16 @@
 z-index: 999;
 }
 
+.transparent {
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease;
+}
+
+.solid {
+  background-color: rgba(0, 0, 0, 1);
+  transition: background-color 0.3s ease;
+}
+
 .logo {
   flex-shrink: 0;
 }
@@ -23,17 +33,28 @@ z-index: 999;
 }
 
 .menuItem:hover .submenu {
-  display: block;
+  /* State when visible (on hover) */
+  opacity: 1;
+  transform: translateY(0); /* Position normale */
+  pointer-events: auto;
 }
 
 .submenu {
-  display: none;
+  display: block; /* Toujours affiché pour permettre l'animation */
   position: absolute;
   top: 100%;
   left: 0;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 99;
+  font-family: var(--gotham-light);
+
+  /* Initial state (hidden) */
+  opacity: 0;
+  transform: translateY(-20px); /* Décalé vers le haut */
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .submenu a {
@@ -65,7 +86,7 @@ z-index: 999;
 
 @media (max-width: 768px) {
   .menu {
-    display: none;
+    display: none !important;
   }
 
   .header {

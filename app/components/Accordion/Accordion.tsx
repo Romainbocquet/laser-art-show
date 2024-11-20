@@ -31,15 +31,14 @@ const Accordion = () => {
         <div className={` ${styles.accordionLeft}`}>
           <h2>NOTRE HISTOIRE</h2>
           <p>
-            Fondée par <span className={` ${styles.itl}`}>Jonathan NINON</span>,
-            Laser Art Show est le fruit d’une solide expérience acquise{' '}
-            <span>depuis 2017</span> aux côtés de{' '}
-            <span className={` ${styles.itl}`}>Loïc LACOSTE</span>, <span>professionnel du laser depuis 1989</span>,
-            véritable référence de ce domaine.
+          Fondée par <span className={` ${styles.itl}`}>Jonathan NINON</span>, Laser
+          Art Show est le fruit d’une solide expérience, acquise <span>depuis 2017</span> en participant à de
+          nombreux événements prestigieux aux côtés de <span className={` ${styles.itl}`}>Loïc LACOSTE</span>, <span>professionnel du laser depuis
+          1989</span>, véritable référence de ce domaine.
           </p>
           <button
             onClick={toggleAccordion} // Ajout de l'événement onClick pour ouvrir/fermer la section
-            className={`${styles.button} text-black bg-white py-1 px-5 rounded-3xl`}
+            className={`${styles.button} text-black bg-white rounded-3xl`}
           >
             VOIR PLUS
           </button>
