@@ -4,7 +4,7 @@ import styles from "./Chateau.module.css";
 const Chateau = () => {
   return (
     <div className={`w-full p-14 lg-pt-28 ${styles.chateau}`}>
-      <div className="relative w-full h-[70vh] mb-10">
+      <div className="relative w-full h-[70vh] mb-5">
         <Image
           className="object-cover"
           src="/img/mapping-2.jpg"
@@ -12,14 +12,15 @@ const Chateau = () => {
           layout="fill"
         />
       </div>
-      <div className="text-center mt-4 mb-20">
-        <h3 className={`text-xl font-semibold ${styles.chateauTitle} leading-10`}>
-          BOSQUET DE LA COLONNADE <span>CHÂTEAU DE VERSAILLES</span> 
+      <div className={`mt-4 mb-20 ${styles.chateauTitle}`}>
+        <h3 className={`text-xl font-semibold leading-10`}>
+          BOSQUET DE LA COLONNADE
         </h3>
+        <h4>CHÂTEAU DE VERSAILLES</h4>
       </div>
       <div className="flex justify-center mt-4">
           <a
-            className={`${styles.button} text-black bg-white py-1 px-5 rounded-3xl`} href='#volumetrique'
+            className={`${styles.button} text-black bg-white rounded-3xl`} href='#volumetrique'
           >
             VOIR PLUS
           </a>

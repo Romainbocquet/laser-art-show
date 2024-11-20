@@ -124,7 +124,7 @@ export default function Contact() {
             <div className="my-6 text-end">
             <button
                 type="submit"
-                className={`${styles.button} text-black bg-white py-1 px-5 rounded-3xl`}
+                className={`${styles.button} text-black bg-white rounded-3xl`}
                 disabled={!isMathCorrect}
               >
                 ENVOYER

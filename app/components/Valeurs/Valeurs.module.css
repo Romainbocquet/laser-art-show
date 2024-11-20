@@ -1,11 +1,6 @@
-.valeurs {
-    background-image: url(/img/valeurs/valeurs-bg-img.png);
-    background-size: cover;
-}
-
 .valeurs h2 {
     font-family: var(--benzin-semibold);
-    font-size: 4vw;
+    font-size: 3.6rem;
 }
 
 .valeursElt {
@@ -44,7 +39,7 @@
 .valeur p {
     height: fit-content;
     margin-top: 40px;
-    text-align: justify;
+    font-family: var(--gotham-light);
 }
 
 .valeur p span {

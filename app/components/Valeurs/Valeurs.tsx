@@ -41,7 +41,7 @@ export default function Valeurs() {
               height={100}
             />
             <h3>ENVIRONNEMENT</h3>
-            <p>Nous utilisons des lasers à <span>basse consommation énergétiqu</span>e pour réduire notre bilan carbone. De plus, ils n&rsquo;engendrent <span>aucun déchet</span>. Nos spectacles sont conçus pour ourir une expérience visuelle spectaculaire en utilisant une <span>technologie respectueuse de la planète</span>, minimisant ainsi l&rsquo;empreinte écologique des événements.</p>
+            <p>Nous utilisons des lasers à <span>basse consommation énergétique</span> pour réduire notre bilan carbone. De plus, ils n&rsquo;engendrent <span>aucun déchet</span>. Nos spectacles sont conçus pour offrir une expérience visuelle spectaculaire en utilisant une <span>technologie respectueuse de la planète</span>, minimisant ainsi l&rsquo;empreinte écologique des événements.</p>
           </div>
           <div className={`${styles.valeur} relative`}>
             <Image
@@ -52,7 +52,7 @@ export default function Valeurs() {
               height={100}
             />
             <h3>QUALITÉ</h3>
-            <p>Nous nous engageons à ourir des spectacles lasers de la <span>plus haute qualité</span>. Pour cela, nous travaillons avec des lasers de marque allemande, équipés de <span>diodes lasers OPSL</span>, de la marque américaine COHERENT, ce qui induit une qualité de faisceau nettement supérieure. Nos lasers sont dotés de <span>scanners à très haute vitesse Cambridge Technology de 60 kpps</span> qui garantissent une rapidité d&rsquo;exécution exceptionnelle, idéale pour les applications les plus exigeantes.</p>
+            <p>Nous nous engageons à offrir des spectacles lasers de la <span>plus haute qualité</span>. Pour cela, nous travaillons avec des lasers de marque allemande, équipés de <span>diodes lasers OPSL</span>, de la marque américaine COHERENT, ce qui induit une qualité de faisceau nettement supérieure. Nos lasers sont dotés de <span>scanners à très haute vitesse Cambridge Technology de 60 kpps</span> qui garantissent une rapidité d&rsquo;exécution exceptionnelle, idéale pour les applications les plus exigeantes.</p>
           </div>
         </div>
       </div>
