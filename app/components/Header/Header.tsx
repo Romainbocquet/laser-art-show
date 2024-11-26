@@ -5,7 +5,8 @@ import styles from "./Header.module.css";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
-
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
@@ -20,23 +21,39 @@ export default function Header() {
 
   return (
     <header
-      className={`w-full text-white p-4 px-10 fixed z-50 ${
-        isScrolled ? styles.solid : styles.transparent
-      }`}
-    >
-      <div className={`flex justify-between items-center ${styles.header}`}>
-        <div className={styles.logo}>
-          <Link href="/">
-            <img
-              src="/img/logo/logo-white.png"
-              height={67}
-              width={200}
-              alt="Logo laser show"
-            />
-          </Link>
-        </div>
-
-        <nav className={`flex space-x-8 ${styles.menu}`}>
+  className={`w-full text-white p-4 px-10 fixed ${
+    isScrolled ? styles.solid : styles.transparent
+  }`}
+>
+  <div className={`flex justify-between items-center ${styles.header}`}>
+    <div className={styles.logo}>
+      <Link href="/">
+        <img
+          className={styles.logoImage}
+          src="/img/logo/logo-white.svg"
+          height={67} // La hauteur sera ignorée grâce au CSS
+          width={200} // La largeur s'ajustera automatiquement
+          alt="Logo laser show"
+        />
+      </Link>
+    </div>
+    <div className={`${styles.burger}`}>
+      <button
+            className={`${styles.burgerIcon}`}
+            onClick={() => setIsMenuOpen(true)}
+          >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="white"
+          >
+            <path d="M4 6h16M4 12h16m-7 6h7" stroke="white" strokeWidth="2" />
+          </svg>
+        </button>
+    </div>
+    <nav className={`flex space-x-8 ${styles.menu}`}>
           <div className={styles.menuItem}>
             <div className={`${styles.menuItemElt} cursor-pointer`}>
               À PROPOS
@@ -102,6 +119,54 @@ export default function Header() {
           </Link>
         </nav>
       </div>
+      {isMenuOpen && (
+      <div className={`${styles.mobilMenu}`}>
+        <div  className={`${styles.closeMenu}`} onClick={() => setIsMenuOpen(false)}>
+          <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27 2.98782L2.98779 27" stroke="white"></path><path d="M27 27L2.98779 2.98782" stroke="white"></path></svg>
+        </div>
+        <nav className={`flex space-x-8 ${styles.menuTel}`}>
+          <div className={styles.menuItem}>
+            <div className={`${styles.menuItemElt} cursor-pointer`}>
+              À PROPOS
+            </div>
+            <div>
+              <Link href="#histoire" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
+                NOTRE HISTOIRE
+              </Link>
+              <Link href="#valeurs" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
+                NOS VALEURS
+              </Link>
+            </div>
+          </div>
+          <div className={styles.menuItem}>
+            <div className={`${styles.menuItemElt} cursor-pointer`}>
+              PRÉSENTATION
+            </div>
+            <div className="flex flex-col gap-2">
+              <Link href="#volumetrique" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
+                SHOW VOLUMÉTRIQUE
+              </Link>
+              <Link href="#mapping-laser" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
+                MAPPING LASER
+              </Link>
+              <Link href="#projection-laser" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
+                PROJECTION LASER
+              </Link>
+              <Link href="#security-audit" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
+                AUDIT DE SÉCURITÉ
+              </Link>
+            </div>
+          </div>
+
+          <Link href="#partenaire" className="hover:underline hidden" onClick={() => setIsMenuOpen(false)}>
+            CLIENTS
+          </Link>
+          <Link href="#contact" className={`${styles.contactLink}`} onClick={() => setIsMenuOpen(false)}>
+            CONTACT
+          </Link>
+        </nav>
+      </div>
+      )}
     </header>
   );
 }

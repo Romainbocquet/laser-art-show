@@ -28,9 +28,14 @@
     .videoTitle {
         left: 50%;
         transform: translateX(-50%);
-        font-size: 8vw;
+        font-size: 1.35rem;
         width: 100%;
         text-align: center;
         line-height: 100%; 
+        padding: 0;
+    }
+
+    .iframe {
+        height: 90vh;
     }
 }

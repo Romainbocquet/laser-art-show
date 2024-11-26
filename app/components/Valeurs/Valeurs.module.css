@@ -1,6 +1,6 @@
 .valeurs h2 {
     font-family: var(--benzin-semibold);
-    font-size: 3.6rem;
+    font-size: 3.4rem;
 }
 
 .valeursElt {
@@ -40,6 +40,7 @@
     height: fit-content;
     margin-top: 40px;
     font-family: var(--gotham-light);
+    text-align: justify;
 }
 
 .valeur p span {

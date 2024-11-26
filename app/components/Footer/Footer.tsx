@@ -7,10 +7,10 @@ export default function Footer() {
   return (
     <footer className="w-full bg-black text-white py-6 mt-8 flex flex-col">
       <div className={`flex justify-between w-full px-10 mb-6 ${styles.footerElt}`}>
-        <div className="flex w-96">
+        <div className="flex">
           <Link href="/">
             <img
-              src="/img/logo/logo-white.png"
+              src="/img/logo/logo-white.svg"
               width={500}
               alt="Logo Laser Art Show"
             />
@@ -20,7 +20,7 @@ export default function Footer() {
         {/* Navigation */}
         <nav className={`flex space-x-16 ${styles.footer}`}>
           <div className={styles.menuItemFooter}>
-            <div className="hover:underline">
+            <div>
               À PROPOS
             </div>
             <div className={styles.submenuFooter}>
@@ -29,7 +29,7 @@ export default function Footer() {
             </div>
           </div>
           <div className={styles.menuItemFooter}>
-            <div className="hover:underline">
+            <div>
               PRÉSENTATION
             </div>
             <div className={styles.submenuFooter}>

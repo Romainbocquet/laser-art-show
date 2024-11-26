@@ -1,24 +1,42 @@
 
 .header {
-z-index: 999;
+z-index: 9999;
 }
 
 .transparent {
   background-color: rgba(0, 0, 0, 0.6);
   transition: background-color 0.3s ease;
+  z-index: 9999;
 }
 
 .solid {
   background-color: rgba(0, 0, 0, 1);
   transition: background-color 0.3s ease;
+  z-index: 9999;
+}
+
+.transparent .logoImage {
+  width: 200px; /* Plus grand pour le mode transparent */
+  transition: width 0.3s ease;
+}
+
+.solid .logoImage {
+  width: 170px; /* Taille normale pour le mode solid */
+  transition: width 0.3s ease;
+}
+
+.transparent .menu {
+  padding-top: 10px; /* Ajustement pour un menu plus haut */
+  transition: padding-top 0.3s ease;
+}
+
+.solid .menu {
+  padding-top: 0; /* Taille normale pour le menu */
+  transition: padding-top 0.3s ease;
 }
 
 .logo {
   flex-shrink: 0;
-}
-
-.logoImage {
-  height: 40px;
 }
 
 .menu {
@@ -84,12 +102,84 @@ z-index: 999;
   color: #111;
 }
 
+.mobilMenu {
+  display: block;
+}
+
+.closeMenu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1rem;
+}
+
+.burger {
+  display: none;
+}
+
 @media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+
   .menu {
     display: none !important;
   }
 
+  .mobilMenu {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+
+  .menuTel {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menuItemElt {
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: var(--benzin-semibold);
+  }
+
+  .menuItem {
+    text-align: center;
+  }
+
+  .menuItem {
+    margin-left: 0 !important;
+  }
+
+  .contactLink {
+    margin-left: 0 !important;
+    width: fit-content;
+  }
+
   .header {
     justify-content: center;
+  }
+
+  .transparent .logoImage {
+    width: 150px; /* Plus grand pour le mode transparent */
+  }
+  
+  .solid .logoImage {
+    width: 120px; /* Taille normale pour le mode solid */
   }
 }

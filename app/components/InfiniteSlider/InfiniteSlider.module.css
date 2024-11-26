@@ -2,3 +2,7 @@
   font-family: var(--benzin-semibold);
   max-width: 100vw;
 }
+
+.infiniteSlider span {
+  font-size: 26px;
+}
