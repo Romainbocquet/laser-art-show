@@ -12,7 +12,7 @@
 
 .intro h4 {
     font-family: var(--gotham-light);
-    font-size: 1.4vw;
+    font-size: 1.4rem;
 }
 
 .textLeftImg {
@@ -43,12 +43,13 @@
 
     .intro h3 {
         font-family: var(--benzin-semibold);
-        font-size: 5vw;
+        font-size: 1rem;
+        margin-bottom: 5px;
     }
     
     .intro h4 {
         font-family: var(--gotham-light);
-        font-size: 5vw;
+        font-size: 1rem;
     }
 
     .textLeft {
@@ -57,5 +58,13 @@
 
     .textLeftImg {
         width: 100%;
+    }
+
+    .textLeftImg img {
+        height: 200px;
+    }
+
+    .imgIntro {
+        height: 200px;
     }
   }

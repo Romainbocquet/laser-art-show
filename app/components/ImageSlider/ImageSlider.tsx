@@ -10,6 +10,7 @@ type ImageType = {
   src: string;
   alt: string;
   title: string;
+  place: string;
 };
 
 interface CarouselProps {
@@ -80,14 +81,14 @@ export default function ImageSlider({ images, iconUrl, title, subTitle}: Carouse
   };
 
   return (
-    <div className={`${styles.slider} mt-10`}>
+    <div className="mt-10">
       <div className={styles.sliderTitle}>
-        <div>
-          {iconUrl && <img src={iconUrl} alt="Icon"/>}
-        </div>
         <div>
           <h1>
           {title}
+            <div>
+            {iconUrl && <img src={iconUrl} alt="Icon"/>}
+            </div>
           </h1>
           <p>{subTitle}</p>
         </div>
@@ -104,6 +105,8 @@ export default function ImageSlider({ images, iconUrl, title, subTitle}: Carouse
                 className={styles.image}
               />
               <h3 className={styles.imageTitle}>{image.title}</h3> {/* Ajout du titre sous chaque image */}
+              <span className={styles.imagePlace}>{image.place}</span> {/* Ajout du titre sous chaque image */}
+              
             </div>
           ))}
         </Slider>

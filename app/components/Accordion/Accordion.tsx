@@ -36,12 +36,14 @@ const Accordion = () => {
           nombreux événements prestigieux aux côtés de <span className={` ${styles.itl}`}>Loïc LACOSTE</span>, <span>professionnel du laser depuis
           1989</span>, véritable référence de ce domaine.
           </p>
-          <button
-            onClick={toggleAccordion} // Ajout de l'événement onClick pour ouvrir/fermer la section
-            className={`${styles.button} text-black bg-white rounded-3xl`}
-          >
-            VOIR PLUS
-          </button>
+          <div className={` ${styles.buttonContainer}`}>
+            <button
+              onClick={toggleAccordion} // Ajout de l'événement onClick pour ouvrir/fermer la section
+              className={`${styles.button} text-black bg-white rounded-3xl`}
+            >
+              VOIR PLUS
+            </button>
+          </div>
         </div>
 
         <div className={` ${styles.accordionRight}`}>

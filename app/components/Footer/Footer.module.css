@@ -48,6 +48,10 @@
     align-items: center;
   }
 
+  .submenuFooter {
+    align-items: center;
+  }
+
   .menuItemFooter {
     margin-left: 0px !important;
     align-items: center;

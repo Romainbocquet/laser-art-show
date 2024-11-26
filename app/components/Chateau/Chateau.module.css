@@ -17,21 +17,21 @@
 
 .chateauTitle h4 {
   font-family: var(--gotham-light);
-  font-size: 1.4vw;
+  font-size: 1.4rem;
 }
 
 .button {
   background-color: black;
   color: white;
-  border: 2px solid white;
+  border: 1px solid white;
   transition: background-color 0.3s ease;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
 }
 
 .button:hover {
   background-color: white;
   color: black;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 @media (max-width: 768px) {
@@ -42,4 +42,23 @@
       padding-left: 2.5rem;
       padding-right: 2.5rem;
   }
+
+  .chateau img {
+      height: 200px !important;
+  }
+
+  .chateau > div:first-child {
+    height: 200px !important;
+}
+
+.chateauTitle h3 {
+  font-family: var(--benzin-semibold);
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.chateauTitle h4 {
+  font-family: var(--gotham-light);
+  font-size: 1rem;
+}
 }

@@ -14,7 +14,7 @@
   }
 }
 
-main {
+html {
   scroll-behavior: smooth;
 }
 
@@ -26,10 +26,11 @@ body {
 
 .global-title {
   font-family: var(--benzin-semibold);
-  font-size:4.2vw;
+  font-size:4vw;
   text-align: center;
   margin: 100px 0px;
   line-height: 130%;
+  padding: 0px 30px;
 }
 
 @layer utilities {
