@@ -73,6 +73,10 @@ const Accordion = () => {
           </button>
           <div className={`${styles.timeline}`}>
             <div className={`${styles.timelineElt}`}>
+              <h5>2020</h5>
+              <p>Le Nouvel An 2020 sur les Champs-Élysées</p>
+            </div>
+            <div className={`${styles.timelineElt}`}>
               <h5>2019</h5>
               <p>Les voiles de St. Barth à Saint-Barthélemy</p>
             </div>
@@ -87,10 +91,6 @@ const Accordion = () => {
             <div className={`${styles.timelineElt}`}>
               <h5>2019</h5>
               <p>Le 1<sup>er</sup> mapping laser de la Tour Eiffel pour son 130<sup>er</sup> anniversaire</p>
-            </div>
-            <div className={`${styles.timelineElt}`}>
-              <h5>2019</h5>
-              <p>Le Nouvel An 2020 sur les Champs-Élysées</p>
             </div>
             <div className={`${styles.timelineElt}`}>
               <h5>2018 - 2019</h5>
