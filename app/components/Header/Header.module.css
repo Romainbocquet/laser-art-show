@@ -162,6 +162,10 @@ z-index: 9999;
     text-align: center;
   }
 
+  .menuItem > div:last-child {
+    font-family: var(--gotham-light);
+  }
+
   .menuItem {
     margin-left: 0 !important;
   }
@@ -169,6 +173,7 @@ z-index: 9999;
   .contactLink {
     margin-left: 0 !important;
     width: fit-content;
+    font-family: var(--benzin-semibold);
   }
 
   .header {
