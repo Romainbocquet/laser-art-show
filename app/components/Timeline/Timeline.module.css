@@ -1,0 +1,161 @@
+/* Timeline.module.css */
+.timeline {
+    display: flex;
+    flex-direction: row; /* Horizontal par défaut */
+    position: relative;
+    color: white; /* Texte en blanc */
+    justify-content: space-between;
+    margin: 0px 100px;
+    gap: 50px;
+  }
+  
+  .timeline:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    background-color: white; /* Ligne en blanc */
+    top: 50px;
+    width: 0;
+    transition: width 1s ease;
+  }
+
+  .timeline.visible:before {
+    width: 100%;
+  }
+  
+  .event {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 25%; /* Largeur des événements */
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .event:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: white; /* Points en blanc */
+    border-radius: 50%;
+    top: 50px;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .event .date {
+    font-family: var(--benzin-semibold);
+    font-size: 24px;
+    transform: translateX(30px);
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  .visible .event .date {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  .event:nth-child(1) .date {
+    transition-delay: 0s; /* 1 seconde de délai pour le premier élément */
+  }
+
+  .event:nth-child(2) .date {
+    transition-delay: 0.5s; /* 2 secondes de délai pour le deuxième élément */
+  }
+
+  .event:nth-child(3) .date {
+    transition-delay: 1s; /* 3 secondes de délai pour le troisième élément */
+  }
+
+  .event:nth-child(4) .date {
+    transition-delay: 1.5s; /* 4 secondes de délai pour le quatrième élément */
+  }
+  
+  .event .content {
+    border-radius: 4px;
+    color: white;
+    margin-top: 15px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: opacity 2s ease, transform 2s ease;
+  }
+    
+  .visible .event .content {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  .event:nth-child(1) .content {
+    transition-delay: 1s; /* 1 seconde de délai pour le premier élément */
+  }
+
+  .event:nth-child(2) .content {
+    transition-delay: 1.5s; /* 2 secondes de délai pour le deuxième élément */
+  }
+
+  .event:nth-child(3) .content {
+    transition-delay: 2s; /* 3 secondes de délai pour le troisième élément */
+  }
+
+  .event:nth-child(4) .content {
+    transition-delay: 2.5s; /* 4 secondes de délai pour le quatrième élément */
+  }
+
+  .event .content p {
+    font-family: var(--gotham-light);
+    margin-top: 15px;
+  }
+
+  .event .content p strong {
+    font-family: var(--gotham-bold);
+  }
+  
+  
+  /* Styles pour les versions mobiles */
+  @media (max-width: 768px) {
+    .timeline {
+      flex-direction: column; /* Vertical en mobile */
+      position: relative;
+      align-items: flex-start;
+      margin: 0px 75px;
+    }
+    
+    .timeline:before {
+      content: '';
+      position: absolute;
+      height: 0%;
+      top: 20px;
+      width: 1px;
+      transition: height 2s ease;
+    }
+  
+    .timeline.visible:before {
+      width: 1px;
+      height: 80%;
+    }
+  
+    .event {
+      align-items: flex-start;
+      margin-bottom: 40px;
+      width: 100%;
+      padding-left: 40px;
+    }
+  
+    .event:before {
+      top: 20px;
+      left: -4px;
+      transform: translateY(-50%);
+    }
+  
+    .event .date {
+      transform: translateX(0);
+      margin-right: 20px;
+    }
+  
+    .event .content {
+      margin-top: 0;
+    }
+  }

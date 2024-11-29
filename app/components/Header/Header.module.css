@@ -121,7 +121,7 @@ z-index: 9999;
 
 @media (max-width: 768px) {
   .burger {
-    display: block;
+    display: flex;
   }
 
   .menu {
@@ -181,10 +181,10 @@ z-index: 9999;
   }
 
   .transparent .logoImage {
-    width: 150px; /* Plus grand pour le mode transparent */
+    width: 100px; /* Plus grand pour le mode transparent */
   }
   
   .solid .logoImage {
-    width: 120px; /* Taille normale pour le mode solid */
+    width: 80px; /* Taille normale pour le mode solid */
   }
 }

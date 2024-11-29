@@ -3,7 +3,7 @@ import styles from "./InfiniteSlider.module.css";
 
 const InfiniteSlider = () => {
   return (
-    <div className={`relative mt-14 flex overflow-x-hidden w-full bg-white text-black ${styles.infiniteSlider}`}>
+    <div className={`relative flex overflow-x-hidden w-full bg-white text-black ${styles.infiniteSlider}`}>
       <div className="py-2 animate-marquee whitespace-nowrap">
         <span className="mx-3">UN PROJET ?</span>
         <span className="mx-3">UN PROJET ?</span>

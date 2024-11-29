@@ -34,13 +34,14 @@
     margin-top: 80px;
     font-size: 32px;
     font-family: var(--benzin-semibold);
+    text-align: center;
 }
 
 .valeur p {
     height: fit-content;
     margin-top: 40px;
     font-family: var(--gotham-light);
-    text-align: justify;
+    text-align: center;
 }
 
 .valeur p span {
@@ -50,7 +51,7 @@
 .valeurtImg {
     top: 30px;
     right: 30px;
-    height: 90px;
+    height: 80px;
     object-fit: contain;
 }
 
