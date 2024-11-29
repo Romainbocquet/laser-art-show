@@ -97,6 +97,15 @@ z-index: 9999;
   cursor: default;
 }
 
+.menuItemElt div {
+  transform: rotate(0deg);
+  animation: transform 0.4s ease-in-out;
+}
+
+.menuItemElt:hover div {
+  transform: rotate(180deg);
+}
+
 .contactLink:hover {
   background-color: #fff;
   color: #111;

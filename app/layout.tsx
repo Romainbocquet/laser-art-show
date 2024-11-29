@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import SlowScrollEffect from './components/SlowScrollEffect/SlowScrollEffect';
 
 const gothamLight = localFont({
   src: "./fonts/Gotham/Gotham-Light.otf",
