@@ -60,7 +60,7 @@ export default function Header() {
           <div className={styles.menuItem}>
             <div className={`${styles.menuItemElt} cursor-pointer`}>
               À PROPOS
-              <div className="Patate">
+              <div>
                 <svg
                   width="14"
                   height="14"
@@ -87,6 +87,7 @@ export default function Header() {
           <div className={styles.menuItem}>
             <div className={`${styles.menuItemElt} cursor-pointer`}>
               PRESTATION
+              <div>
               <svg
                 width="14"
                 height="14"
@@ -99,6 +100,7 @@ export default function Header() {
                   fill="white"
                 />
               </svg>
+              </div>
             </div>
             <div className={styles.submenu}>
               <Link href="#volumetrique" className="hover:underline">
