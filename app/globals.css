@@ -26,9 +26,9 @@ body {
 
 .global-title {
   font-family: var(--benzin-semibold);
-  font-size:4vw;
+  font-size:4.5vw;
   text-align: center;
-  margin: 100px 0px;
+  margin: 80px 0px;
   line-height: 130%;
   padding: 0px 30px;
 }
@@ -41,6 +41,9 @@ body {
 
 @media (max-width: 768px) {
   .global-title {
-    font-size:7.2vw;
+    margin: 50px 0px;
+    font-size: 1.6rem;
+    text-align: start;
+    padding: 0px 15px;
   }
 }

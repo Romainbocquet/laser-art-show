@@ -10,6 +10,7 @@ import PartenaireSlider from "./components/PartenaireSlider/PartenaireSlider";
 import AuditSecu from "./components/AuditSecu/AuditSecu";
 import Contact from "./components/Contact/Contact";
 import Image from 'next/image';
+import MouseLaserEffect from './components/MouseLaserEffect/MouseLaserEffect';
 
 export default function Home() {
 
@@ -22,7 +23,9 @@ export default function Home() {
         <section id="histoire" className="w-full">
           <Accordion />
         </section>
+        <a className="my-10" href="#contact">
         <InfiniteSlider />
+        </a>
         <section id="valeurs" className="w-full">
           <Valeurs />
         </section>
@@ -71,9 +74,9 @@ export default function Home() {
         <section id="security-audit">
           <AuditSecu />
         </section>
-        <div className="my-10">
+        <a className="my-10" href="#contact">
           <InfiniteSlider />
-        </div>
+        </a>
         <section id="partenaire" className=" hidden">
           <PartenaireSlider
             images={[
@@ -98,6 +101,8 @@ export default function Home() {
         <section id="contact">
           <Contact />
         </section>
+        <MouseLaserEffect></MouseLaserEffect>
+
       </main>
     </div>
   );

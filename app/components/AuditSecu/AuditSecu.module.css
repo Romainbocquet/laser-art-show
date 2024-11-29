@@ -1,16 +1,10 @@
 .secu {
   gap: 80px;
 }
-
-.secuTitle {
-  font-family: var(--benzin-semibold);
-  margin-top: 200px;
-  font-size: 3.4rem;
-}
-
+ 
 .secuText {
   font-family: var(--gotham-light);
-  text-align: justify;
+  text-align: center;
 }
 
 .secuText span {
@@ -18,7 +12,6 @@
 }
 
 .secuLeft {
-  background-color: #1A1A1A;
   padding: 50px;
 }
 
@@ -26,19 +19,34 @@
   height: 492px;
 }
 
+.secuTitle {
+  font-family: var(--benzin-semibold);
+  font-size: 3.4rem;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.secuTitleImg {
+  width: 150px;
+}
+
+.secuTitle img {
+  height: 100%;
+ }
+
 @media (max-width: 768px) {
   .secu {
     padding: 1rem;
   }
   .secu h2 {
     margin-top: 0;
+    font-size: 2rem;
+  }
+  .secuTitle {
+    margin-bottom: 50px;
   }
   .secuLeft {
-    background-color: #1A1A1A;
     padding: 20px;
-  }
-
-  .secuTitle {
-    font-size: 2.6rem;
   }
 }
