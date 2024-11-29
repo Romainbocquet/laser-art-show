@@ -4,8 +4,22 @@ import styles from './AuditSecu.module.css';
 export default function AuditSecu() {
   return (
     <div className={`relative w-full mt-20 py-10 px-16 ${styles.secu} flex flex-col md:flex-row justify-between items-center`}>  
-      <div className={`w-full md:w-5/12 text-center md:text-left ${styles.secuLeft}`}>
-        <h2 className={`font-semibold mb-4 ${styles.secuTitle}`}>AUDIT DE SÉCURITÉ</h2>
+      <div className={`w-full md:w-5/12 text-center md:text-left ${styles.secuLeft} relative`}>
+
+        <div className={` ${styles.secuTitle} mb-5`}>
+          <div className={` ${styles.secuTitleImg}`}>
+          <Image
+              className={` ${styles.valeurtImg}`}
+              src="/img/valeurs/service-client.svg"
+              alt="Picture of the author"
+              width={128}
+              height={90}
+            />
+          </div>
+        
+            <h2 className={`font-semibold`}>
+            AUDIT DE SÉCURITÉ</h2>
+        </div>
         <p className={`text-lg ${styles.secuText}`}>
         En France, une formation aux risques lasers est obligatoire pour l’utilisation
         des lasers de classe 3 et 4. Tous nos techniciens étant <span>formés et diplômés

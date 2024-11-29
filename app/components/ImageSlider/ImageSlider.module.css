@@ -32,7 +32,7 @@
 
 .imagePlace {
   font-family: var(--gotham-light);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .prev {
@@ -76,7 +76,6 @@
 }
 
 .sliderTitle h1 > div {
-  width: 80px;
   display: flex;
   justify-content: center;
 }
@@ -86,7 +85,7 @@
   font-size: 16px;
   margin-left: 20px;
   max-width: 600px;
-  margin-left: 130px;
+  margin-left: 110px;
 }
 
 @media (max-width: 768px) {
@@ -94,6 +93,14 @@
     padding: 0px;
   }
   
+  .imageTitle {
+    font-size: 1rem;
+  }
+
+  .imagePlace {
+    font-size: 0.8rem;
+  }
+
   .next {
     right: 20px;
     z-index: 999;
@@ -109,9 +116,10 @@
   }
 
   .sliderTitle h1 {
-    font-size: 18px;
+    font-size: 24px;
     margin-left: 0px;
   }
+
   .image {
     height: 400px; /* Définit une hauteur fixe pour les images */
   }

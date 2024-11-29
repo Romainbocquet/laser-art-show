@@ -42,14 +42,17 @@ export default function Header() {
             className={`${styles.burgerIcon}`}
             onClick={() => setIsMenuOpen(true)}
           >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="white"
-          >
-            <path d="M4 6h16M4 12h16m-7 6h7" stroke="white" strokeWidth="2" />
+          <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clipPath="url(#clip0_30_68)">
+          <path d="M24.46 0.5L0.130005 0.74" stroke="white" strokeMiterlimit="10"/>
+          <path d="M24.39 9.82001L0.0700073 10.06" stroke="white" strokeMiterlimit="10"/>
+          <path d="M24.33 19.15L0 19.38" stroke="white" strokeMiterlimit="10"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_30_68">
+          <rect width="24.46" height="19.88" fill="white"/>
+          </clipPath>
+          </defs>
           </svg>
         </button>
     </div>
@@ -72,16 +75,16 @@ export default function Header() {
             </div>
             <div className={styles.submenu}>
               <Link href="#histoire" className="hover:underline">
-                NOTRE HISTOIRE
+                Notre histoire
               </Link>
               <Link href="#valeurs" className="hover:underline">
-                NOS VALEURS
+                Nos valeurs
               </Link>
             </div>
           </div>
           <div className={styles.menuItem}>
             <div className={`${styles.menuItemElt} cursor-pointer`}>
-              PRÉSENTATION
+              PRESTATION
               <svg
                 width="14"
                 height="14"
@@ -97,16 +100,16 @@ export default function Header() {
             </div>
             <div className={styles.submenu}>
               <Link href="#volumetrique" className="hover:underline">
-                SHOW VOLUMÉTRIQUE
+                Show volumétrique
               </Link>
               <Link href="#mapping-laser" className="hover:underline">
-                MAPPING LASER
+                Mapping laser
               </Link>
               <Link href="#projection-laser" className="hover:underline">
-                PROJECTION LASER
+                Projection laser
               </Link>
               <Link href="#security-audit" className="hover:underline">
-                AUDIT DE SÉCURITÉ
+                Audit de sécurité
               </Link>
             </div>
           </div>
@@ -122,38 +125,38 @@ export default function Header() {
       {isMenuOpen && (
       <div className={`${styles.mobilMenu}`}>
         <div  className={`${styles.closeMenu}`} onClick={() => setIsMenuOpen(false)}>
-          <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27 2.98782L2.98779 27" stroke="white"></path><path d="M27 27L2.98779 2.98782" stroke="white"></path></svg>
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clipPath="url(#clip0_30_72)"> <path d="M25.34 0.350006L0.349976 25.34" stroke="white" strokeMiterlimit="10"/> <path d="M25.34 25.34L0.349976 0.350006" stroke="white" strokeMiterlimit="10"/> </g> <defs> <clipPath id="clip0_30_72"> <rect width="25.69" height="25.69" fill="white"/> </clipPath> </defs> </svg>
         </div>
         <nav className={`flex space-x-8 ${styles.menuTel}`}>
           <div className={styles.menuItem}>
             <div className={`${styles.menuItemElt} cursor-pointer`}>
               À PROPOS
             </div>
-            <div>
+            <div className="flex flex-col gap-2">
               <Link href="#histoire" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
-                NOTRE HISTOIRE
+                Notre histoire
               </Link>
               <Link href="#valeurs" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
-                NOS VALEURS
+                Nos valeurs
               </Link>
             </div>
           </div>
           <div className={styles.menuItem}>
             <div className={`${styles.menuItemElt} cursor-pointer`}>
-              PRÉSENTATION
+              PRESTATION
             </div>
             <div className="flex flex-col gap-2">
               <Link href="#volumetrique" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
-                SHOW VOLUMÉTRIQUE
+                Show volumétrique
               </Link>
               <Link href="#mapping-laser" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
-                MAPPING LASER
+                Mapping laser
               </Link>
               <Link href="#projection-laser" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
-                PROJECTION LASER
+                Projection laser
               </Link>
               <Link href="#security-audit" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
-                AUDIT DE SÉCURITÉ
+                Audit de sécurité
               </Link>
             </div>
           </div>

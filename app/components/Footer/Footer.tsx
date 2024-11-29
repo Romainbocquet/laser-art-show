@@ -30,7 +30,7 @@ export default function Footer() {
           </div>
           <div className={styles.menuItemFooter}>
             <div>
-              PRÉSENTATION
+              PRESTATION
             </div>
             <div className={styles.submenuFooter}>
               <Link href="#volumetrique" className="hover:underline">Show volumétrique</Link>

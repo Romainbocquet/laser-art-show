@@ -1,7 +1,5 @@
 .videoTitle {
     bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
     font-size: 5.5vw;
     width: 100%;
     text-align: center;
@@ -26,11 +24,12 @@
 
 @media (max-width: 768px) {
     .videoTitle {
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 1.35rem;
+        font-size: 2rem;
         width: 100%;
-        text-align: center;
+        text-align: start;
+        left: 20px;
+        bottom: 50px;
+        max-width: 200px;
         line-height: 100%; 
         padding: 0;
     }
