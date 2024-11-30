@@ -1,3 +1,4 @@
+"use client";
 
 import Video from "./components/Video/Video";
 import InfiniteSlider from "./components/InfiniteSlider/InfiniteSlider";
@@ -11,11 +12,17 @@ import AuditSecu from "./components/AuditSecu/AuditSecu";
 import Contact from "./components/Contact/Contact";
 import Image from 'next/image';
 import MouseLaserEffect from './components/MouseLaserEffect/MouseLaserEffect';
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export default function Home() {
+  // Animations pour la première valeur (Haut)
+  const controls1 = useAnimation();
+  const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
+  if (inView1) controls1.start({ opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.3 } });
 
   return (
-    <div className="font-[family-name:var(--font-geist-sans)]">
+    <div className="font-[family-name:var(--font-geist-sans)] w-100">
       <main className="relative flex flex-col row-start-2 sm:items-start">
         <Video />
         <Intro />
@@ -29,8 +36,13 @@ export default function Home() {
         <section id="valeurs" className="w-full">
           <Valeurs />
         </section>
-        <h1 className="global-title">TRANSFORMEZ VOS ÉVÉNEMENTS
-        EN EXPÉRIENCES INOUBLIABLES</h1>
+        <motion.div
+          ref={ref1}
+          initial={{ opacity: 0, y: 50 }}
+          animate={controls1}>
+            <h1 className="global-title">TRANSFORMEZ VOS ÉVÉNEMENTS EN EXPÉRIENCES INOUBLIABLES</h1>
+        </motion.div>
+
         <section id="volumetrique">
           <ImageSlider
             iconUrl="/img/home/show-volumetrique.svg"
@@ -101,8 +113,7 @@ export default function Home() {
         <section id="contact">
           <Contact />
         </section>
-        <MouseLaserEffect></MouseLaserEffect>
-
+        <div className="hidden"><MouseLaserEffect ></MouseLaserEffect></div>
       </main>
     </div>
   );

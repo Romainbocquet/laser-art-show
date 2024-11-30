@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./Header.module.css";
@@ -6,7 +6,11 @@ import styles from "./Header.module.css";
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
@@ -21,42 +25,29 @@ export default function Header() {
 
   return (
     <header
-  className={`w-full text-white p-4 px-10 fixed ${
-    isScrolled ? styles.solid : styles.transparent
-  }`}
->
-  <div className={`flex justify-between items-center ${styles.header}`}>
-    <div className={styles.logo}>
-      <Link href="/">
-        <img
-          className={styles.logoImage}
-          src="/img/logo/logo-white.svg"
-          height={67} // La hauteur sera ignorée grâce au CSS
-          width={200} // La largeur s'ajustera automatiquement
-          alt="Logo laser show"
-        />
-      </Link>
-    </div>
-    <div className={`${styles.burger}`}>
-      <button
-            className={`${styles.burgerIcon}`}
-            onClick={() => setIsMenuOpen(true)}
-          >
-          <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clipPath="url(#clip0_30_68)">
-          <path d="M24.46 0.5L0.130005 0.74" stroke="white" strokeMiterlimit="10"/>
-          <path d="M24.39 9.82001L0.0700073 10.06" stroke="white" strokeMiterlimit="10"/>
-          <path d="M24.33 19.15L0 19.38" stroke="white" strokeMiterlimit="10"/>
-          </g>
-          <defs>
-          <clipPath id="clip0_30_68">
-          <rect width="24.46" height="19.88" fill="white"/>
-          </clipPath>
-          </defs>
-          </svg>
-        </button>
-    </div>
-    <nav className={`flex space-x-8 ${styles.menu}`}>
+      className={`w-full text-white p-4 px-10 fixed ${
+        isScrolled ? styles.solid : styles.transparent
+      }`}
+    >
+       <div className={`${styles.iconMenu} ${isMenuOpen ? styles.open : ""}`} onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      <div className={`flex justify-between items-center ${styles.header}`}>
+        <div className={styles.logo}>
+          <Link href="/">
+            <img
+              className={styles.logoImage}
+              src="/img/logo/logo-white.svg"
+              height={67} // La hauteur sera ignorée grâce au CSS
+              width={200} // La largeur s'ajustera automatiquement
+              alt="Logo laser show"
+            />
+          </Link>
+        </div>
+        <nav className={`flex space-x-8 ${styles.menu}`}>
           <div className={styles.menuItem}>
             <div className={`${styles.menuItemElt} cursor-pointer`}>
               À PROPOS
@@ -126,12 +117,10 @@ export default function Header() {
           </Link>
         </nav>
       </div>
-      {isMenuOpen && (
-      <div className={`${styles.mobilMenu}`}>
-        <div  className={`${styles.closeMenu}`} onClick={() => setIsMenuOpen(false)}>
-          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clipPath="url(#clip0_30_72)"> <path d="M25.34 0.350006L0.349976 25.34" stroke="white" strokeMiterlimit="10"/> <path d="M25.34 25.34L0.349976 0.350006" stroke="white" strokeMiterlimit="10"/> </g> <defs> <clipPath id="clip0_30_72"> <rect width="25.69" height="25.69" fill="white"/> </clipPath> </defs> </svg>
-        </div>
-        <nav className={`flex space-x-8 ${styles.menuTel}`}>
+        <div
+          className={`${styles.mobilMenu} ${isMenuOpen ? styles.open : styles.close}`}
+        >
+          <nav className={`${styles.menuTel}`}>
           <div className={styles.menuItem}>
             <div className={`${styles.menuItemElt} cursor-pointer`}>
               À PROPOS
@@ -171,9 +160,8 @@ export default function Header() {
           <Link href="#contact" className={`${styles.contactLink}`} onClick={() => setIsMenuOpen(false)}>
             CONTACT
           </Link>
-        </nav>
-      </div>
-      )}
+          </nav>
+        </div>
     </header>
   );
 }
