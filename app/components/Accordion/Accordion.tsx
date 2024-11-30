@@ -4,10 +4,20 @@ import { useState, useRef, useEffect } from 'react';
 import Timeline from '../Timeline/Timeline';
 import styles from "./Accordion.module.css";
 import Image from 'next/image';
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Accordion = () => {
   const [isOpen, setIsOpen] = useState(false); // État pour contrôler l'ouverture de la section
   const contentRef = useRef<HTMLDivElement>(null);
+
+  const controls1 = useAnimation();
+  const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
+  if (inView1) controls1.start({ opacity: 1, y: 0, transition: { duration: 0.6} });
+
+  const controls2 = useAnimation();
+  const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
+  if (inView2) controls2.start({ opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.3  } });
 
   const toggleAccordion = () => {
     setIsOpen(!isOpen); // Inverser l'état pour afficher/masquer la section
@@ -30,13 +40,25 @@ const Accordion = () => {
     <div>
       <div className={`px-10 ${styles.accordion}`}>
         <div className={` ${styles.accordionLeft}`}>
-          <h2>NOTRE HISTOIRE</h2>
+          <motion.div
+          ref={ref1}
+          initial={{ opacity: 0, y: 20 }}
+          animate={controls1}
+          >
+            <h2>NOTRE HISTOIRE</h2>
+          </motion.div>
+          <motion.div
+          ref={ref2}
+          initial={{ opacity: 0, y: 20 }}
+          animate={controls2}
+          >
           <p>
             Fondée par <span className={` ${styles.itl}`}>Jonathan NINON</span>, Laser
             Art Show est le fruit d’une solide expérience, acquise <span>depuis 2017</span> en participant à de
             nombreux événements prestigieux aux côtés de <span className={` ${styles.itl}`}>Loïc LACOSTE</span>, <span>professionnel du laser depuis
               1989</span>, véritable référence de ce domaine.
           </p>
+          </motion.div>
           <div className={` ${styles.buttonContainer}`}>
             <button
               onClick={toggleAccordion} // Ajout de l'événement onClick pour ouvrir/fermer la section
