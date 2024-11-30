@@ -113,7 +113,7 @@ export default function Home() {
         <section id="contact">
           <Contact />
         </section>
-        <div className="hidden"><MouseLaserEffect ></MouseLaserEffect></div>
+        <MouseLaserEffect ></MouseLaserEffect>
       </main>
     </div>
   );
