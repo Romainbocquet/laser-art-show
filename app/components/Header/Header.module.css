@@ -133,32 +133,41 @@ z-index: 9999;
   padding-top: 1rem;
 }
 
-.burger {
+.iconMenu {
+  display: none;
+}
+
+.menuTel {
   display: none;
 }
 
 @media (max-width: 768px) {
-  .burger {
-    display: flex;
-  }
 
   .menu {
     display: none !important;
   }
 
   .mobilMenu {
+    position: fixed;
     display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: black;
-    width: 100vw;
-    height: 100vh;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
     align-items: center;
     justify-content: center;
-    z-index: 9999;
+    top: 0;
+    right: 0;
+    width: 100%; /* Ajuste la largeur du menu mobile */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1); /* Exemple de fond sombre */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .mobilMenu.open {
+    opacity: 1;
+  }
+
+  .mobilMenu.close {
+    opacity: 0;
+    pointer-events: none;
   }
 
   .menuTel {
@@ -204,5 +213,70 @@ z-index: 9999;
   
   .solid .logoImage {
     width: 80px; /* Taille normale pour le mode solid */
+  }
+
+  .iconMenu{
+    display: block;
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    right: 2.5rem;
+    transform: rotate(0deg);
+    top: 31px;
+    transform: translateY(-50%);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  .solid .iconMenu{
+    top: 28px;
+  }
+  
+  .iconMenu span {
+    position: absolute;
+    background-color: #fff;
+    height: 1px;
+    width: 100%;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+  
+  .iconMenu span:nth-child(1) {
+    top: 0px;
+  }
+  
+  .iconMenu span:nth-child(2) {
+    top: 10px;
+  }
+
+  .iconMenu span:nth-child(3) {
+    top: 10px;
+  }
+  
+  .iconMenu span:nth-child(4) {
+    top: 19px;
+  }
+  
+  .iconMenu.open span:nth-child(1) {
+    top: 10px;
+    width: 0%;
+    left: 50%;
+  }
+  
+  .iconMenu.open span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  
+  .iconMenu.open span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  
+  .iconMenu.open span:nth-child(4) {
+    top: 10px;
+    width: 0%;
+    left: 50%;
   }
 }

@@ -5,6 +5,8 @@ import Image from 'next/image';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from './ImageSlider.module.css';
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 type ImageType = {
   src: string;
@@ -80,37 +82,64 @@ export default function ImageSlider({ images, iconUrl, title, subTitle}: Carouse
     ],
   };
 
+  const controls1 = useAnimation();
+  const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
+  if (inView1) controls1.start({ opacity: 1, y: 0, transition: { duration: 0.6 } });
+
+  const controls2 = useAnimation();
+  const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
+  if (inView2) controls2.start({ opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.2} });
+
+  const controls3 = useAnimation();
+  const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true });
+  if (inView3) controls3.start({ opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.4} });
+
   return (
     <div className="mt-10">
       <div className={styles.sliderTitle}>
         <div>
+        <motion.div
+          ref={ref1}
+          initial={{ opacity: 0, y: 20 }}
+          animate={controls1}>
           <h1>
-          {title}
+            {title}
             <div>
             {iconUrl && <img src={iconUrl} alt="Icon"/>}
             </div>
           </h1>
-          <p>{subTitle}</p>
+          </motion.div>
+          <motion.div
+            ref={ref2}
+            initial={{ opacity: 0, y: 20 }}
+            animate={controls2}>
+            <p>{subTitle}</p>
+          </motion.div>
         </div>
       </div>
-      <div className={styles.sliderContainer}>
-        <Slider {...settings}>
-          {images.map((image, index) => (
-            <div key={index} className={styles.slide}>
-              <Image
-                src={image.src}
-                alt={image.alt}
-                width={1200} // ajuste la largeur pour s'adapter
-                height={600} // ajuste la hauteur en conséquence
-                className={styles.image}
-              />
-              <h3 className={styles.imageTitle}>{image.title}</h3> {/* Ajout du titre sous chaque image */}
-              <span className={styles.imagePlace}>{image.place}</span> {/* Ajout du titre sous chaque image */}
-              
-            </div>
-          ))}
-        </Slider>
-      </div>
+      <motion.div
+          ref={ref3}
+          initial={{ opacity: 0, y: 200 }}
+          animate={controls3}>
+          <div className={styles.sliderContainer}>
+              <Slider {...settings}>
+                {images.map((image, index) => (
+                  <div key={index} className={styles.slide}>
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={1200} // ajuste la largeur pour s'adapter
+                      height={600} // ajuste la hauteur en conséquence
+                      className={styles.image}
+                    />
+                    <h3 className={styles.imageTitle}>{image.title}</h3> {/* Ajout du titre sous chaque image */}
+                    <span className={styles.imagePlace}>{image.place}</span> {/* Ajout du titre sous chaque image */}
+                    
+                  </div>
+                ))}
+              </Slider>
+          </div>
+        </motion.div>
     </div>
   );
 }
