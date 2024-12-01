@@ -77,7 +77,7 @@ export default function Header() {
           </div>
           <div className={styles.menuItem}>
             <div className={`${styles.menuItemElt} cursor-pointer`}>
-              PRESTATION
+              PRESTATIONS
               <div>
               <svg
                 width="14"
@@ -136,7 +136,7 @@ export default function Header() {
           </div>
           <div className={styles.menuItem}>
             <div className={`${styles.menuItemElt} cursor-pointer`}>
-              PRESTATION
+              PRESTATIONS
             </div>
             <div className="flex flex-col gap-2">
               <Link href="#volumetrique" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
