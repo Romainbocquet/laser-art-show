@@ -53,7 +53,7 @@ export default function Home() {
               { src: '/img/volumetrie/test.jpg', alt: 'Image 1', title: 'Soirée privée', place: "Toulouse"},
               { src: '/img/volumetrie/volumetrie-6.jpg', alt: 'Image 5', title: 'Les Grandes Eaux Nocturnes Electro', place: "Château de Versailles"},
               { src: '/img/volumetrie/volumetrie-8.png', alt: 'Image 6', title: 'Concert de M.Pokora', place: "Bruxelles"},
-              { src: '/img/volumetrie/volumetrie-9.jpg', alt: 'Image 7', title: '200e anniversaire de la Caisse d\'Épargne', place: "Paris"},
+              { src: '/img/volumetrie/volumetrie-9.jpg', alt: 'Image 7', title: '200e anniversaire de la Caisse d’Épargne', place: "Paris"},
             ]}
           />
         </section>
@@ -86,7 +86,7 @@ export default function Home() {
         <section id="security-audit">
           <AuditSecu />
         </section>
-        <a className="my-10" href="#contact">
+        <a className="my-10 mb-0" href="#contact">
           <InfiniteSlider />
         </a>
         <section id="partenaire" className=" hidden">
@@ -102,7 +102,7 @@ export default function Home() {
             ]}
           />
         </section>
-        <div className="relative w-full h-[90vh] my-10">
+        <div className="relative w-full h-[90vh]">
           <Image
             className="object-cover"
             src="/img/photo-laser.jpg"

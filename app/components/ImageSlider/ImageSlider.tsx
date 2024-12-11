@@ -63,7 +63,7 @@ export default function ImageSlider({ images, iconUrl, title, subTitle}: Carouse
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     arrows: true,
     centerMode: false,
     centerPadding: "5%",
@@ -124,7 +124,7 @@ export default function ImageSlider({ images, iconUrl, title, subTitle}: Carouse
           <div className={styles.sliderContainer}>
               <Slider {...settings}>
                 {images.map((image, index) => (
-                  <div key={index} className={styles.slide}>
+                  <div key={index} className={styles.slide} aria-hidden="true">
                     <Image
                       src={image.src}
                       alt={image.alt}

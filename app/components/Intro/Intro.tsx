@@ -36,7 +36,6 @@ export default function Intro() {
           {/* Image 1 */}
           <div className="mb-10">
           <motion.div
-            className="mb-10"
             ref={ref4}
             initial={{ opacity: 0, y: 20 }}
             animate={controls4}
@@ -56,7 +55,7 @@ export default function Intro() {
               className="text-left mt-3"
             >
               <h3 className="text-xl font-semibold">CONCERT DE DAVID GUETTA</h3>
-              <h4 className="text-gray-500">PARIS</h4>
+              <h4>PARIS</h4>
             </motion.div>
           </div>
 
@@ -85,7 +84,7 @@ export default function Intro() {
               <h3 className="text-xl font-semibold">
                 DÉFILÉ DE MODE <br /> POUR « VETEMENTS »
               </h3>
-              <h4 className="text-gray-500">PARIS</h4>
+              <h4>PARIS</h4>
             </motion.div>
           </div>
         </div>
@@ -115,7 +114,7 @@ export default function Intro() {
             <h3 className="text-xl font-semibold">
               130<sup>e</sup> ANNIVERSAIRE DE LA <br /> TOUR EIFFEL
             </h3>
-            <h4 className="text-gray-500">PARIS</h4>
+            <h4>PARIS</h4>
           </motion.div>
         </div>
       </div>

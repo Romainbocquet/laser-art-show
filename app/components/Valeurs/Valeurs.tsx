@@ -47,9 +47,9 @@ export default function Valeurs() {
             ref={ref2}
             initial={{ opacity: 0, x: -20 }} // Arrive de la gauche
             animate={controls2}>
-            <div className={`${styles.valeur} relative`}>
+            <div className={`${styles.valeur}`}>
               <Image
-                className={` ${styles.valeurtImg} absolute`}
+                className={` ${styles.valeurtImg}`}
                 src="/img/valeurs/service-client.png"
                 alt="Service Client"
                 width={100}
@@ -65,9 +65,9 @@ export default function Valeurs() {
             ref={ref3}
             initial={{ opacity: 0, y: 20 }}
             animate={controls3}>
-            <div className={`${styles.valeur} relative`}>
+            <div className={`${styles.valeur}`}>
               <Image
-                className={` ${styles.valeurtImg} absolute`}
+                className={` ${styles.valeurtImg}`}
                 src="/img/valeurs/securite.png"
                 alt="Sécurité"
                 width={60}
@@ -86,9 +86,9 @@ export default function Valeurs() {
             ref={ref4}
             initial={{ opacity: 0, y: -20 }} // Arrive de la droite
             animate={controls4}>
-            <div className={`${styles.valeur} relative`}>
+            <div className={`${styles.valeur}`}>
               <Image
-                className={` ${styles.valeurtImg} absolute`}
+                className={` ${styles.valeurtImg}`}
                 src="/img/valeurs/environnement.png"
                 alt="Environnement"
                 width={100}
@@ -104,9 +104,9 @@ export default function Valeurs() {
             ref={ref5}
             initial={{ opacity: 0, x: 20 }}
             animate={controls5}>
-            <div className={`${styles.valeur} relative`}>
+            <div className={`${styles.valeur}`}>
               <Image
-                className={` ${styles.valeurtImg} absolute`}
+                className={` ${styles.valeurtImg}`}
                 src="/img/valeurs/qualite.png"
                 alt="Qualité"
                 width={100}

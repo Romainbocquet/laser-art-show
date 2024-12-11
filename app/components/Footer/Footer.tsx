@@ -8,9 +8,9 @@ export default function Footer() {
     <footer className="w-full bg-black text-white py-6 mt-8 flex flex-col">
       <div className={`flex justify-between w-full px-10 mb-6 ${styles.footerElt}`}>
         <div className="flex">
-          <Link href="/">
+          <Link href="/" className="w-60">
             <img
-              src="/img/logo/logo-white.svg"
+              src="/img/logo/logo-white-icone.svg"
               width={500}
               alt="Logo Laser Art Show"
             />
@@ -18,7 +18,7 @@ export default function Footer() {
         </div>
 
         {/* Navigation */}
-        <nav className={`flex space-x-16 ${styles.footer}`}>
+        <nav className={`flex space-x-16 w-3/5 justify-around ${styles.footer}`}>
           <div className={styles.menuItemFooter}>
             <div>
               À PROPOS
@@ -30,7 +30,7 @@ export default function Footer() {
           </div>
           <div className={styles.menuItemFooter}>
             <div>
-              PRESTATION
+              PRESTATIONS
             </div>
             <div className={styles.submenuFooter}>
               <Link href="#volumetrique" className="hover:underline">Show volumétrique</Link>
@@ -66,11 +66,11 @@ export default function Footer() {
 
       <div className={`flex items-center px-10 justify-between mt-20 text-white ${styles.menuItemTBottomFooter}`}>
         <div>
-          <a href="mailto:contact@laserartshow.com" className="hover:underline">contact@laserartshow.com</a>
+          <a href="mailto:contact@laserartshow.com" className="underline">contact@laserartshow.com</a>
           <p>+33 7 59 50 86 08</p>
-          <a href="https://maps.app.goo.gl/PnYKWnRYJY19Hq8E9" target="_blank" className="hover:underline">12E chemin de Basso Cambo, 31100 Toulouse</a>
+          <a href="https://maps.app.goo.gl/PnYKWnRYJY19Hq8E9" target="_blank" className="hover:underline">12E chemin de Basso Cambo, <br /> 31100 Toulouse</a>
         </div>
-        <p>Copyright &copy; Laser Art Show 2024. Tous droits réservés.</p>
+        <p className="text-center">Copyright &copy; Laser Art Show 2024. <br /> Tous droits réservés.</p>
         <Link href="/mentions-legales" className="hover:underline mt-2">
           Mentions légales
         </Link>
