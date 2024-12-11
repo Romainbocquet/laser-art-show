@@ -51,6 +51,7 @@ const Accordion = () => {
           ref={ref2}
           initial={{ opacity: 0, y: 20 }}
           animate={controls2}
+          className='flex justify-center'
           >
           <p>
             Fondée par <span className={` ${styles.itl}`}>Jonathan NINON</span>, Laser

@@ -26,12 +26,14 @@
 .accordionLeft h2 {
   font-size: 3.4rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .accordionLeft p {
   font-family: var(--gotham-light);
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   max-width: 600px;
+  text-align: center;
 }
 
 .itl {
@@ -95,6 +97,11 @@
   display: none;
 }
 
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   .accordionRightImgMobile {
     display: block;
@@ -131,9 +138,8 @@
     margin-bottom: 20px;
   }
 
-  .buttonContainer {
-    display: flex;
-    justify-content: center;
+.button {
+  padding-top: 0.6rem;
 }
 
 .extraContentButton {

@@ -1,5 +1,7 @@
 .chateau {
   font-family: var(--benzin-semibold);
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .extraContentButton {
@@ -35,6 +37,9 @@
 }
 
 @media (max-width: 768px) {
+  .chateau {
+    padding-top: 0;
+  }
   .chateauTitle {
     font-size: 24px;
   }
@@ -45,6 +50,10 @@
 
   .chateau img {
       height: 200px !important;
+  }
+
+  .button {
+    padding-top: 0.6rem;
   }
 
   .chateau > div:first-child {

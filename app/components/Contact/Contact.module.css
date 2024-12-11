@@ -6,7 +6,7 @@
   font-family: var(--benzin-semibold);
   font-size: 75px;
   line-height: 120%;
-  color: rgb(73, 73, 73);
+  color: rgb(150,150,150);
 }
 
 .button {
@@ -15,7 +15,7 @@
   background-color: black;
   border: 1px solid white;
   transition: background-color 0.3s ease;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
 }
 
 .button:hover {
@@ -33,6 +33,18 @@
 .contactTopTitle {
   font-family: var(--benzin-semibold);
   font-size: 3.4rem;
+  margin-top: 60px;
+}
+
+.contactRight input::-webkit-outer-spin-button,
+.contactRight input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.contactRight input[type=number] {
+  -moz-appearance: textfield;
 }
 
 
@@ -43,10 +55,17 @@
 
   .contactTopTitle {
     font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
   }
 
   .contact {
     padding: 1rem;
   }
+
+  .button {
+    padding-bottom: 0.6rem;
+  }
+  
   
 }

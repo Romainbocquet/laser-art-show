@@ -37,7 +37,7 @@ export default function Header() {
         </div>
       <div className={`flex justify-between items-center ${styles.header}`}>
         <div className={styles.logo}>
-          <Link href="/">
+          <a href="/">
             <img
               className={styles.logoImage}
               src="/img/logo/logo-white.svg"
@@ -45,7 +45,7 @@ export default function Header() {
               width={200} // La largeur s'ajustera automatiquement
               alt="Logo laser show"
             />
-          </Link>
+          </a>
         </div>
         <nav className={`flex space-x-8 ${styles.menu}`}>
           <div className={styles.menuItem}>
