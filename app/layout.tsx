@@ -5,12 +5,12 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 const interItalic = localFont({
-  src: "./fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf",
+  src: "./fonts/Inter/Inter-Italic.ttf",
   variable: "--inter-italic",
 });
 
 const inter = localFont({
-  src: "./fonts/Inter/Inter-VariableFont_opsz,wght.ttf",
+  src: "./fonts/Inter/Inter.ttf",
   variable: "--inter",
 });
 
