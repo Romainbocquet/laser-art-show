@@ -17,6 +17,7 @@
 
 .secuRight {
   padding: 0 calc(4rem);
+  height: 400px;
 }
 
 .secuTitleContainer {
@@ -32,6 +33,10 @@
 .secuTitle img {
   height: 100%;
  }
+
+ .secuPicto {
+  width: 50px;
+}
 
 @media (max-width: 768px) {
   .secu {
