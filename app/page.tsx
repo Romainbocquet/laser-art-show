@@ -109,7 +109,7 @@ export default function Home() {
             layout="fill"
           />
         </div>
-        <section id="contact">
+        <section className="w-full" id="contact">
           <Contact />
         </section>
       </main>
