@@ -1,32 +1,32 @@
 .secuText {
-  font-family: var(--gotham-light);
-  margin-left: 115px;
+  font-family: var(--inter);
   font-size: 16px;
-  line-height: 1.5rem;
-  max-width: 60%;
-  margin-bottom: 40px;
+  font-weight: 300;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.secu {
+  display: flex;
 }
 
 .secuText span {
-  font-family: var(--gotham-bold);
+  font-family: var(--inter);
+  font-weight: 700;
 }
 
 .secuRight {
-  height: 550px;
   padding: 0 calc(4rem);
 }
 
-.secuTitle {
-  font-family: var(--benzin-semibold);
-  font-size: 3.4rem;
+.secuTitleContainer {
+  font-family: var(--microma-regular);
+  font-size: 3.2rem;
   margin-left: 20px;
   display: flex;
   gap: 20px;
   align-items: center;
-}
-
-.secuTitleImg {
-  width: 60px;
+  justify-content: center;
 }
 
 .secuTitle img {
@@ -36,6 +36,14 @@
 @media (max-width: 768px) {
   .secu {
     padding: 0rem;
+    flex-direction: column;
+  }
+
+  .secuPicto {
+    width: 50px;
+  }
+  .secuTitleContainer {
+    margin-bottom: 30px;
   }
   .secu h2 {
     font-size: 24px;
@@ -49,7 +57,7 @@
   .secuText {
     margin: 0;
     max-width: 100%;
-    text-align: left;
+    text-align: center;
   }
   .secuLeft {
     padding: 20px;

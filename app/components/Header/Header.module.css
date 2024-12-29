@@ -43,7 +43,7 @@ z-index: 9999;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-family: var(--benzin-semibold);
+  font-family: var(--microma-regular);
 }
 
 .menuItem {
@@ -66,7 +66,7 @@ z-index: 9999;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 99;
-  font-family: var(--gotham-light);
+  font-family: var(--inter);
 
   /* Initial state (hidden) */
   opacity: 0;
@@ -85,9 +85,10 @@ z-index: 9999;
 
 .contactLink {
   border: 1px solid white;
-  padding: 0.5rem;
+  padding: 0.5rem 0.7rem;
   border-radius: 30px;
   transition: background-color 0.3s ease;
+  font-family: var(--microma-regular);
 }
 
 .menuItemElt {
@@ -141,7 +142,17 @@ z-index: 9999;
   display: none;
 }
 
+.headerMenu {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 @media (max-width: 768px) {
+
+  .headerMenu {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   .menu {
     display: none !important;
@@ -182,7 +193,7 @@ z-index: 9999;
     justify-content: center;
     margin-bottom: 10px;
     font-size: 18px;
-    font-family: var(--benzin-semibold);
+    font-family: var(--microma-regular);
   }
 
   .menuItem {
@@ -190,7 +201,7 @@ z-index: 9999;
   }
 
   .menuItem > div:last-child {
-    font-family: var(--gotham-light);
+    font-family: var(--inter);
   }
 
   .menuItem {
@@ -200,7 +211,6 @@ z-index: 9999;
   .contactLink {
     margin-left: 0 !important;
     width: fit-content;
-    font-family: var(--benzin-semibold);
   }
 
   .header {
@@ -220,7 +230,7 @@ z-index: 9999;
     width: 25px;
     height: 20px;
     position: absolute;
-    right: 2.5rem;
+    right: 20px;
     transform: rotate(0deg);
     top: 41px;
     transform: translateY(-50%);

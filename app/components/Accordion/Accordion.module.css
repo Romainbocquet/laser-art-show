@@ -1,5 +1,4 @@
 .accordion {
-  font-family: var(--benzin-semibold);
   width: 100%;
   max-width: 100vw;
   display: flex;
@@ -24,24 +23,26 @@
 }
 
 .accordionLeft h2 {
-  font-size: 3.4rem;
+  font-size: 3.2rem;
   margin-bottom: 20px;
   text-align: center;
+  font-family: var(--microma-regular);
 }
 
 .accordionLeft p {
-  font-family: var(--gotham-light);
+  font-family: var(--inter);
   margin-bottom: 50px;
   max-width: 600px;
   text-align: center;
+  font-weight: 300;
 }
 
 .itl {
-  font-family: var(--gotham-medium-itl) !important;
+  font-weight: 700;
 }
 
 .accordionLeft span {
-  font-family: var(--gotham-light);
+  font-family: var(--inter);
 }
 
 .button {
@@ -49,7 +50,8 @@
   color: white;
   border: 1px solid white;
   transition: background-color 0.3s ease;
-  padding: 0.5rem;
+  padding: 0.5rem 0.7rem;
+  font-family: var(--microma-regular);
 }
 
 .button:hover {
@@ -79,11 +81,11 @@
 }
 
 .extraContent p {
-  font-family: var(--gotham-light);
+  font-family: var(--inter);
 }
 
 .extraContent p span {
-  font-family: var(--gotham-medium-itl) !important;
+  font-family: var(--inter-italic) !important;
 }
 
 .extraContentButton {
@@ -108,6 +110,7 @@
     width: 100%;
     height: 400px;
     margin-top: 50px;
+    padding: 0px 12px;
   }
 
   .accordionRightImgMobile img {
@@ -137,10 +140,6 @@
     font-size: 6vw;
     margin-bottom: 20px;
   }
-
-.button {
-  padding-top: 0.6rem;
-}
 
 .extraContentButton {
   right: 20px;

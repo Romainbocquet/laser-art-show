@@ -3,36 +3,36 @@
 }
 
 .contactTitle {
-  font-family: var(--benzin-semibold);
-  font-size: 75px;
-  line-height: 120%;
+  font-family: var(--microma-regular);
+  font-size: 4rem;
   color: rgb(150,150,150);
+  font-weight: 200;
 }
 
 .button {
-  font-family: var(--benzin-semibold);
+  font-family: var(--inter);
   color: white;
   background-color: black;
   border: 1px solid white;
   transition: background-color 0.3s ease;
-  padding: 0.5rem;
+  padding: 0.5rem 0.7rem;
+  font-family: var(--microma-regular);
 }
 
 .button:hover {
   background-color: white;
   border: 1px solid black;
-  font-family: var(--benzin-semibold);
   color: black;
   cursor: pointer;
 }
 
 .contactText {
-  font-family: var(--benzin-light);
+  font-family: var(--inter);
 }
 
 .contactTopTitle {
-  font-family: var(--benzin-semibold);
-  font-size: 3.4rem;
+  font-family: var(--microma-regular);
+  font-size: 2.5rem;
   margin-top: 60px;
 }
 
@@ -50,7 +50,7 @@
 
 @media (max-width: 768px) {
   .contactTitle {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .contactTopTitle {
@@ -61,11 +61,5 @@
 
   .contact {
     padding: 1rem;
-  }
-
-  .button {
-    padding-bottom: 0.6rem;
-  }
-  
-  
+  }  
 }

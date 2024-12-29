@@ -1,5 +1,4 @@
 .chateau {
-  font-family: var(--benzin-semibold);
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -12,14 +11,15 @@
 }
 
 .chateauTitle h3 {
-  font-family: var(--benzin-semibold);
+  font-family: var(--microma-regular);
   font-size: 1.6rem;
   line-height: 1.6rem;
 }
 
 .chateauTitle h4 {
-  font-family: var(--gotham-light);
+  font-family: var(--inter);
   font-size: 1.4rem;
+  font-weight: 300;
 }
 
 .button {
@@ -27,7 +27,8 @@
   color: white;
   border: 1px solid white;
   transition: background-color 0.3s ease;
-  padding: 0.5rem;
+  padding: 0.5rem 0.7rem;
+  font-family: var(--microma-regular);
 }
 
 .button:hover {
@@ -52,22 +53,16 @@
       height: 200px !important;
   }
 
-  .button {
-    padding-top: 0.6rem;
-  }
-
   .chateau > div:first-child {
     height: 200px !important;
 }
 
 .chateauTitle h3 {
-  font-family: var(--benzin-semibold);
   font-size: 1rem;
   margin-bottom: 5px;
 }
 
 .chateauTitle h4 {
-  font-family: var(--gotham-light);
   font-size: 1rem;
 }
 }

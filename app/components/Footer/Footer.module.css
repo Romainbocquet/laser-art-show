@@ -1,9 +1,9 @@
 .menuItemFooter {
   display: flex;
   flex-direction: column;
-  font-family: var(--benzin-semibold);
+  font-family: var(--microma-regular);
   font-size: 22px;
-  margin-top: 40px;
+  margin-bottom: 5px;
 }
 
 .footerElt {
@@ -13,13 +13,15 @@
 .submenuFooter {
   display: flex;
   flex-direction: column;
-  font-family: var(--gotham-light);
+  font-family: var(--inter);
+  font-weight: 300;
   font-size: 16px;
   color: white;
+  margin-top: 10px;
+  gap: 5px;
 }
 
 .menuItemTightFooter {
-  margin-top: 40px;
   bottom: 80px;
   right: 50px;
 }
@@ -32,10 +34,13 @@
 .menuItemBottomFooter {
   display: flex;
   flex-direction: row;
-  font-family: var(--benzin-semibold);
+  font-family: var(--inter);
   font-size: 22px;
-  margin-top: 40px;
   gap: 64px;
+}
+
+.contactLinkFooter {
+  font-family: var(--microma-regular);
 }
 
 @media (max-width: 768px) {
@@ -46,6 +51,7 @@
   .footerElt {
     flex-direction: column;
     align-items: center;
+    gap: 50px;
   }
 
   .submenuFooter {
@@ -55,7 +61,7 @@
   .menuItemFooter {
     margin-left: 0px !important;
     align-items: center;
-    gap: 10px;
+    margin-bottom: 40px;
   }
 
   .menuItemBottomFooter {

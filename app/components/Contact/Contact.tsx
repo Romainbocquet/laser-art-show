@@ -29,10 +29,10 @@ export default function Contact() {
 
   return (
     <div className={`w-full`}>
-      <h1 className={`px-16 ${styles.contactTopTitle}`}>CONTACT</h1>
-      <div className={`relative w-full py-10 px-16 ${styles.contact} flex flex-col md:flex-row justify-between`}>
+      <h1 className={`px-24  ${styles.contactTopTitle}`}>Contact</h1>
+      <div className={`relative w-full py-10 px-24  ${styles.contact} flex flex-col md:flex-row justify-between`}>
         <div className={`w-full md:w-7/12 text-center md:text-left ${styles.contactLeft}`}>
-          <h2 className={`text-3xl font-semibold mb-4 ${styles.contactTitle}`}>PARLEZ-NOUS DE VOTRE PROJET</h2>
+          <h2 className={`mb-4 ${styles.contactTitle}`}>PARLEZ-NOUS <br /> DE VOTRE <br /> PROJET</h2>
         </div>
         <div className={`w-full md:w-5/12 flex justify-center mb-6 md:mb-0 ${styles.contactRight}`}>
           <form className="w-full" onSubmit={handleSendEmail}>
@@ -127,7 +127,7 @@ export default function Contact() {
                 className={`${styles.button} text-black bg-white rounded-3xl`}
                 disabled={!isMathCorrect}
               >
-                ENVOYER
+                Envoyer
               </button>
             </div>
           </form>

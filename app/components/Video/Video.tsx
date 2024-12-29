@@ -21,6 +21,7 @@ export default function Video() {
         autoPlay
         loop
         preload="auto"
+        playsInline
       >
         <source src="/video/video-header.mp4" type="video/mp4" />
         <img src="/video/video-header-caption.png" alt="Fallback image if video fails" />

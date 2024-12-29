@@ -21,6 +21,13 @@ const Accordion = () => {
 
   const toggleAccordion = () => {
     setIsOpen(!isOpen); // Inverser l'état pour afficher/masquer la section
+
+    if (!isOpen) {
+      window.scrollBy({
+        top: 400, // Valeur en pixels pour défiler vers le bas
+        behavior: 'smooth' // Défilement fluide
+      });
+    }
   };
 
   // Utilisation de useEffect pour gérer la hauteur dynamique
@@ -45,7 +52,7 @@ const Accordion = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={controls1}
           >
-            <h2>NOTRE HISTOIRE</h2>
+            <h2>Notre histoire</h2>
           </motion.div>
           <motion.div
           ref={ref2}
@@ -65,7 +72,7 @@ const Accordion = () => {
               onClick={toggleAccordion} // Ajout de l'événement onClick pour ouvrir/fermer la section
               className={`${styles.button} text-black bg-white rounded-3xl`}
             >
-              VOIR PLUS
+              Voir plus
             </button>
           </div>
         </div>

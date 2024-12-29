@@ -63,7 +63,7 @@ export default function ImageSlider({ images, iconUrl, title, subTitle}: Carouse
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     arrows: true,
     centerMode: false,
     centerPadding: "5%",
