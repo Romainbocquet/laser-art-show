@@ -25,16 +25,16 @@ const Chateau = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={controls1}
       >
-        <h3 className={`text-xl font-semibold leading-10`}>
-          BOSQUET DE LA COLONNADE
+        <h3 className={`text-xl leading-10`}>
+        Bosquet de la Colonnade
         </h3>
-        <h4>CHÂTEAU DE VERSAILLES</h4>
+        <h4>Château de Versailles</h4>
       </motion.div>
       <div className="flex justify-center mt-4">
           <a
             className={`${styles.button} text-black bg-white rounded-3xl`} href='#volumetrique'
           >
-            VOIR PLUS
+            Voir plus
           </a>
       </div>
     </div>

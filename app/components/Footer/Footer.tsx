@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="w-full bg-black text-white py-6 mt-8 flex flex-col">
       <div className={`flex justify-between w-full px-10 mb-6 ${styles.footerElt}`}>
         <div className="flex">
-          <Link href="/" className="w-60">
+          <Link href="/" className="w-40">
             <img
               src="/img/logo/logo-white-icone.svg"
               width={500}
@@ -21,31 +21,31 @@ export default function Footer() {
         <nav className={`flex space-x-16 w-3/5 justify-around ${styles.footer}`}>
           <div className={styles.menuItemFooter}>
             <div>
-              À PROPOS
+              À propos
             </div>
             <div className={styles.submenuFooter}>
-              <Link href="#histoire" className="hover:underline">Notre histoire</Link>
-              <Link href="#valeurs" className="hover:underline">Nos valeurs</Link>
+              <Link href="/#histoire" className="hover:underline">Notre histoire</Link>
+              <Link href="/#valeurs" className="hover:underline">Nos valeurs</Link>
             </div>
           </div>
           <div className={styles.menuItemFooter}>
             <div>
-              PRESTATIONS
+              Prestations
             </div>
             <div className={styles.submenuFooter}>
-              <Link href="#volumetrique" className="hover:underline">Show volumétrique</Link>
-              <Link href="#mapping-laser" className="hover:underline">Mapping laser</Link>
-              <Link href="#projection-laser" className="hover:underline">Projection laser</Link>
-              <Link href="#security-audit" className="hover:underline">Audit de sécurité</Link>
+              <Link href="/#volumetrique" className="hover:underline">Show volumétrique</Link>
+              <Link href="/#mapping-laser" className="hover:underline">Mapping laser</Link>
+              <Link href="/#projection-laser" className="hover:underline">Projection laser</Link>
+              <Link href="/#security-audit" className="hover:underline">Audit de sécurité</Link>
             </div>
           </div>
 
           <div className={`flex ${styles.menuItemBottomFooter}`}>
-            <Link href="#partenaire" className="hover:underline hidden">
+            <Link href="/#partenaire" className="hover:underline hidden">
               CLIENTS
             </Link>
-            <Link href="#contact" className="hover:underline">
-              CONTACT
+            <Link href="/#contact" className={`hover:underline ${styles.contactLinkFooter}`}>
+            Contact
             </Link>
           </div>
         </nav>

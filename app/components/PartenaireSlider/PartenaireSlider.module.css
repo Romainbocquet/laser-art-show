@@ -13,7 +13,7 @@
 
 .sliderTitle {
   font-size: 54px;
-  font-family: var(--benzin-semibold);
+  font-family: var(--microma-regular);
   text-align: center;
   margin-bottom: 100px;
 }
@@ -62,7 +62,6 @@
 
   .sliderTitle {
     font-size: 34px;
-    font-family: var(--benzin-semibold);
     text-align: center;
     margin-bottom: 100px;
   }

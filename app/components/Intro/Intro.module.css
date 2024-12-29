@@ -1,17 +1,18 @@
 
 
 .intro {
-    font-family: var(--benzin-semibold);
+    font-family: var(--microma-regular);
 }
 
 .intro h3 {
-    font-family: var(--benzin-semibold);
+    font-family: var(--microma-regular);
     font-size: 1.6rem;
     line-height: 1.6rem;
 }
 
 .intro h4 {
-    font-family: var(--gotham-light);
+    font-family: var(--inter);
+    font-weight: 300;
     font-size: 1.4rem;
 }
 
@@ -37,17 +38,15 @@
 
 @media (max-width: 768px) {
     .intro {
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .intro h3 {
-        font-family: var(--benzin-semibold);
         font-size: 1rem;
     }
     
     .intro h4 {
-        font-family: var(--gotham-light);
         font-size: 1rem;
     }
 
