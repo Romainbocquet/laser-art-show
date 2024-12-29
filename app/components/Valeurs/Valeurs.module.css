@@ -1,6 +1,6 @@
 .valeurs h2 {
-    font-family: var(--benzin-semibold);
-    font-size: 3.4rem;
+    font-family: var(--microma-regular);
+    font-size: 3.2rem;
 }
 
 .valeursElt {
@@ -34,19 +34,21 @@
 .valeur h3 {
     margin-top: 40px;
     font-size: 32px;
-    font-family: var(--benzin-semibold);
+    font-family: var(--microma-regular);
     text-align: center;
 }
 
 .valeur p {
     height: fit-content;
     margin-top: 40px;
-    font-family: var(--gotham-light);
+    font-family: var(--inter);
+    font-weight: 300;
     text-align: center;
 }
 
 .valeur p span {
-    font-family: var(--gotham-bold);
+    font-family: var(--inter);
+    font-weight: 700;
 }
 
 .valeurtImg {
@@ -84,7 +86,7 @@
     .valeur h3 {
         font-size: 6vw;
         margin-top: 50px;
-        font-family: var(--benzin-semibold);
+        font-family: var(--microma-regular);
     }
 
     .valeur p {

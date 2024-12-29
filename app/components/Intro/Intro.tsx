@@ -29,7 +29,7 @@ export default function Intro() {
   if (inView6) controls6.start({ opacity: 1, y: 0, transition: { duration: 0.6 } });
 
   return (
-    <div className={`relative w-full mt-11 py-10 px-16 ${styles.intro} flex justify-center`}>
+    <div className={`relative w-full mt-11 py-10 px-24 ${styles.intro} flex justify-center`}>
       <div className={`flex flex-wrap lg:flex-nowrap lg:gap-20 sm:gap-0  ${styles.introContainer}`}>
         {/* Section gauche */}
         <div className={`flex flex-col`}>
@@ -54,8 +54,8 @@ export default function Intro() {
               animate={controls1}
               className="text-left mt-3"
             >
-              <h3 className="text-xl font-semibold">CONCERT DE DAVID GUETTA</h3>
-              <h4>PARIS</h4>
+              <h3 className="text-xl">Concert de David Guetta</h3>
+              <h4>Paris</h4>
             </motion.div>
           </div>
 
@@ -81,10 +81,10 @@ export default function Intro() {
               animate={controls2}
               className={`${styles.textLeftImgTitle} lg:absolute mt-5 lg:mt-0 bottom-0`}
             >
-              <h3 className="text-xl font-semibold">
-                DÉFILÉ DE MODE <br /> POUR « VETEMENTS »
+              <h3 className="text-xl">
+                Féfilé de mode <br /> pour « VETEMENTS »
               </h3>
-              <h4>PARIS</h4>
+              <h4>Paris</h4>
             </motion.div>
           </div>
         </div>
@@ -111,10 +111,10 @@ export default function Intro() {
             animate={controls3}
             className="text-left mt-5"
           >
-            <h3 className="text-xl font-semibold">
-              130<sup>e</sup> ANNIVERSAIRE DE LA <br /> TOUR EIFFEL
+            <h3 className="text-xl">
+              130<sup>e</sup> anniversaire de la <br /> Tour Eiffle
             </h3>
-            <h4>PARIS</h4>
+            <h4>Paris</h4>
           </motion.div>
         </div>
       </div>

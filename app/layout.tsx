@@ -4,29 +4,19 @@ import "./globals.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
-const gothamLight = localFont({
-  src: "./fonts/Gotham/Gotham-Light.otf",
-  variable: "--gotham-light",
+const interItalic = localFont({
+  src: "./fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf",
+  variable: "--inter-italic",
 });
 
-const gothamMedium = localFont({
-  src: "./fonts/Gotham/Gotham-Medium.otf",
-  variable: "--gotham-medium",
+const inter = localFont({
+  src: "./fonts/Inter/Inter-VariableFont_opsz,wght.ttf",
+  variable: "--inter",
 });
 
-const gothamMediumItl = localFont({
-  src: "./fonts/Gotham/Gotham-MediumItalic.otf",
-  variable: "--gotham-medium-itl",
-});
-
-const gothamBold = localFont({
-  src: "./fonts/Gotham/Gotham-Bold.otf",
-  variable: "--gotham-bold",
-});
-
-const benzinSemibold = localFont({
-  src: "./fonts/benzin-semibold.ttf",
-  variable: "--benzin-semibold",
+const micromaRegular = localFont({
+  src: "./fonts/Michroma-Regular.ttf",
+  variable: "--microma-regular",
 });
 
 export const metadata: Metadata = {
@@ -42,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body
-        className={`${benzinSemibold.variable} ${gothamMedium.variable} ${gothamBold.variable} ${gothamLight.variable} ${gothamMediumItl.variable} antialiased bg-black text-white`}
+        className={`${interItalic.variable} ${inter.variable} ${micromaRegular.variable} antialiased bg-black text-white`}
       >
         <Header />
         {children}

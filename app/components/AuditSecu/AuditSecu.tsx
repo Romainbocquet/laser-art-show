@@ -24,19 +24,19 @@ export default function AuditSecu() {
             initial={{ opacity: 0, y: 20 }}
             animate={controls1}>
 
-        <div className={` ${styles.secuTitle}`}>
-          <div className={` ${styles.secuTitleImg}`}>
+        <div className={` ${styles.secuTitleContainer}`}>
+          <div className={`${styles.secuPicto}`}>
           <Image
               className={` ${styles.valeurtImg}`}
               src="/img/valeurs/service-client.svg"
-              alt="Picture of the author"
+              alt="Audit de securité"
               width={128}
               height={90}
             />
           </div>
         
             <h2 className={`${styles.secuTitle}`}>
-            AUDIT DE SÉCURITÉ</h2>
+            Audit de sécurité</h2>
         </div>
         </motion.div>
         <motion.div

@@ -11,7 +11,6 @@ import PartenaireSlider from "./components/PartenaireSlider/PartenaireSlider";
 import AuditSecu from "./components/AuditSecu/AuditSecu";
 import Contact from "./components/Contact/Contact";
 import Image from 'next/image';
-import MouseLaserEffect from './components/MouseLaserEffect/MouseLaserEffect';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -46,21 +45,21 @@ export default function Home() {
         <section id="volumetrique">
           <ImageSlider
             iconUrl="/img/home/show-volumetrique.svg"
-            title="SHOW VOLUMÉTRIQUE"
+            title="Show volumétrique"
             subTitle="Vivez une expérience immersive où la lumière et la technologie fusionnent pour créer des spectacles éblouissants en trois dimensions."
             images={[
+              { src: '/img/volumetrie/volumetrie-9.jpg', alt: 'Image 7', title: '200e anniversaire de la Caisse d’Épargne', place: "Paris"},
               { src: '/img/volumetrie/david.jpg', alt: 'Image 1', title: 'Concert de David Guetta', place: "Paris"},
+              { src: '/img/volumetrie/volumetrie-8.png', alt: 'Image 6', title: 'Concert de M.Pokora', place: "Bruxelles"},
               { src: '/img/volumetrie/test.jpg', alt: 'Image 1', title: 'Soirée privée', place: "Toulouse"},
               { src: '/img/volumetrie/volumetrie-6.jpg', alt: 'Image 5', title: 'Les Grandes Eaux Nocturnes Electro', place: "Château de Versailles"},
-              { src: '/img/volumetrie/volumetrie-8.png', alt: 'Image 6', title: 'Concert de M.Pokora', place: "Bruxelles"},
-              { src: '/img/volumetrie/volumetrie-9.jpg', alt: 'Image 7', title: '200e anniversaire de la Caisse d’Épargne', place: "Paris"},
             ]}
           />
         </section>
         <section id="mapping-laser">
           <ImageSlider
             iconUrl="/img/home/mapping-laser.svg"
-            title="MAPPING LASER"
+            title="Mapping laser"
             subTitle="Transformez vos espaces en véritables œuvres d’art, où chaque surface devient un spectacle lumineux."
             images={[
               { src: '/img/mapping-2.jpg', alt: 'Château de Versailles', title: 'Bosquet de la Colonnade', place: "Château de Versailles"},
@@ -73,7 +72,7 @@ export default function Home() {
         <section id="projection-laser">
           <ImageSlider
             iconUrl="/img/home/projection-laser.svg"
-            title="PROJECTION LASER"
+            title="Projection laser"
             subTitle="Mettez en avant votre identité de manière percutante en projetant votre logo, des animations ou textes personnalisés"
             images={[
               { src: '/img/projection/projection-5.jpg', alt: 'Image 1', title: 'Tournoi de futsal', place: "Dijon"},
@@ -86,7 +85,7 @@ export default function Home() {
         <section id="security-audit">
           <AuditSecu />
         </section>
-        <a className="my-10 mb-0" href="#contact">
+        <a className="my-10 mb-20" href="#contact">
           <InfiniteSlider />
         </a>
         <section id="partenaire" className=" hidden">
@@ -113,7 +112,6 @@ export default function Home() {
         <section id="contact">
           <Contact />
         </section>
-        <MouseLaserEffect ></MouseLaserEffect>
       </main>
     </div>
   );

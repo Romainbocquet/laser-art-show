@@ -25,9 +25,7 @@ export default function Header() {
 
   return (
     <header
-      className={`w-full text-white p-4 px-10 fixed ${
-        isScrolled ? styles.solid : styles.transparent
-      }`}
+      className={`w-full text-white py-4 fixed ${isScrolled ? styles.solid : styles.transparent } ${styles.headerMenu}`}
     >
        <div className={`${styles.iconMenu} ${isMenuOpen ? styles.open : ""}`} onClick={toggleMenu}>
           <span></span>
@@ -50,7 +48,7 @@ export default function Header() {
         <nav className={`flex space-x-8 ${styles.menu}`}>
           <div className={styles.menuItem}>
             <div className={`${styles.menuItemElt} cursor-pointer`}>
-              À PROPOS
+              À propos
               <div>
                 <svg
                   width="14"
@@ -67,17 +65,17 @@ export default function Header() {
               </div>
             </div>
             <div className={styles.submenu}>
-              <Link href="#histoire" className="hover:underline">
+              <Link href="/#histoire" className="hover:underline">
                 Notre histoire
               </Link>
-              <Link href="#valeurs" className="hover:underline">
+              <Link href="/#valeurs" className="hover:underline">
                 Nos valeurs
               </Link>
             </div>
           </div>
           <div className={styles.menuItem}>
             <div className={`${styles.menuItemElt} cursor-pointer`}>
-              PRESTATIONS
+              Presentations
               <div>
               <svg
                 width="14"
@@ -94,26 +92,26 @@ export default function Header() {
               </div>
             </div>
             <div className={styles.submenu}>
-              <Link href="#volumetrique" className="hover:underline">
+              <Link href="/#volumetrique" className="hover:underline">
                 Show volumétrique
               </Link>
-              <Link href="#mapping-laser" className="hover:underline">
+              <Link href="/#mapping-laser" className="hover:underline">
                 Mapping laser
               </Link>
-              <Link href="#projection-laser" className="hover:underline">
+              <Link href="/#projection-laser" className="hover:underline">
                 Projection laser
               </Link>
-              <Link href="#security-audit" className="hover:underline">
+              <Link href="/#security-audit" className="hover:underline">
                 Audit de sécurité
               </Link>
             </div>
           </div>
 
-          <Link href="#partenaire" className="hover:underline hidden">
-            CLIENTS
+          <Link href="/#partenaire" className="hover:underline hidden">
+            Client
           </Link>
-          <Link href="#contact" className={`${styles.contactLink}`}>
-            CONTACT
+          <Link href="/#contact" className={`${styles.contactLink}`}>
+            Contact
           </Link>
         </nav>
       </div>
@@ -123,42 +121,42 @@ export default function Header() {
           <nav className={`${styles.menuTel}`}>
           <div className={styles.menuItem}>
             <div className={`${styles.menuItemElt} cursor-pointer`}>
-              À PROPOS
+              À propos
             </div>
             <div className="flex flex-col gap-2">
-              <Link href="#histoire" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/#histoire" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
                 Notre histoire
               </Link>
-              <Link href="#valeurs" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/#valeurs" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
                 Nos valeurs
               </Link>
             </div>
           </div>
           <div className={styles.menuItem}>
             <div className={`${styles.menuItemElt} cursor-pointer`}>
-              PRESTATIONS
+              Presentation
             </div>
             <div className="flex flex-col gap-2">
-              <Link href="#volumetrique" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/#volumetrique" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
                 Show volumétrique
               </Link>
-              <Link href="#mapping-laser" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/#mapping-laser" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
                 Mapping laser
               </Link>
-              <Link href="#projection-laser" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/#projection-laser" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
                 Projection laser
               </Link>
-              <Link href="#security-audit" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/#security-audit" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
                 Audit de sécurité
               </Link>
             </div>
           </div>
 
-          <Link href="#partenaire" className="hover:underline hidden" onClick={() => setIsMenuOpen(false)}>
-            CLIENTS
+          <Link href="/#partenaire" className="hover:underline hidden" onClick={() => setIsMenuOpen(false)}>
+            Clients
           </Link>
-          <Link href="#contact" className={`${styles.contactLink}`} onClick={() => setIsMenuOpen(false)}>
-            CONTACT
+          <Link href="/#contact" className={`${styles.contactLink}`} onClick={() => setIsMenuOpen(false)}>
+            Contact
           </Link>
           </nav>
         </div>

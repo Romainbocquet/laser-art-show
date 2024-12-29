@@ -24,15 +24,16 @@
 }
 
 .imageTitle {
-  font-family: var(--benzin-semibold);
+  font-family: var(--microma-regular);
   font-size: 1.2rem;
   margin-top: 10px;
   color: #fff;
 }
 
 .imagePlace {
-  font-family: var(--gotham-light);
+  font-family: var(--inter);
   font-size: 1.2rem;
+  font-weight: 300;
 }
 
 .prev {
@@ -65,8 +66,8 @@
 }
 
 .sliderTitle h1 {
-  font-family: var(--benzin-semibold);
-  font-size: 3.4rem;
+  font-family: var(--microma-regular);
+  font-size: 3.2rem;
   margin-left: 20px;
   display: flex;
   flex-direction: row-reverse;
@@ -83,7 +84,8 @@
 }
 
 .sliderTitle p {
-  font-family: var(--gotham-light);
+  font-family: var(--inter);
+  font-weight: 300;
   font-size: 16px;
   margin-left: 20px;
   max-width: 600px;

@@ -45,22 +45,34 @@ const Timeline: React.FC = () => {
   }, []);
 
   const events: Event[] = [
-    { date: '2017', content: "L'exposition sur le thème Energie du Futur à Astana, Kazakhstan" },
-    { date: '2018', content: 'Festival Mawazine au Maroc en 2018 et 2019' },
+    { date: '2017', content: "L'exposition sur le thème Energie du Futur <br/><strong>Astana, Kazakhstan</strong>" },
+    { date: '2018', content: 'Festival Mawazine <br/><strong>Rabat, Maroc</strong>' },
     {
       date: '2019',
       content: [
-        "1<sup>er</sup> mapping laser sur la Tour Eiffel pour son 130<sup>e</sup> anniversaire",
-        'Les voiles de St. Barth à Saint-Barthélemy',
-        'Finale de "La coupe de la Ligue" de football à Bordeaux',
-        'Emission de TV <strong>The Voice</strong> et Mask Singer',
+        "1<sup>er</sup> mapping laser sur la Tour Eiffel pour son 130<sup>e</sup> anniversaire <br/><strong>Paris, France</strong>",
+        'Les voiles de St. Barth <br/><strong>Saint-Barthélemy</strong>',
+        'Finale de "La coupe de la Ligue" de football <br/><strong>Bordeaux, France</strong>',
+        'Émission de TV The Voice et Mask Singer <br/><strong>Paris, France</strong>',
+        'Concerts de David Guetta, Martin Garrix et Travis Scott <br/><strong>Paris, France</strong>'
       ],
     },
     {
       date: '2020',
       content: [
-        'Nouvel an sur les Champ-Elysées',
-        'Concerts d\'artistes de renom comme <strong>David Guetta</strong>, <strong>Martin Garrix</strong>, ou encore <strong>Travis Scott</strong>',
+        'Nouvel An sur les Champs-Élysées <br/> <strong>Paris, France</strong>',
+      ],
+    },{
+      date: '2023',
+      content: [
+        'Concert de The Weeknd <br/> <strong>Paris, France</strong>',
+        'Concert de Charlotte De Witte <br/> <strong>Festival des Vieilles Charrues, France</strong>'
+      ],
+    },{
+      date: '2024',
+      content: [
+        'Mapping laser du Grand Théâtre de Provence <br/> <strong>Aix-en-Provence, France</strong>',
+        'Les Grandes Eaux Nocturnes Électro <br/> <strong>Château de Versailles</strong>'
       ],
     },
   ];
@@ -77,7 +89,7 @@ const Timeline: React.FC = () => {
           <div className={styles.content}>
             {Array.isArray(event.content)
               ? event.content.map((item, idx) => <p key={idx} dangerouslySetInnerHTML={{ __html: item }} />)
-              : <p>{event.content}</p>}
+              : <p dangerouslySetInnerHTML={{ __html: event.content }} />}
           </div>
         </div>
       ))}
