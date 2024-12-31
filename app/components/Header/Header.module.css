@@ -85,7 +85,7 @@ z-index: 9999;
 
 .contactLink {
   border: 1px solid white;
-  padding: 0.5rem 0.7rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 30px;
   transition: background-color 0.3s ease;
   font-family: var(--microma-regular);

@@ -28,7 +28,7 @@ export default function Valeurs() {
   if (inView5) controls5.start({ opacity: 1, x: 0, transition: { duration: 0.6, delay: 0.12 } });
 
   return (
-    <div className={`relative w-full py-10 p-16 ${styles.valeurs}`}>
+    <div className={`relative w-full p-16 ${styles.valeurs}`}>
       {/* Titre des valeurs */}
       <motion.div
         ref={ref1}

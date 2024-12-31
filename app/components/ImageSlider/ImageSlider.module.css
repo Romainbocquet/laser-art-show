@@ -24,9 +24,10 @@
 }
 
 .imageTitle {
-  font-family: var(--microma-regular);
+  font-family: var(--inter);
   font-size: 1.2rem;
   margin-top: 10px;
+  font-weight: 700;
   color: #fff;
 }
 
@@ -61,14 +62,13 @@
 
 .sliderTitle {
   display: flex;
-  padding: 0px 2.5rem;
+  padding: 0px 100px;
   align-items: center;
 }
 
 .sliderTitle h1 {
   font-family: var(--microma-regular);
   font-size: 3.2rem;
-  margin-left: 20px;
   display: flex;
   flex-direction: row-reverse;
   gap: 20px;
@@ -89,7 +89,7 @@
   font-size: 16px;
   margin-left: 20px;
   max-width: 600px;
-  margin-left: 120px;
+  margin-left: 100px;
 }
 
 @media (max-width: 768px) {
@@ -122,6 +122,11 @@
   .sliderTitle h1 {
     font-size: 24px;
     margin-left: 0px;
+    flex-direction: column-reverse;
+  }
+
+  .sliderTitle p {
+    text-align: center;
   }
 
   .image {

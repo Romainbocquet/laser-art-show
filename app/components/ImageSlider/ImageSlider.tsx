@@ -95,7 +95,7 @@ export default function ImageSlider({ images, iconUrl, title, subTitle}: Carouse
   if (inView3) controls3.start({ opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.4} });
 
   return (
-    <div className="mt-10">
+    <div className="pt-10">
       <div className={styles.sliderTitle}>
         <div>
         <motion.div

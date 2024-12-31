@@ -75,7 +75,7 @@ export default function Header() {
           </div>
           <div className={styles.menuItem}>
             <div className={`${styles.menuItemElt} cursor-pointer`}>
-              Presentations
+              Prestations
               <div>
               <svg
                 width="14"

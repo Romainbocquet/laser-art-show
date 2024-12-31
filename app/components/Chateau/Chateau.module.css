@@ -11,7 +11,8 @@
 }
 
 .chateauTitle h3 {
-  font-family: var(--microma-regular);
+  font-family: var(--inter);
+  font-weight: 700;
   font-size: 1.6rem;
   line-height: 1.6rem;
 }
@@ -27,7 +28,7 @@
   color: white;
   border: 1px solid white;
   transition: background-color 0.3s ease;
-  padding: 0.5rem 0.7rem;
+  padding: 0.2rem 0.5rem;
   font-family: var(--microma-regular);
 }
 
@@ -45,8 +46,8 @@
     font-size: 24px;
   }
   .chateau {
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
+      padding-left: 20px;
+      padding-right: 20px;
   }
 
   .chateau img {
