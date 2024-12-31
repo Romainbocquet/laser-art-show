@@ -5,7 +5,8 @@
 }
 
 .intro h3 {
-    font-family: var(--microma-regular);
+    font-family: var(--inter);
+    font-weight: 700;
     font-size: 1.6rem;
     line-height: 1.6rem;
 }
@@ -21,7 +22,7 @@
 }
 
 .textLeftImgTitle {
-    right: -350px;
+    right: -200px;
 }
 
 @media (max-width: 1600px) {

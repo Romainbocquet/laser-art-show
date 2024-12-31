@@ -82,7 +82,7 @@ export default function Intro() {
               className={`${styles.textLeftImgTitle} lg:absolute mt-5 lg:mt-0 bottom-0`}
             >
               <h3 className="text-xl">
-                Féfilé de mode <br /> pour « VETEMENTS »
+                Défilé de mode <br /> pour « VETEMENTS »
               </h3>
               <h4>Paris</h4>
             </motion.div>
@@ -112,7 +112,7 @@ export default function Intro() {
             className="text-left mt-5"
           >
             <h3 className="text-xl">
-              130<sup>e</sup> anniversaire de la <br /> Tour Eiffle
+              130<sup>e</sup> anniversaire de la <br /> Tour Eiffel
             </h3>
             <h4>Paris</h4>
           </motion.div>

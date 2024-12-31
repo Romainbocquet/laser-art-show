@@ -16,7 +16,7 @@ const Chateau = () => {
         <Image
           className="object-cover"
           src="/img/mapping-2.jpg"
-          alt="Bosquet de la Colonnade - Château de Versailles"
+          alt="Les Grandes Eaux Nocturnes - Château de Versailles"
           layout="fill"
         />
       </div>
@@ -26,7 +26,7 @@ const Chateau = () => {
       animate={controls1}
       >
         <h3 className={`text-xl leading-10`}>
-        Bosquet de la Colonnade
+        Les Grandes Eaux Nocturnes
         </h3>
         <h4>Château de Versailles</h4>
       </motion.div>

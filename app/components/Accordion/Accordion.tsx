@@ -45,7 +45,7 @@ const Accordion = () => {
 
   return (
     <div>
-      <div className={`px-10 ${styles.accordion}`}>
+      <div className={`${styles.accordion}`}>
         <div className={` ${styles.accordionLeft}`}>
           <motion.div
           ref={ref1}

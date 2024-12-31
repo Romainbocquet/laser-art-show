@@ -45,34 +45,35 @@ const Timeline: React.FC = () => {
   }, []);
 
   const events: Event[] = [
-    { date: '2017', content: "L'exposition sur le thème Energie du Futur <br/><strong>Astana, Kazakhstan</strong>" },
-    { date: '2018', content: 'Festival Mawazine <br/><strong>Rabat, Maroc</strong>' },
+    { date: '2017', content: "<strong>Exposition « Énergie du Futur » </strong><br/>Astana, Kazakhstan" },
+    { date: '2018', content: '<strong>Festival Mawazine </strong><br/>Rabat, Maroc' },
     {
       date: '2019',
       content: [
-        "1<sup>er</sup> mapping laser sur la Tour Eiffel pour son 130<sup>e</sup> anniversaire <br/><strong>Paris, France</strong>",
-        'Les voiles de St. Barth <br/><strong>Saint-Barthélemy</strong>',
-        'Finale de "La coupe de la Ligue" de football <br/><strong>Bordeaux, France</strong>',
-        'Émission de TV The Voice et Mask Singer <br/><strong>Paris, France</strong>',
-        'Concerts de David Guetta, Martin Garrix et Travis Scott <br/><strong>Paris, France</strong>'
+        "<strong>1<sup>er</sup> mapping laser sur la Tour Eiffel pour son 130<sup>e</sup> anniversaire </strong><br/>Paris",
+        '<strong>Les voiles de St. Barth</strong> <br/>Saint-Barthélemy',
+        '<strong>Finale de La coupe de la Ligue de football</strong> <br/>Bordeaux',
+        '<strong>Émission de TV The Voice et Mask Singer </strong><br/>Paris',
+        '<strong>Concerts de David Guetta, Martin Garrix et Travis Scott</strong> <br/>Paris'
       ],
     },
     {
       date: '2020',
       content: [
-        'Nouvel An sur les Champs-Élysées <br/> <strong>Paris, France</strong>',
+        '<strong>Nouvel An sur les Champs-Élysées</strong> <br/> Paris',
       ],
     },{
       date: '2023',
       content: [
-        'Concert de The Weeknd <br/> <strong>Paris, France</strong>',
-        'Concert de Charlotte De Witte <br/> <strong>Festival des Vieilles Charrues, France</strong>'
+        '<strong>Concert de The Weeknd </strong><br/> Paris',
+        '<strong>Concert de Charlotte De Witte </strong><br/> Festival des Vieilles Charrues'
       ],
     },{
       date: '2024',
       content: [
-        'Mapping laser du Grand Théâtre de Provence <br/> <strong>Aix-en-Provence, France</strong>',
-        'Les Grandes Eaux Nocturnes Électro <br/> <strong>Château de Versailles</strong>'
+        '<strong>Concert de M. Pokora</strong> <br/> Bruxelles, Belgique',
+        '<strong>Mapping laser du Grand Théâtre de Provence</strong> <br/> Aix-en-Provence',
+        '<strong>Les Grandes Eaux Nocturnes Électro</strong> <br/> Château de Versailles'
       ],
     },
   ];
