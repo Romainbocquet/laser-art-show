@@ -3,6 +3,11 @@
     font-size: 3.2rem;
 }
 
+.valeurs {
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
 .valeursElt {
     display: flex;
     flex-wrap: wrap;
