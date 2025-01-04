@@ -25,15 +25,21 @@
     right: -200px;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1500px) {
     .textLeftImgTitle {
-        right: -350px;
+        right: -200px;
     }    
 }
 
-@media (max-width: 1170px) {
+@media (max-width: 1380px) {
     .textLeftImgTitle {
-        right: -400px;
+        right: -220px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .textLeftImgTitle {
+        right: -270px;
     }
 }
 
