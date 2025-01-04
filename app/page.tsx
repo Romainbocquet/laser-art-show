@@ -48,7 +48,7 @@ export default function Home() {
             title="Show volumétrique"
             subTitle="Vivez une expérience immersive où la lumière et la technologie fusionnent pour créer des spectacles éblouissants en trois dimensions."
             images={[
-              { src: '/img/volumetrie/volumetrie-9.jpg', alt: 'Image 7', title: '200e anniversaire de la Caisse d’Épargne', place: "Paris"},
+              { src: '/img/volumetrie/volumetrie-9.jpg', alt: 'Image 7', title: '200 anniversaire de la Caisse d’Épargne', place: "Paris"},
               { src: '/img/volumetrie/david.jpg', alt: 'Image 1', title: 'Concert de David Guetta', place: "Paris"},
               { src: '/img/volumetrie/volumetrie-8.png', alt: 'Image 6', title: 'Concert de M.Pokora', place: "Bruxelles"},
               { src: '/img/volumetrie/test.jpg', alt: 'Image 1', title: 'Soirée privée', place: "Toulouse"},

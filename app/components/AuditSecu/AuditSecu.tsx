@@ -17,7 +17,7 @@ export default function AuditSecu() {
 
   return (
     <div className={`relative w-full py-10 px-12 ${styles.secu}`}>  
-      <div className={`w-full text-center md:text-left ${styles.secuLeft} relative`}>
+      <div className={`text-center ${styles.secuLeft} relative`}>
 
       <motion.div
             ref={ref1}
@@ -25,18 +25,16 @@ export default function AuditSecu() {
             animate={controls1}>
 
         <div className={` ${styles.secuTitleContainer}`}>
-          <div className={`${styles.secuPicto}`}>
-          <Image
-              className={` ${styles.valeurtImg}`}
-              src="/img/valeurs/service-client.svg"
-              alt="Audit de securité"
-              width={128}
-              height={90}
-            />
-          </div>
-        
-            <h2 className={`${styles.secuTitle}`}>
-            Audit de sécurité</h2>
+            <div className={`${styles.secuPicto}`}>
+              <Image
+                className={` ${styles.valeurtImg}`}
+                src="/img/valeurs/service-client.svg"
+                alt="Audit de securité"
+                width={128}
+                height={90}
+              />
+            </div>
+            <h2 className={`${styles.secuTitle}`}>Audit de sécurité</h2>
         </div>
         </motion.div>
         <motion.div
@@ -52,7 +50,7 @@ export default function AuditSecu() {
           </p>
         </motion.div>
       </div>
-      <div className={`w-full flex justify-center mb-6 md:mb-0 ${styles.secuRight}`}>
+      <div className={`flex justify-center mb-6 md:mb-0 ${styles.secuRight}`}>
         <Image
           src="/img/home/secu.jpeg"
           alt="Audit Sécurité"
