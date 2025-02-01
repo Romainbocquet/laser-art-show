@@ -10,7 +10,6 @@ import ImageSlider from "./components/ImageSlider/ImageSlider";
 import PartenaireSlider from "./components/PartenaireSlider/PartenaireSlider";
 import AuditSecu from "./components/AuditSecu/AuditSecu";
 import Contact from "./components/Contact/Contact";
-import LanguageSwitcher from "./components/LanguageSwitcher/LanguageSwitcher";
 import Image from 'next/image';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
