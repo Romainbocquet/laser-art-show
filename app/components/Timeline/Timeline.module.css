@@ -72,6 +72,14 @@
   .event:nth-child(4) .date {
     transition-delay: 1.5s; /* 4 secondes de délai pour le quatrième élément */
   }
+
+  .event:nth-child(5) .date {
+    transition-delay: 2s; /* 4 secondes de délai pour le quatrième élément */
+  }
+
+  .event:nth-child(6) .date {
+    transition-delay: 2.5s; /* 4 secondes de délai pour le quatrième élément */
+  }
   
   .event .content {
     border-radius: 4px;
@@ -101,6 +109,14 @@
 
   .event:nth-child(4) .content {
     transition-delay: 2.5s; /* 4 secondes de délai pour le quatrième élément */
+  }
+
+  .event:nth-child(5) .content {
+    transition-delay: 3s; /* 4 secondes de délai pour le quatrième élément */
+  }
+
+  .event:nth-child(6) .content {
+    transition-delay: 3.5s; /* 4 secondes de délai pour le quatrième élément */
   }
 
   .event .content p {

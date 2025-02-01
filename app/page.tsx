@@ -39,7 +39,7 @@ export default function Home() {
           ref={ref1}
           initial={{ opacity: 0, y: 50 }}
           animate={controls1}>
-            <h1 className="global-title">TRANSFORMEZ VOS ÉVÉNEMENTS EN EXPÉRIENCES INOUBLIABLES</h1>
+            <h1 className="global-title">TRANSFORMEZ <br /> VOS ÉVÉNEMENTS EN EXPÉRIENCES INOUBLIABLES</h1>
         </motion.div>
 
         <section id="volumetrique">
@@ -48,11 +48,11 @@ export default function Home() {
             title="Show volumétrique"
             subTitle="Vivez une expérience immersive où la lumière et la technologie fusionnent pour créer des spectacles éblouissants en trois dimensions."
             images={[
-              { src: '/img/volumetrie/volumetrie-9.jpg', alt: 'Image 7', title: '200 anniversaire de la Caisse d’Épargne', place: "Paris"},
+              { src: '/img/volumetrie/volumetrie-9.jpg', alt: 'Image 7', title: '200<sup>e</sup> anniversaire de la Caisse d’Épargne', place: "Paris"},
               { src: '/img/volumetrie/david.jpg', alt: 'Image 1', title: 'Concert de David Guetta', place: "Paris"},
               { src: '/img/volumetrie/volumetrie-8.png', alt: 'Image 6', title: 'Concert de M.Pokora', place: "Bruxelles"},
               { src: '/img/volumetrie/test.jpg', alt: 'Image 1', title: 'Soirée privée', place: "Toulouse"},
-              { src: '/img/volumetrie/volumetrie-6.jpg', alt: 'Image 5', title: 'Les Grandes Eaux Nocturnes Electro', place: "Château de Versailles"},
+              { src: '/img/volumetrie/volumetrie-6.jpg', alt: 'Image 5', title: 'Les Grandes Eaux Nocturnes', place: "Château de Versailles"},
             ]}
           />
         </section>

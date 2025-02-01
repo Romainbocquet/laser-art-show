@@ -22,24 +22,24 @@
 }
 
 .textLeftImgTitle {
-    right: -200px;
+    right: -400px;
 }
 
 @media (max-width: 1500px) {
     .textLeftImgTitle {
-        right: -200px;
+        right: -400px;
     }    
 }
 
 @media (max-width: 1380px) {
     .textLeftImgTitle {
-        right: -220px;
+        right: -420px;
     }
 }
 
 @media (max-width: 1200px) {
     .textLeftImgTitle {
-        right: -270px;
+        right: -470px;
     }
 }
 
