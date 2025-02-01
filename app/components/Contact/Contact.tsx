@@ -2,7 +2,6 @@
 import { useState, FormEvent } from 'react';
 import styles from './Contact.module.css';
 import emailjs from "emailjs-com";
-import { log } from 'console';
 
 export default function Contact() {
   const [mathAnswer, setMathAnswer] = useState('');
