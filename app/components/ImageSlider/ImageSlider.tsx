@@ -132,7 +132,7 @@ export default function ImageSlider({ images, iconUrl, title, subTitle}: Carouse
                       height={600} // ajuste la hauteur en conséquence
                       className={styles.image}
                     />
-                    <h3 className={styles.imageTitle}>{image.title}</h3> {/* Ajout du titre sous chaque image */}
+                    <h3 className={styles.imageTitle} dangerouslySetInnerHTML={{ __html: image.title }}></h3> {/* Ajout du titre sous chaque image */}
                     <span className={styles.imagePlace}>{image.place}</span> {/* Ajout du titre sous chaque image */}
                     
                   </div>
