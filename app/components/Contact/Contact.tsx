@@ -37,7 +37,7 @@ export default function Contact() {
     )
     .then(
       () => setStatusMessage("Email envoyé avec succès !"),
-      (error) => setStatusMessage("Erreur lors de l'envoi de l'email.")
+      () => setStatusMessage("Erreur lors de l'envoi de l'email.")
     );
   };
 
