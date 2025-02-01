@@ -51,9 +51,9 @@ const Timeline: React.FC = () => {
       date: '2019',
       content: [
         "<strong>1<sup>er</sup> mapping laser sur la Tour Eiffel pour son 130<sup>e</sup> anniversaire </strong><br/>Paris",
-        '<strong>Les voiles de St. Barth</strong> <br/>Saint-Barthélemy',
-        '<strong>Finale de La coupe de la Ligue de football</strong> <br/>Bordeaux',
-        '<strong>Émission de TV The Voice et Mask Singer </strong><br/>Paris',
+        '<strong>Les Voiles de St. Barth</strong> <br/>Saint-Barthélemy',
+        '<strong>Finale de la Coupe de la Ligue de Football</strong> <br/>Bordeaux',
+        '<strong>Émissions de TV The Voice et Mask Singer</strong><br/>Paris',
         '<strong>Concerts de David Guetta, Martin Garrix et Travis Scott</strong> <br/>Paris'
       ],
     },
@@ -73,7 +73,7 @@ const Timeline: React.FC = () => {
       content: [
         '<strong>Concert de M. Pokora</strong> <br/> Bruxelles, Belgique',
         '<strong>Mapping laser du Grand Théâtre de Provence</strong> <br/> Aix-en-Provence',
-        '<strong>Les Grandes Eaux Nocturnes Électro</strong> <br/> Château de Versailles'
+        '<strong>Les Grandes Eaux Nocturnes</strong> <br/> Château de Versailles'
       ],
     },
   ];

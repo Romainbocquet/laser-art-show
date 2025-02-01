@@ -2,6 +2,9 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./Header.module.css";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
+
+const OFFSET = 50;
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,16 +26,39 @@ export default function Header() {
     };
   }, []);
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const hash = window.location.hash;
+      if (hash) {
+        scrollToSection(hash);
+      }
+    }
+  }, []);
+
+  const scrollToSection = (id: string) => {
+    const element = document.querySelector(id);
+    if (element) {
+      const top = element.getBoundingClientRect().top + window.scrollY - OFFSET;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
+  };
+
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    scrollToSection(id);
+    window.history.pushState(null, "", id); // Met à jour l'URL sans recharger
+  };
+
   return (
     <header
       className={`w-full text-white py-4 fixed ${isScrolled ? styles.solid : styles.transparent } ${styles.headerMenu}`}
     >
-       <div className={`${styles.iconMenu} ${isMenuOpen ? styles.open : ""}`} onClick={toggleMenu}>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+      <div className={`${styles.iconMenu} ${isMenuOpen ? styles.open : ""}`} onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div className={`flex justify-between items-center ${styles.header}`}>
         <div className={styles.logo}>
           <a href="/">
@@ -45,6 +71,7 @@ export default function Header() {
             />
           </a>
         </div>
+       
         <nav className={`flex space-x-8 ${styles.menu}`}>
           <div className={styles.menuItem}>
             <div className={`${styles.menuItemElt} cursor-pointer`}>
@@ -92,18 +119,14 @@ export default function Header() {
               </div>
             </div>
             <div className={styles.submenu}>
-              <Link href="/#volumetrique" className="hover:underline">
-                Show volumétrique
-              </Link>
-              <Link href="/#mapping-laser" className="hover:underline">
-                Mapping laser
-              </Link>
-              <Link href="/#projection-laser" className="hover:underline">
-                Projection laser
-              </Link>
-              <Link href="/#security-audit" className="hover:underline">
-                Audit de sécurité
-              </Link>
+            <Link href="/#volumetrique">Show volumétrique</Link>
+            <a href="/#mapping-laser" onClick={(e) => handleClick(e, "#mapping-laser")}>
+              Mapping laser
+            </a>
+            <a href="/#projection-laser" onClick={(e) => handleClick(e, "#projection-laser")}>
+              Projection laser
+            </a>
+            <Link href="/#security-audit">Audit de sécurité</Link>
             </div>
           </div>
 
@@ -113,6 +136,7 @@ export default function Header() {
           <Link href="/#contact" className={`${styles.contactLink}`}>
             Contact
           </Link>
+          <LanguageSwitcher />
         </nav>
       </div>
         <div

@@ -1,6 +1,8 @@
 "use client";
 import { useState, FormEvent } from 'react';
 import styles from './Contact.module.css';
+import emailjs from "emailjs-com";
+import { log } from 'console';
 
 export default function Contact() {
   const [mathAnswer, setMathAnswer] = useState('');
@@ -10,6 +12,7 @@ export default function Contact() {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  const [statusMessage, setStatusMessage] = useState('');
 
   const handleMathChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const answer = e.target.value;
@@ -20,11 +23,23 @@ export default function Contact() {
   const handleSendEmail = (e: FormEvent) => {
     e.preventDefault();
     
-    const mailtoLink = `mailto:contact@laserartshow.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
-      `${message}\n\n${firstName} ${lastName}\n\n Email de contact : ${email}`
-    )}`;
-    
-    window.location.href = mailtoLink;
+    emailjs
+    .send(
+      "service_8nxu6wc",
+      "template_eer4fv6",
+      {
+        firstName,
+        lastName,
+        email,
+        subject,
+        message,
+      },
+      "0XLjpJ_ILlvs77sGV"
+    )
+    .then(
+      () => setStatusMessage("Email envoyé avec succès !"),
+      (error) => setStatusMessage("Erreur lors de l'envoi de l'email.")
+    );
   };
 
   return (
@@ -129,6 +144,7 @@ export default function Contact() {
               >
                 Envoyer
               </button>
+              {statusMessage && <p className="text-center text-white">{statusMessage}</p>}
             </div>
           </form>
         </div>
