@@ -12,7 +12,7 @@ export default function Contact() {
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [statusMessage, setStatusMessage] = useState('');
-  const [isSending, setIsSending] = useState(false); // Ajout de l'état pour le loader
+  const [isSending, setIsSending] = useState(false);
 
   const handleMathChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const answer = e.target.value;
@@ -42,9 +42,10 @@ export default function Contact() {
       setIsMathCorrect(false);
     } catch (error) {
       setStatusMessage("Erreur lors de l'envoi de l'email.");
+      console.error(error);
     }
 
-    setIsSending(false); // Désactiver le loader après l'envoi
+    setIsSending(false);
   };
 
   return (
