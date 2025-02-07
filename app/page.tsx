@@ -62,10 +62,10 @@ export default function Home() {
             title="Mapping laser"
             subTitle="Transformez vos espaces en véritables œuvres d’art, où chaque surface devient un spectacle lumineux."
             images={[
-              { src: '/img/mapping-2.jpg', alt: 'Château de Versailles', title: 'Bosquet de la Colonnade', place: "Château de Versailles"},
-              { src: '/img/mapping-1.jpg', alt: 'Château de Versailles', title: 'Bosquet de la Colonnade', place: "Château de Versailles"},
-              { src: '/img/mapping-3.jpg', alt: 'Tour eiffel', title: '130e anniversaire de la Tour Eiffel', place: "Paris"},
-              { src: '/img/mapping-1.jpg', alt: 'Château de Versailles', title: 'Bosquet de la Colonnade', place: "Château de Versailles"},
+              { src: '/img/mapping-2.jpg', alt: 'Château de Versailles', title: 'Les Grandes Eaux Nocturnes', place: "Château de Versailles"},
+              { src: '/img/mapping-1.jpg', alt: 'Château de Versailles', title: 'Les Grandes Eaux Nocturnes', place: "Château de Versailles"},
+              { src: '/img/mapping-3.jpg', alt: 'Tour eiffel', title: '130<sup>e</sup> anniversaire de la Tour Eiffel', place: "Paris"},
+              { src: '/img/mapping-1.jpg', alt: 'Château de Versailles', title: 'Les Grandes Eaux Nocturnes', place: "Château de Versailles"},
             ]}
           />
         </section>
@@ -105,7 +105,7 @@ export default function Home() {
           <Image
             className="object-cover"
             src="/img/photo-laser.jpg"
-            alt="Bosquet de la Colonnade - Château de Versailles"
+            alt="Les Grandes Eaux Nocturnes - Château de Versailles"
             layout="fill"
           />
         </div>
