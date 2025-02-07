@@ -12,6 +12,7 @@ export default function Contact() {
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [statusMessage, setStatusMessage] = useState('');
+  const [isSending, setIsSending] = useState(false);
 
   const handleMathChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const answer = e.target.value;
@@ -19,26 +20,32 @@ export default function Contact() {
     setIsMathCorrect(answer === '7');
   };
 
-  const handleSendEmail = (e: FormEvent) => {
+  const handleSendEmail = async (e: FormEvent) => {
     e.preventDefault();
-    
-    emailjs
-    .send(
-      "service_8nxu6wc",
-      "template_eer4fv6",
-      {
-        firstName,
-        lastName,
-        email,
-        subject,
-        message,
-      },
-      "0XLjpJ_ILlvs77sGV"
-    )
-    .then(
-      () => setStatusMessage("Email envoyé avec succès !"),
-      () => setStatusMessage("Erreur lors de l'envoi de l'email.")
-    );
+    setIsSending(true);
+
+    try {
+      await emailjs.send(
+        "service_8nxu6wc",
+        "template_eer4fv6",
+        { firstName, lastName, email, subject, message },
+        "0XLjpJ_ILlvs77sGV"
+      );
+
+      setStatusMessage("Email envoyé avec succès !");
+      setFirstName('');
+      setLastName('');
+      setEmail('');
+      setSubject('');
+      setMessage('');
+      setMathAnswer('');
+      setIsMathCorrect(false);
+    } catch (error) {
+      setStatusMessage("Erreur lors de l'envoi de l'email.");
+      console.error(error);
+    }
+
+    setIsSending(false);
   };
 
   return (
@@ -139,11 +146,11 @@ export default function Contact() {
             <button
                 type="submit"
                 className={`${styles.button} text-black bg-white rounded-3xl`}
-                disabled={!isMathCorrect}
+                disabled={!isMathCorrect || isSending}
               >
-                Envoyer
-              </button>
-              {statusMessage && <p className="text-center text-white">{statusMessage}</p>}
+                  Envoyer {isSending ? (<span className={`${styles.loader}`}></span>) : ( "" )}
+              </button> 
+              {statusMessage && <p className="text-center text-white mt-6">{statusMessage}</p>}
             </div>
           </form>
         </div>
