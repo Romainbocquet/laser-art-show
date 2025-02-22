@@ -42,11 +42,14 @@ interface ImageFile {
 }
 
 interface ImageFields {
-  fields: any;
-  image: ImageFile;
-  alt?: string;
-  title?: string;
-  place?: string;
+  fields: {
+    image: {
+      fields: ImageFile;
+    };
+    alt?: string;
+    title?: string;
+    place?: string;
+  };
 }
 
 interface SliderFields {
@@ -96,9 +99,9 @@ export default function Home() {
                 : "/default-icon.png",
               images: Array.isArray(data.images)
                 ? data.images.map((img: ImageFields) => ({
-                    src: img.fields.image?.fields?.file?.url
-                      ? `https:${img.fields.image.fields.file.url}`
-                      : "/default-image.png",
+                  src: img.fields.image.fields.file.url
+                    ? `https:${img.fields.image.fields.file.url}`
+                    : "/default-image.png",
                     alt: String(img.fields.alt || "Image sans description"),
                     title: String(img.fields.title || "Sans titre"),
                     place: String(img.fields.place || "Lieu inconnu"),
