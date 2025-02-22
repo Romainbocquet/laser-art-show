@@ -32,7 +32,7 @@ const Chateau = () => {
       </motion.div>
       <div className="flex justify-center mt-4">
           <a
-            className={`${styles.button} text-black bg-white rounded-3xl`} href='#volumetrique'
+            className={`${styles.button} text-black bg-white rounded-3xl`} href='#realisations'
           >
             Voir plus
           </a>
