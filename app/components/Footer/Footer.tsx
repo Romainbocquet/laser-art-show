@@ -33,9 +33,9 @@ export default function Footer() {
               Prestations
             </div>
             <div className={styles.submenuFooter}>
-              <Link href="/#volumetrique" className="hover:underline">Show volumétrique</Link>
-              <Link href="/#mapping-laser" className="hover:underline">Mapping laser</Link>
-              <Link href="/#projection-laser" className="hover:underline">Projection laser</Link>
+              <Link href="/#1" className="hover:underline">Show volumétrique</Link>
+              <Link href="/#2" className="hover:underline">Mapping laser</Link>
+              <Link href="/#3" className="hover:underline">Projection laser</Link>
               <Link href="/#security-audit" className="hover:underline">Audit de sécurité</Link>
             </div>
           </div>

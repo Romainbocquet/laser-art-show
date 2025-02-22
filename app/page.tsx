@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Video from "./components/Video/Video";
 import InfiniteSlider from "./components/InfiniteSlider/InfiniteSlider";
 import Accordion from "./components/Accordion/Accordion";
@@ -13,24 +14,123 @@ import Contact from "./components/Contact/Contact";
 import Image from 'next/image';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { createClient } from "contentful";
+
+interface PictoSlider {
+  fields: {
+    file: {
+      url: string;
+    };
+  };
+}
+
+interface ImageData {
+  src: string;
+  alt: string;
+  title: string;
+  place: string;
+  colorSpace?: string;
+  data?: any;
+  height?: number;
+  width?: number;
+}
+
+interface ImageFields {
+  image: {
+    fields: {
+      file: {
+        url: string;
+      };
+    };
+  };
+  alt: string;
+  title: string;
+  place: string;
+}
+
+interface SliderFields {
+  sliderId: string | number;
+  nomDuSlider?: string;
+  subTitle?: string;
+  pictoSlider?: PictoSlider;
+  images?: ImageFields[];
+}
+
+interface SliderData {
+  id: string;
+  title: string;
+  subTitle: string;
+  iconUrl: string;
+  images: ImageData[];
+}
+
+const client = createClient({
+  space: "hfnntuvhdevi",
+  accessToken: "e6yLmttsyvcZ5u_UB4hY-GFYLDEaq7VCO7QK8gOaKd8",
+});
 
 export default function Home() {
   // Animations pour la première valeur (Haut)
   const controls1 = useAnimation();
   const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
   if (inView1) controls1.start({ opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.3 } });
+  
+  const [slidersData, setSlidersData] = useState<SliderData[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await client.getEntries({ content_type: "imageSlider" });
+    
+        if (response.items.length > 0) {
+          const formattedData = response.items.map((item) => {
+            const data = item.fields as unknown as SliderFields;
+    
+            return {
+              id: String(data.sliderId),
+              title: String(data.nomDuSlider || "Titre par défaut"),
+              subTitle: String(data.subTitle || "Sous-titre par défaut"),
+              iconUrl: data.pictoSlider?.fields?.file?.url
+                ? `https:${data.pictoSlider.fields.file.url}`
+                : "/default-icon.png",
+              images: Array.isArray(data.images)
+                ? data.images.map((img: any) => ({
+                    src: img.fields.image?.fields?.file?.url
+                      ? `https:${img.fields.image.fields.file.url}`
+                      : "/default-image.png",
+                    alt: String(img.fields.alt || "Image sans description"),
+                    title: String(img.fields.title || "Sans titre"),
+                    place: String(img.fields.place || "Lieu inconnu"),
+                    colorSpace: "srgb", // Valeur par défaut
+                    data: null, // Valeur par défaut
+                    height: 0, // Valeur par défaut
+                    width: 0, // Valeur par défaut
+                  }))
+                : [],
+            };
+          });
+    
+          setSlidersData(formattedData);
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    };
+  
+    fetchData();
+  }, []);
 
   return (
     <div className="font-[family-name:var(--font-geist-sans)] w-100">
       <main className="relative flex flex-col row-start-2 sm:items-start">
         <Video />
         <Intro />
-        <Chateau/>
+        <Chateau />
         <section id="histoire" className="w-full">
           <Accordion />
         </section>
         <a className="my-10" href="#contact">
-        <InfiniteSlider />
+          <InfiniteSlider />
         </a>
         <section id="valeurs" className="w-full">
           <Valeurs />
@@ -39,49 +139,25 @@ export default function Home() {
           ref={ref1}
           initial={{ opacity: 0, y: 50 }}
           animate={controls1}>
-            <h1 className="global-title">TRANSFORMEZ <br /> VOS ÉVÉNEMENTS EN EXPÉRIENCES INOUBLIABLES</h1>
+          <h1 className="global-title">TRANSFORMEZ <br /> VOS ÉVÉNEMENTS EN EXPÉRIENCES INOUBLIABLES</h1>
         </motion.div>
-
-        <section id="volumetrique">
-          <ImageSlider
-            iconUrl="/img/home/show-volumetrique.svg"
-            title="Show volumétrique"
-            subTitle="Vivez une expérience immersive où la lumière et la technologie fusionnent pour créer des spectacles éblouissants en trois dimensions."
-            images={[
-              { src: '/img/volumetrie/volumetrie-9.jpg', alt: 'Image 7', title: '200<sup>e</sup> anniversaire de la Caisse d’Épargne', place: "Paris"},
-              { src: '/img/volumetrie/david.jpg', alt: 'Image 1', title: 'Concert de David Guetta', place: "Paris"},
-              { src: '/img/volumetrie/volumetrie-8.png', alt: 'Image 6', title: 'Concert de M.Pokora', place: "Bruxelles"},
-              { src: '/img/volumetrie/test.jpg', alt: 'Image 1', title: 'Soirée privée', place: "Toulouse"},
-              { src: '/img/volumetrie/volumetrie-6.jpg', alt: 'Image 5', title: 'Les Grandes Eaux Nocturnes', place: "Château de Versailles"},
-            ]}
-          />
-        </section>
-        <section id="mapping-laser">
-          <ImageSlider
-            iconUrl="/img/home/mapping-laser.svg"
-            title="Mapping laser"
-            subTitle="Transformez vos espaces en véritables œuvres d’art, où chaque surface devient un spectacle lumineux."
-            images={[
-              { src: '/img/mapping-2.jpg', alt: 'Château de Versailles', title: 'Les Grandes Eaux Nocturnes', place: "Château de Versailles"},
-              { src: '/img/mapping-1.jpg', alt: 'Château de Versailles', title: 'Les Grandes Eaux Nocturnes', place: "Château de Versailles"},
-              { src: '/img/mapping-3.jpg', alt: 'Tour eiffel', title: '130<sup>e</sup> anniversaire de la Tour Eiffel', place: "Paris"},
-              { src: '/img/mapping-1.jpg', alt: 'Château de Versailles', title: 'Les Grandes Eaux Nocturnes', place: "Château de Versailles"},
-            ]}
-          />
-        </section>
-        <section id="projection-laser">
-          <ImageSlider
-            iconUrl="/img/home/projection-laser.svg"
-            title="Projection laser"
-            subTitle="Mettez en avant votre identité de manière percutante en projetant votre logo, des animations ou textes personnalisés"
-            images={[
-              { src: '/img/projection/projection-5.jpg', alt: 'Image 1', title: 'Tournoi de futsal', place: "Dijon"},
-              { src: '/img/projection/projection-3.jpg', alt: 'Image 4', title: 'Finale de la Coupe de la Ligue de Football', place: "Bordeaux"},
-              { src: '/img/projection/projection-4.jpg', alt: 'Image 5', title: 'Tournoi de futsal', place: "Dijon"},
-              { src: '/img/projection/projection-6.jpg', alt: 'Image 6', title: 'Tournoi de futsal', place: "Dijon"},
-            ]}
-          />
-        </section>
+        <div id="realisations">
+          {slidersData.length > 0 ? (
+            slidersData.map((slider, index) => (
+              <section key={`carousel-${index}`} id={slider.id}>
+                <ImageSlider
+                  key={index}
+                  title={slider.title}
+                  subTitle={slider.subTitle}
+                  iconUrl={slider.iconUrl}
+                  images={slider.images}
+                />
+                </section>
+            ))
+          ) : (
+            <p>Chargement...</p>
+          )}
+        </div>
         <section id="security-audit">
           <AuditSecu />
         </section>

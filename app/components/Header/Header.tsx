@@ -26,29 +26,6 @@ export default function Header() {
     };
   }, []);
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const hash = window.location.hash;
-      if (hash) {
-        scrollToSection(hash);
-      }
-    }
-  }, []);
-
-  const scrollToSection = (id: string) => {
-    const element = document.querySelector(id);
-    if (element) {
-      const top = element.getBoundingClientRect().top + window.scrollY - OFFSET;
-      window.scrollTo({ top, behavior: "smooth" });
-    }
-  };
-
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-    e.preventDefault();
-    scrollToSection(id);
-    window.history.pushState(null, "", id); // Met à jour l'URL sans recharger
-  };
-
   return (
     <header
       className={`w-full text-white py-4 fixed ${isScrolled ? styles.solid : styles.transparent } ${styles.headerMenu}`}
@@ -119,13 +96,9 @@ export default function Header() {
               </div>
             </div>
             <div className={styles.submenu}>
-            <Link href="/#volumetrique">Show volumétrique</Link>
-            <a href="/#mapping-laser" onClick={(e) => handleClick(e, "#mapping-laser")}>
-              Mapping laser
-            </a>
-            <a href="/#projection-laser" onClick={(e) => handleClick(e, "#projection-laser")}>
-              Projection laser
-            </a>
+            <Link href="/#1">Show volumétrique</Link>
+            <Link href="/#2">Mapping laser</Link>
+            <Link href="/#3">Projection laser</Link>
             <Link href="/#security-audit">Audit de sécurité</Link>
             </div>
           </div>
@@ -161,13 +134,13 @@ export default function Header() {
               Prestations
             </div>
             <div className="flex flex-col gap-2">
-              <Link href="/#volumetrique" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/#1" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
                 Show volumétrique
               </Link>
-              <Link href="/#mapping-laser" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/#2" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
                 Mapping laser
               </Link>
-              <Link href="/#projection-laser" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/#3" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
                 Projection laser
               </Link>
               <Link href="/#security-audit" className="hover:underline" onClick={() => setIsMenuOpen(false)}>
