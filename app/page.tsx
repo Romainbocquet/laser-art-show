@@ -30,7 +30,7 @@ interface ImageData {
   title: string;
   place: string;
   colorSpace?: string;
-  data?: any;
+  data?: string;
   height?: number;
   width?: number;
 }
@@ -101,10 +101,10 @@ export default function Home() {
                     alt: String(img.fields.alt || "Image sans description"),
                     title: String(img.fields.title || "Sans titre"),
                     place: String(img.fields.place || "Lieu inconnu"),
-                    colorSpace: "srgb", // Valeur par défaut
-                    data: null, // Valeur par défaut
-                    height: 0, // Valeur par défaut
-                    width: 0, // Valeur par défaut
+                    colorSpace: "srgb",
+                    data: String(''),
+                    height: 0,
+                    width: 0,
                   }))
                 : [],
             };
