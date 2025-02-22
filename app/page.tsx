@@ -35,17 +35,18 @@ interface ImageData {
   width?: number;
 }
 
-interface ImageFields {
-  image: {
-    fields: {
-      file: {
-        url: string;
-      };
-    };
+interface ImageFile {
+  file: {
+    url: string;
   };
-  alt: string;
-  title: string;
-  place: string;
+}
+
+interface ImageFields {
+  fields: any;
+  image: ImageFile;
+  alt?: string;
+  title?: string;
+  place?: string;
 }
 
 interface SliderFields {
@@ -94,7 +95,7 @@ export default function Home() {
                 ? `https:${data.pictoSlider.fields.file.url}`
                 : "/default-icon.png",
               images: Array.isArray(data.images)
-                ? data.images.map((img: any) => ({
+                ? data.images.map((img: ImageFields) => ({
                     src: img.fields.image?.fields?.file?.url
                       ? `https:${img.fields.image.fields.file.url}`
                       : "/default-image.png",
