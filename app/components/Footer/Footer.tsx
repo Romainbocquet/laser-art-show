@@ -67,7 +67,7 @@ export default function Footer() {
       <div className={`flex items-center px-10 justify-between mt-20 text-white ${styles.menuItemTBottomFooter}`}>
         <div>
           <a href="mailto:contact@laserartshow.com" className="underline">contact@laserartshow.com</a>
-          <p>+33 7 59 50 86 08</p>
+          <p>+33 (0)6 12 46 01 58</p>
           <a href="https://maps.app.goo.gl/PnYKWnRYJY19Hq8E9" target="_blank" className="hover:underline">12E chemin de Basso Cambo, <br /> 31100 Toulouse</a>
         </div>
         <p className="text-center">Copyright &copy; Laser Art Show 2024. <br /> Tous droits réservés.</p>

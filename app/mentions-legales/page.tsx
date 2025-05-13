@@ -17,7 +17,7 @@ export default function MentionsLegales() {
         <p><strong>RCS de Toulouse :</strong> 952 167 567</p>
         <p><strong>Numéro de TVA intracommunautaire :</strong> FR56952167567</p>
         <p><strong>Email :</strong> <a href="mailto:contact@laserartshow.com" className="text-blue-600">contact@laserartshow.com</a></p>
-        <p><strong>Téléphone :</strong> 07 59 50 86 08</p>
+        <p><strong>Téléphone :</strong> +33 (0)6 12 46 01 58</p>
         <p><strong>Directeur de la publication :</strong> Maël NINON</p>
     </section>
 
